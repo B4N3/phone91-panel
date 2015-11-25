@@ -1,0 +1,212 @@
+    <style>
+    #moveToGroup2{position:absolute; border:1px solid #eee; z-index: 100; background: #fff; color:#999; cursor: pointer; margin-top:27px; height:240px; overflow: auto; right:0; width:168px;}
+    #moveToGroup2 li{padding:5px 10px; border-bottom: 1px solid #eee;}
+    #moveToGroup2 li:hover{background:#f5f5f5;}
+</style>
+<style type="text/css">
+#helpBox{overflow:hidden; min-height:49px;}
+#selectBox{width:260px; top:50px;z-index:999;background-color: #fff;}
+#addBox{position:absolute; top:50px; bottom:0; left:260px; right:210px; overflow-y:auto;z-index:999;background-color: #fff;}
+#previewBox{position:absolute; top:50px; bottom:0; right:0; width:210px;}
+#selectBoxUl .gLi{margin-bottom:1px;}
+#accHelpNote{width:300px; background:#FFFFCC; border:1px solid #FFCC66;}
+.container-bg {
+position: absolute;
+top: 0;
+bottom: 0;
+left: 0;
+right: 0;
+overflow-y: auto;
+}
+#popup_wrapper {
+display: none;
+position: absolute;
+z-index: 1001;
+background: #fff;
+}
+/*#openingBalanceDate:hover{border:1px solid #ccc;}*/
+
+.gLi{border-left:5px solid transparent}
+.bdrLIB:hover, .bdrLIB.active{border-left:5px solid #F90; background:#eee}
+.bdrASS:hover, .bdrASS.active{border-left:5px solid #39F; background:#eee}
+.bdrINC:hover, .bdrINC.active{border-left:5px solid #009900; background:#eee}
+.bdrEXP:hover, .bdrEXP.active{border-left:5px solid #C0F; background:#eee}
+.hidediv, .hidden{ display:none; }
+.DnBArr.r{-ms-transform: rotate(-90deg); /* IE 9 */
+    -webkit-transform: rotate(-90deg); /* Chrome, Safari, Opera */
+    transform: rotate(-90deg);}
+</style>
+
+<div id="popup_wrapper" style="display: block; top: 5%; bottom: 5%; left: 4%; right: 6%;">
+<div class="container-bg">
+<div id="helpBox" class="pr pdL2 pdR2 bdrB bgGry"></div>
+
+<div id="selectBox" class="pa l b bdrR">
+	<div class="hdBlack mrL2 pdT pdB"><h3>Select Group</h3></div>
+	<div class="iWrp mrL2 mrR1 mrB1">
+	    <div class="icon24 icon-srch pa r"></div>
+        <div style="margin-right:24px">
+    		<input class="in" ng-model="sgInput" name="" type="text" style="height:22px;">
+        </div>
+    </div>
+    <div id= "grouplist" class = "grouplistAll">
+
+        <!-- Nested node template -->
+            <script type="text/ng-template" id="nodes_renderer.html">
+              <div ui-tree-handle ng-click="selectGroupToAdd(value,1);">
+                
+                <a class="btn btn-success btn-xs" data-nodrag ng-click="toggle(this)"><span class="tpico DnBArr" ng-class="{'r': collapsed, '': !collapsed}"></span></a>
+                {{value.name}}
+             
+              </div>
+              <ol ui-tree-nodes="" ng-model="value.children" ng-class="{hidden: collapsed}">
+                <li ng-repeat="(key,value) in value.children  | filter:sgInput " ng-class="value.charId == 1 ? 'bdrLIB' : value.charId== 2? 'bdrASS' :value.charId==3? 'bdrINC':'bdrEXP'"  ui-tree-node ng-include="'nodes_renderer.html'">
+	    </li>
+              </ol>
+            </script>
+            <div ui-tree data-drag-enabled="false">
+              <ol ui-tree-nodes="" ng-model="groupList" id="tree-root">
+                <li ng-repeat="(key,value) in groupList | filter:sgInput" ng-class="value.charId == 1 ? 'bdrLIB' : value.charId== 2? 'bdrASS' :value.charId==3? 'bdrINC':'bdrEXP'"  ui-tree-node ng-include="'nodes_renderer.html'"></li>
+              </ol>
+    </div>
+    
+</div>
+
+</div>
+
+<form id="insertName" name="f1" action="javascript:;" ng-submit="addNewGroup()" method="post"> 
+		<div id="addBox" class="bdrR">
+        	<div id="addBoxForm" class="{{addGroupBox}}">
+                <div class="hdBlack pdT pdB pdL1 pdR1 bdrB">
+ 
+Add New Sub Group
+
+                </div>
+                <div class="pdL1 pdR1">
+		    <div onclick="uiDrop(this,'#moveToGroup2')" class="fr pr mrT1">
+			
+			<input class="fr bdr" ng-model="searchGroup" type="text"  placeholder="Group name"/>
+			<div class="exportLbl ptr fr">
+			    <div class="fl fs3">Move to group :</div>
+			</div>                
+
+			     <!--EXPORT MENU(XLS,PDF)-->
+			<ul id="moveToGroup2" class="dn">
+			    <li ng-repeat="value in groupListById | filter:searchGroup" ><a href="javascript:;" ng-click="moveGroupToGroup(value.groupId)" >{{value.groupName}}</a></li>
+                    </ul>
+		    </div>
+<!--                    <ul id="breadCrumbs" class="oh pdT1 pdB1">
+                        <li class="fl"><a href="javascript:;" class="fs3" onClick="getNext('','')"> </a></li>
+                    </ul>-->
+                    <!--<p class="pdT pdB">&laquo; Your are adding <?php echo $name; ?> in <span id="selectedGroup" class="fwB">...</span></p>-->
+                   
+                        <div class="pdT pdB oh fl">				                
+                            <div class="iWrp fl mrB2">                	
+                                <input type="text" ng-model="selectedGroup" value="" maxlength="30" placeholder="Enter Sub Group Name" id="name" name="name" class="in fs2"> 
+                            </div>
+                            
+                            <div >	
+                                <input type="text" ng-model="groupUniqueName" placeholder="uniqueName" class="in fs2" style="border:1px solid #ccc;"/> <br>
+                            </div>
+                            
+                            
+			    <div style="width:401px" class="cl inventoryOpeningBal dn">                	
+                                <div style="width:154px;" class="iWrp fl">                	
+                                        <input type="text" placeholder="Inventory Opening Balance" id="inventoryOpeningBal" name="inventoryOpeningBal" class="in">                     
+                                </div>
+                                <div class="cl mrB2"></div>    
+                            </div>
+                           <div class="fl">
+                                <input type="submit" value="Add" name="" class="btn thmClr whClr fs2 mrR2" id="insertNameSubmit">
+                            </div>
+                            
+                            <div id="accHelpNote" class="fl pd2 mrT dn" ng-switch="dialogType=='0'" >
+                            <div ng-model="accHelpNoteTitle"  class="fs2 mrB1">{{accHelpNoteTitle}} {{ dialogType }}</div>
+                            <div ng-model="accHelpNoteDesc"  class="">{{accHelpNoteDesc}}</div>                	
+                        </div>
+		   
+                            
+                
+                            
+                        </div>
+            </div>
+            <div id="addBoxHelp" class="{{hideClass}}" style="margin-top:70px;">
+            	<span class="icArw arwL"></span>
+            	<div style="margin-top:-20px;" class="mrL4">
+                <div class="fs1 hWrt bgWh gryClr" >Select a group!</div>
+              
+                <p class="fwB">Manage all your alike accounts with Group facility.</p>
+                <p class="mrT1"><strong>Add a New Account</strong><span> under the appropriate group heading.</span></p>
+                
+                <p class=""><span>On the left side you can see fixed default groups which </span><strong>cannot be changed or deleted.</strong> </p>
+                <p class="mrT1"><strong>BUT, </strong><span> we understand your organizing needs!</span></p>
+                <p><span>Therefore, if you want to </span><strong>add a new group,</strong></p>
+                <p>Add them under the appropriate fixed default group.</p>
+               
+                </div>
+            </div>
+            
+            <div id="afterOneAcHelp" style="margin-top:30px; display:none;">            	
+            	<div class="mrL4">
+                    <div class="fs1 hWrt bgWh gryClr" >Now! Add One More Account!</div>                
+                    <p class=""><span>Since every account has a </span><strong>dual effect.</strong></p>
+                    <p class="mrT1">For example, consider this entry:</p>
+                    <p><strong>Giving Rs. 500 in cash to Ram</strong></p>
+                    <p><strong>Giving Rs. 500 for tea expenses</strong></p>
+                    <p class="mrT1">Here, you will either give cash against tea expenses</p>
+                    <p>OR you will give cash to a person.</p>
+                    <p class="mrT1">Now the system will record either reduce Cash and increase tea expenses</p> 
+                    <p>OR it will reduce Cash and increase money due to a person.</p>
+                    <p class="mrT1 fwB">So there will ALWAYS be two accounts that will get affected.</p>
+                    <input class="btn thmClr whClr mrT1"  type="button" onClick="showhide()" value="Proceed">
+                </div>
+            </div>            
+		</div>	
+
+</div>
+    </form>
+</div>    
+<div id="previewBox" class="">	
+    
+    <input type="text" ng-model="groupUniqenNameEdit" placeholder="Unique Name" class="iWrp" value="{{ displayGroupUniqueName }}"    ng-blur="updateGroupUniqueNameOne()" >
+    <br>   <br>
+      <form  method="post" ng-submit="addShareGroupEmail()" action="javascript:;">
+	<div class="searchUser pd1">
+	    <input ng-model="shareGroupEmail"   type="text" id="shareGroupEmail" class="bdr" placeholder="Enter email to share Group" /> 
+	    <input name="" class="btn thmClr whClr" value="Add" id="insertDescBtn" type="submit"/>						
+	</div>
+    </form>
+
+  <ul class="userList list mrT1">
+
+	<li ng-repeat="(key,value) in shareGroupEmailList" class="li bdrB oh" id=''>
+
+	    <div class="action fr">
+		<div class="action pa r1 mrT">
+		    <a href="javascript:;" ng-click="dropShareGroupEmail(value.shareEmail,$index)" class="btn icon trns"><span class="ui-icon ui-icon-trash">delete</span>
+		    </a>
+</div>
+		<!-- delete description -->
+	    </div>
+
+	    <div class="liContent fl lh30 mrL1">                    
+		<p class="a fl">{{value.shareEmail}}</p>
+	    </div>            
+	</li>
+
+    </ul>	
+        <div class="hdBlack pd1">
+        	<h3>Sub Groups<span class="fs6">Preview</span></h3>            
+       </div>
+    <div class="f1" id="previewDiv">
+	<ul id="previewUl" style="overflow:auto;height: 450px">
+	    <li ng-repeat="(key,value) in subGroupList" class="pdL1 pr oh lh24">
+		<div class="pa l2 r1 t b ellp">{{value.groupName}}
+		</div>
+	    </li>
+	</ul>
+    </div>   	
+</div>
+    <div class="closeDil" ng-click="closeThisDialog('popup_wrapper')" style="position: relative;width: 50px;height: 50px;left: 97%;">X close</div>
+
+

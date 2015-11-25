@@ -1,0 +1,21 @@
+;Configuration File made by Zend Studio PHPDocumentor Wizard, Mon Dec 04 11:09:06 EST 2006
+pear=off
+
+output=HTML:frames:earthli
+
+defaultpackagename=phpGCheckout 0x9
+
+parseprivate=off
+
+directory=C:\wamp\www\libraries\phpGCheckout
+
+target=C:\wamp\www\libraries\phpGCheckout\documentation
+
+ignore=C:\wamp\www\libraries\phpGCheckout\sandbox\checkout-shopping-cart-COMPLEX.xml,C:\wamp\www\libraries\phpGCheckout\sandbox\checkout-shopping-cart-SIMPLE.xml,C:\wamp\www\libraries\phpGCheckout\sandbox\complex.php,C:\wamp\www\libraries\phpGCheckout\sandbox\simple.php
+
+title=phpGCheckout-0x9
+
+sourcecode=on
+
+javadocdesc=off
+

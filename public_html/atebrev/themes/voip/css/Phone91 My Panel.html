@@ -1,0 +1,1100 @@
+<!DOCTYPE html>
+<html ng-app="phoneApp"><head>
+    <meta name="viewport" id="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,initial-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>Phone91 My Panel</title>
+	<link rel="stylesheet" type="text/css" href="Phone91%20My%20Panel_files/panel_style.css">
+	<link rel="stylesheet" type="text/css" href="Phone91%20My%20Panel_files/group.css">
+    <!--link for tour fonts-->
+    <link href="Phone91%20My%20Panel_files/css.css" rel="stylesheet" type="text/css">
+    <!--<link rel="stylesheet" type="text/css" href="css/ui-theme.css" />
+	<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+	<link rel="stylesheet" type="text/css" href="css/jquery.paginate.css" />-->
+    <!--<script src="/js/angular.js"></script>-->  
+    <!--[if IE 7]>  
+		<link rel="stylesheet" href="ie7.css">  
+    <![endif]-->
+<style>
+.flip-horizontal { -webkit-transform: matrix(-1, 0, 0, 1, 0, 0); -moz-transform: matrix(-1, 0, 0, 1, 0, 0); }
+</style>
+</head>
+<body><nav id="menu-right" class="dn mm-menu mm-right mm-is-menu mm-horizontal"><div class="mm-inner"><div class="mm-search"><input placeholder="Search" autocomplete="off" type="text"></div><ul class="mm-opened">
+       		<li>
+                  <p id="firstName" class="semi  mrL2 lh20">sameer293</p>
+                  <p id="lastName" class="mrB1  mrL2  lh20">sameer293</p>          
+             </li>            
+			 <li><span>Balance 2 USD</span></li>             
+			 <li><a href="#%21setting.php%7Cbuymore.php">Buy Now</a> </li>
+             <li><a href="#%21transactions.php">Transactions</a></li>
+    		 <li class="paddInner">
+             	  <a href="javascript:void(0);" class="fl text" onclick="window.location.href='#!setting.php|buymore.php'">  
+                      <span class="ic-24 setting fl"></span> 
+                      <span class="fl text">Settings</span>
+                </a>
+             </li>
+             <li class="paddInner">   
+                 <a href="javscript:void%280%29;">
+                        <span class="ic-24 logout fl"></span>
+                        <span onclick="var url = window.location.hash;window.location.href='/logout.php?url='+url.substring(1)" class="fl text">Logout</span>  
+                  </a>
+             </li>
+        	 
+        <li class="mm-noresults">No results found.</li></ul></div></nav><nav id="menu-left" class="dn mm-menu mm-is-menu mm-horizontal"><div class="mm-inner"><ul class="mm-opened">
+            <li class="main"><span>User</span></li>
+              <li><a href="#%21contact.php">Contacts</a></li>
+              <li><a href="#%21call-log.php">Call Log</a></li>
+              
+              <li class="main mrT2"><span>Reseller</span></li>
+              <li><a href="#%21reseller-transactional-log.php">Transaction Log</a></li>
+              <li><a href="#%21reseller-call-log.php">Call Log</a></li>
+              <li><a href="#%21reseller-manage-clients.php">Manage Client</a></li>
+              <li><a href="#%21reseller-manage-plan.php">Manage Plans</a></li>
+              <li><a href="#%21reseller-manage-pins.php">Manage PINs</a></li>
+              <!--<li><a href="#!manage-websites.php" >Manage Website</a></li>-->
+              <li class="main mrT2"><span><a href="#%21callshop.php">CallShop</a></span></li>
+              <!--<li><a  href="#!callshop.php" >Callshop Active Call</a></li>-->
+               <!--<li><a  href="http://voip91.com:8082" >Active Call</a></li>-->
+               <!--<li><a  href="#!call-log.php" >Call Log</a></li>-->
+               <!--<li><a  href="" >Manage IDs</a></li>-->
+
+   	 </ul></div></nav>
+<script id="undefined" src="Phone91%20My%20Panel_files/linkid.js" async="" type="text/javascript"></script><script src="Phone91%20My%20Panel_files/analytics.js" async=""></script><script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-38167416-1', 'auto');
+  ga('require', 'linkid', 'linkid.js');
+  ga('send', 'pageview');
+
+</script>
+<script type="text/javascript">    
+	if(window.location.hash == "")
+        window.location.hash = "!contact.php";
+</script>
+
+<div class="mm-page"><div id="progress" class="waiting" style="width: 0px; display: none;"><dt></dt><dd></dd></div><div id="notification"> </div><div class="motion" style="display:none;"></div><div id="header" class="clear">
+	 <a href="#menu-left" class="menuLeft"></a><span id="screen" style="position:absolute"></span>
+            <a href="#menu-right" class="menuRight friends right"></a>
+            <div id="dynamicPageName" class="pageName hidden-desktop">Manage website</div>
+            
+          <!-- Desktop Menus-->
+          <div class="deskMenu  clear">
+				                <!--Logo Here-->
+                <div id="logosec">
+               		 <a href="http://192.168.1.191/index.php"><img src="Phone91%20My%20Panel_files/phone91-logo.png" alt="" height="46px"></a>
+               </div>
+       		  <!--//Logo Here-->
+             <!--User Menus-->
+             <div id="usersec" class="pr">
+  				  <div class="clear cp" onclick="uiDrop(this,'#showUsType', 'true')">
+                  		 <span style="display: none;" class="ic-32 mrR1 icClass" id="uSign"></span> 
+                         <span class="ic-32 mrR1 icClass" id="rSign" style=""></span> 
+                         <span class="ic-32 mrR1 icClass" id="cSign" style="display: none;"></span> 
+                         <span id="userTitle" class="mrR1">Reseller</span> <span class="ic-16 mrT1 dropsign"></span> 
+                  </div>
+   				  <ul class="dropmenu boxsize ln" id="showUsType">
+                      <li id="userMenuLi" class="UserTypeMenu" menuval="user" icid="uSign" lpage="#!contact.php">User</li>
+                                                <li id="resMenuLi" class="UserTypeMenu" menuval="reseller" icid="rSign" lpage="#!reseller-manage-clients.php">Reseller</li>
+                          <li id="cShopMenuLi" class="UserTypeMenu" menuval="callshop" icid="cSign" lpage="#!callshop.php">CallShop</li>
+                       				 </ul>
+    		</div>
+           <!--//User Menus-->
+        
+          <!--Nav Menus-->
+              <ul style="display: none;" class="ln topmenu userTopMenu userMenuLi">
+                    <li class="contactLi"><a class="contact bdrTrns" href="#%21contact.php">Contacts</a></li>
+                    <li class="call-logLi"><a class="bdrTrns" href="#%21call-log.php">Call Log</a></li>                     
+             </ul>
+                         <ul class="ln topmenu userTopMenu resellerMenuLi" style="">
+                <!--<li><a class="contact bdrTrns" href="#!reseller-active-call.php" >Active Calls</a></li>-->                
+                <li class="resellerManage active"> <a class="bdrTrns prnt" href="javascript:void(0)"> <span class="fl" id="manageLbl">Manage Websites</span> <span class="ic-16 dropsign"></span> </a>
+                      <ul class="submenu ln">
+                        <li><a class="bdrTrns" href="#%21reseller-manage-clients.php">Manage Clients</a></li>
+                        <li><a class="bdrTrns" href="#%21reseller-manage-plan.php">Manage Plans</a></li>
+                        <li><a class="bdrTrns" href="#%21reseller-manage-pins.php">Manage PINs</a></li>
+                        <li><a class="bdrTrns" href="#%21manage-websites.php">Manage Website</a></li>
+                  </ul>
+                </li>
+				<li class="resellerLog"> <a class="bdrTrns prnt" href="javascript:void(0)"> <span class="fl" id="logLbl">Log</span> <span class="ic-16 dropsign"></span> </a>
+                  <ul class="submenu ln" style="min-width:210px;">
+                     <li><a class="bdrTrns" href="#%21reseller-transactional-log.php">Transaction Log</a></li>
+                                          <li><a class="bdrTrns" href="#%21reseller-call-log.php">Call Log</a></li>
+                                       </ul>
+                </li>
+                <li class="resellerActiveCall"><a class="contact bdrTrns" href="http://192.168.1.191:8082/" target="_blank">Active Calls</a>
+                <!--call count-->
+                <span>425</span>
+                </li>
+                               
+             </ul>
+             <ul class="ln topmenu userTopMenu callshopMenuLi" style="display:none">
+                <!--<li><a class="contact bdrTrns" href="http://voip91.com:8082" >Active Call</a></li>
+                <li><a class="bdrTrns" href="#!call-log.php" >Call Log</a></li>
+                <li><a class="bdrTrns" href="" >Manage IDs</a></li>-->
+             </ul>
+                    <!--//Nav Menus-->
+
+        <!--Top Right-->
+         <ul id="topRightAct" class="ln topmenu">
+                <li class="bdrTrns pr setting">
+      					<div class="clear cp" onclick="uiDrop(this,'#showSetting', 'true')"> 
+                                    <span id="namewrap" class="fl">
+                                            <p id="firstName" class="semi">sameer293</p>
+                                                                                        <p id="lastName">sameer293</p>
+                                                                                 </span> 
+                                                                                            <span class="hasName"></span>
+                                                                                 <!--<span class="ic-24 userico"></span> -->
+                                     <span class="ic-16 dropsign"></span>
+                        </div>
+                        <ul class="dropmenu boxsize ln" id="showSetting">
+                                <li class="clear" onclick="window.location.href='#!setting.php|buymore.php'"> 
+                                        <span class="ic-24 setting"></span> <span>Settings</span>
+                                </li>
+                                <li class="clear"> 
+                                        <span class="ic-24 logout"></span>
+                                        <span onclick="var url = window.location.hash;window.location.href='/logout.php?url='+url.substring(1)">Logout</span> 
+                               </li>
+      			  		</ul>
+    			</li>
+                <li class="bdrTrns balance">
+                      <div id="balance">
+					  <div class="semi mrB">Balance 2 USD</div>
+					  <a class="themeLink clrTrns" href="#%21setting.php%7Cpanel-pricing.php">Pricing</a><span class="mrL mrR">|</span><a class="themeLink clrTrns" href="#%21setting.php%7Cbuymore.php">Buy Now</a><span class="mrL mrR">|</span><a class="themeLink clrTrns" href="#%21transactions.php">Transactions</a> 
+					  </div>
+                      <div id="dtLink" class=""></div>
+   			 </li>
+        </ul>
+        <!--//Top Right-->
+    </div>
+   <!-- //Desktop Menus-->
+ </div><div id="container" class=""><div class="commHeader">
+	<div class="showAtFront">
+        <div class="clear" id="srchrow">
+        	   <a class="btn btn-medium btn-primary clear alC iconBtn fl slideAndBack" title="Add New Website" href="#%21manage-websites.php%7Cadd-website.php">
+                        <span class="ic-24 addW"></span>
+                        <span class="iconBtnLbl">Add New Website</span>
+                </a>               
+        </div>
+	</div>
+	<div class="showAtBack"><a href="javascript:void(0);" class="back btn btn-medium btn-primary hidden-desktop backPhone" title="Back">Back</a></div>	
+	
+        	
+        	<div id="leftsec" class="slideLeft commLeftSec">
+            	<div class="innerSection">
+					<ul class="ln cmnli-webli commLeftList" id="webList"><li class="slideAndBack" id="web_54" onclick="selectedWebLi('192.168.1.191',event,'54')">				 <div class="jh clear">				 <p>Walkover Web</p>				 <p></p>				 </div>				 <h3 class="ellp">192.168.1.191</h3>				 <p class="">template1</p>				 <div class="actwrap delBtn" onclick="DeleteWebsite(this);" websiteid="192.168.1.191">				 <i class="ic-24 delR"></i>				 </div>				 </li><li class="slideAndBack active" id="web_69" onclick="selectedWebLi('testingex.yoyo',event,'69')">				 <div class="jh clear">				 <p>walkover</p>				 <p>English</p>				 </div>				 <h3 class="ellp">testingex.yoyo</h3>				 <p class="">template2</p>				 <div class="actwrap delBtn" onclick="DeleteWebsite(this);" websiteid="testingex.yoyo">				 <i class="ic-24 delR"></i>				 </div>				 </li><li class="slideAndBack" id="web_74" onclick="selectedWebLi('asdfsaf.com',event,'74')">				 <div class="jh clear">				 <p>waljkkjdflksaf</p>				 <p>English</p>				 </div>				 <h3 class="ellp">asdfsaf.com</h3>				 <p class="">temp1</p>				 <div class="actwrap delBtn" onclick="DeleteWebsite(this);" websiteid="asdfsaf.com">				 <i class="ic-24 delR"></i>				 </div>				 </li><li class="slideAndBack" id="web_75" onclick="selectedWebLi('da.com',event,'75')">				 <div class="jh clear">				 <p>dsfadfas</p>				 <p>English</p>				 </div>				 <h3 class="ellp">da.com</h3>				 <p class="">temp1</p>				 <div class="actwrap delBtn" onclick="DeleteWebsite(this);" websiteid="da.com">				 <i class="ic-24 delR"></i>				 </div>				 </li></ul>
+				</div>
+            </div>
+            
+            <div id="rightsec" class="box- box-addWebsite slideRight webSite commRightSec"><!--<script type="text/javascript" src="https://www.google.com/jsapi"></script>-->
+
+<!--<script src="http://malsup.github.com/jquery.form.js"></script>-->
+
+
+      
+<!--Add Wesbite Content-->
+<div id="web-data-form">
+	  <div class="reSellerhead">Edit Website</div>
+  	  <p class="subline">You can upload data page wise by default you get 4 pages in your website</p>
+          <div id="checkB" style="float:left;"><label>Enable Unicode</label><input id="checkboxId" onclick="javascript:checkboxClickHandler()" type="checkbox"></div>
+          
+          <div id="transControl">
+              
+          </div>
+	<!--Tabs Wrapper-->
+    <div class="ui-tabs ui-widget ui-widget-content ui-corner-all" id="tabs">
+        <ul role="tablist" class="ui-tabs-nav ui-helper-reset ui-helper-clearfix ui-widget-header ui-corner-all">
+            <li aria-selected="false" aria-labelledby="ui-id-1" aria-controls="tabs-0" tabindex="-1" role="tab" class="ui-state-default ui-corner-top"><a id="ui-id-1" tabindex="-1" role="presentation" class="ui-tabs-anchor" href="#tabs-0">Domain Data</a></li>
+            <li aria-selected="false" aria-labelledby="ui-id-2" aria-controls="tabs-1" tabindex="-1" role="tab" class="ui-state-default ui-corner-top"><a id="ui-id-2" tabindex="-1" role="presentation" class="ui-tabs-anchor" href="#tabs-1">General Data</a></li>
+            <li aria-selected="false" aria-labelledby="ui-id-3" aria-controls="tabs-2" tabindex="-1" role="tab" class="ui-state-default ui-corner-top"><a id="ui-id-3" tabindex="-1" role="presentation" class="ui-tabs-anchor" href="#tabs-2">Home</a></li>
+            <li aria-selected="false" aria-labelledby="ui-id-4" aria-controls="tabs-3" tabindex="-1" role="tab" class="ui-state-default ui-corner-top"><a id="ui-id-4" tabindex="-1" role="presentation" class="ui-tabs-anchor" href="#tabs-3">About</a></li>
+            <li aria-selected="false" aria-labelledby="ui-id-5" aria-controls="tabs-4" tabindex="-1" role="tab" class="ui-state-default ui-corner-top"><a id="ui-id-5" tabindex="-1" role="presentation" class="ui-tabs-anchor" href="#tabs-4">Pricing</a></li>
+            <li aria-selected="true" aria-labelledby="ui-id-6" aria-controls="tabs-5" tabindex="0" role="tab" class="ui-state-default ui-corner-top ui-tabs-active ui-state-active"><a id="ui-id-6" tabindex="-1" role="presentation" class="ui-tabs-anchor" href="#tabs-5">Contact</a></li>
+            <li aria-selected="false" aria-labelledby="ui-id-7" aria-controls="tabs-6" tabindex="-1" role="tab" class="ui-state-default ui-corner-top"><a id="ui-id-7" tabindex="-1" role="presentation" class="ui-tabs-anchor" href="#tabs-6">Templates</a></li>
+        </ul>
+        
+        <div style="display: none;" aria-hidden="true" aria-expanded="false" role="tabpanel" aria-labelledby="ui-id-1" id="tabs-0" class="tabs ui-tabs-panel ui-widget-content ui-corner-bottom">
+            <form id="domainDataForm" action="">
+                <fieldset class="fieldset">
+                       <legend class="legend">General</legend>
+                        <div class="inprow">
+                            <label class="lblLeft">Company Name</label>
+                            <input name="companyName" id="cName" value="walkover" type="text">
+                        </div>  
+                        <div class="inprow">
+                            <label class="lblLeft">Domain Name</label>
+                            <input name="domainName" value="testingex.yoyo" type="text">
+                        </div>
+                       <input name="domainId" value="69" type="hidden">
+                       
+<!--                        <div class="inprow">
+                            <label class="lblLeft">Copyright</label>
+                            <input type="text" name="copyright" value=""/>
+                        </div>-->
+<!--                        <div class="inprow">
+                         <label class="lblLeft">Signup</label>
+                         <input type="checkbox" class="enableCheck mrT1" name="signupFlag" id="signupFlag"><label for="signupFlag"> Enable</label>
+                        </div>-->
+                </fieldset>
+                <input class="mrB2 btn btn-medium btn-primary" value="Update" title="Update" type="submit">
+            </form>
+            <form id="tariffDetailsForm" action="" enctype="multipart/form-data">
+                <fieldset class="fieldset">
+                    <div class="fl">
+                    
+                    <table class="cmntbl">
+                        <thead>
+                                <tr>
+                                    <th>Tariff Plan</th>
+                                    <th>Default Balance</th>
+                                    <th>Currency</th>
+                                    <th>Action</th>
+                                </tr>
+                            </thead>
+                        <tbody id="tariffTbody">
+                                                            
+                            
+                            <tr class="even">
+                                <td>
+                                    <select class="selPlan" select="9" name="tariffPlan[]" onchange="showCurrency($(this))">undefined<option value="Select">Select</option><option selected="selected" value="9">My Plan</option><option value="144">sameer293</option></select>
+                                </td> 
+                                <td>
+                                    <input name="balance[]" value="1000" class="balance" type="text">
+                                </td> 
+                                <td>
+                                    <label class="lbl">AED</label>
+                                    <input class="curr" name="currency[]" value="1" type="hidden">
+                                </td> 
+                                <td>
+                                    <input class="btn btn-medium btn-danger" onclick="deleteRow($(this),'tariffTbody',2,64)" value="Delete" type="button">
+                                </td>
+                            </tr>
+                            
+                                                    </tbody>
+                   </table>
+                    <input name="domainName" id="dName" value="testingex.yoyo" type="hidden">
+                        <div class="cl"></div>
+			<a href="javascript:void(0);" class="themeLink pd db fr" onclick="addNewRow('tariffTbody')">Add Row</a>
+                    </div>
+                </fieldset>
+                <input class="mrB2 btn btn-medium btn-primary" value="Update" title="Update" type="submit">
+            </form>
+        </div>
+        
+        <!--1st Tabs-->
+        <div aria-hidden="true" aria-expanded="false" style="display: none;" role="tabpanel" aria-labelledby="ui-id-2" id="tabs-1" class="tabs ui-tabs-panel ui-widget-content ui-corner-bottom">
+            <form id="generalDataForm" action="" method="post" name="generalDataForm" enctype="multipart/form-data">
+                <fieldset class="fieldset">
+                       <legend class="legend">Logo</legend>
+                       <label class="lblBlock">Logo (file should be in .jpg, .png, .gif - formats and max. size 200kb)</label>
+                        <!--class="fileWrap"--><div><input name="file" type="file"></div>
+                        <!--<input type="hidden" name ="logoimg" id="logoimg" value ="default.php"/>-->
+                        <input name="domainId" id="domainId" value="testingex.yoyo" type="hidden">
+                </fieldset>
+               
+                <fieldset class="fieldset">
+                    <legend class="legend">Social Links</legend>
+                    <div class="inprow">
+                        <label class="lblLeft">Facebook</label>
+                        <input name="facebook" id="facebook" type="text">
+                    </div>
+                    <div class="inprow">
+                        <label class="lblLeft">Twitter</label>
+                        <input name="twitter" id="twitter" type="text">
+                    </div>
+                    <div class="inprow">
+                        <label class="lblLeft">linkedin</label>
+                        <input name="linkedin" id="linkedin" type="text">
+                    </div>
+                    <div class="inprow">
+                        <label class="lblLeft">Gplus</label>
+                        <input name="gplus" id="gplus" type="text">
+                   </div>
+                </fieldset>
+                <fieldset class="fieldset"> 
+                             <legend class="legend">Contact Details</legend>
+                            <div class="inprow">
+                                <label class="lblLeft">Address</label>
+                                <input name="address" id="address" type="text">
+                            </div>
+                            <div class="inprow">
+                                <label class="lblLeft">Phone No.</label>
+                                <input name="phoneNo" id="phoneNo" type="text">
+                            </div>
+                            <div class="inprow">
+                                <label class="lblLeft">Email ID</label>
+                                <input name="emailId" id="emailId" type="text">
+                            </div>
+                    </fieldset>
+                <input class="mrT2 btn btn-medium btn-primary" value="Update" title="Update" type="submit">
+            </form>
+        </div>
+        <!--//1st Tabs-->
+        
+        <!--2nd Tabs-->
+        <div aria-hidden="true" aria-expanded="false" style="display: none;" role="tabpanel" aria-labelledby="ui-id-3" id="tabs-2" class="tabs ui-tabs-panel ui-widget-content ui-corner-bottom">
+             <form novalidate="novalidate" id="homeDataForm" action="" enctype="multipart/form-data">
+                <div class="rowsTabs">
+                      <label class="lblBlock">Title</label>
+                      <input class="valid" name="title" id="homeTitle" value="the title is the" type="text">
+                 </div>
+                <div class="rowsTabs">
+                    <label class="lblBlock">Meta Tags keyword</label>
+                    <textarea class="mtag valid" id="homeKeyword" name="mKeyword">the key word is the </textarea>
+                    <input name="domainId" id="domainId" value="testingex.yoyo" type="hidden">
+                    <!--<input type="hidden" name ="welImage" id="welImage" value ="welcomeDefault.gif"/>-->
+                
+                </div>
+                <div class="rowsTabs">
+                        <label class="lblBlock">Meta Tags Description</label>
+                        <textarea class="mtag valid" id="homeDescription" name="mDescription">the description is the </textarea>
+                 </div>
+                <fieldset class="fieldset">
+                <legend class="legend">Banner</legend>                    
+				  <label class="lblBlock">Welcome Image (file should be in .jpg, .png, .gif - formats and max. size 200kb and resoulution is 100X100 in pixels)</label>
+				  <input name="file" class="mrB1" type="file">                    
+                    <div class="inprow">
+                            <label class="lblLeft">Heading</label>
+                            <input class="valid" name="heading" id="homeHeading" value="heading " type="text">
+                    </div>
+                    <div class="inprow">
+                            <label class="lblLeft">Sub heading</label>
+                            <input class="valid" name="subHeading" id="homeSubHeading" value="sub heading " type="text">
+                    </div>
+                    <div class="inprow">
+                            <label class="lblLeft">Banner button text</label>
+                            <input class="valid" name="text" id="homeBannerText" value="banner text " type="text">
+                    </div>
+                    <div class="inprow">
+                            <label class="lblLeft">Banner button url</label>
+                            <input class="valid" name="link" value="http://jdsklfas.com" type="text">
+                    </div>
+                 </fieldset>
+                <div class="rowsTabs">
+                        <label class="lblBlock">Welcome Content</label>
+                        <textarea class="valid" id="welcomeContent" name="welcomeContent">welcome
+ content goes here here exactly we decide how much content can be show 
+to the user. The content should be unique atleast 30 percent from any 
+content of the world so you have to be careful </textarea>
+                </div>
+                <!--<fieldset class="fieldset">
+                    <legend class="legend">Feautures List (you can select max. 3)</legend>
+                   <div class="features">
+                                                        <div class="inprow">
+                            	<input type="checkbox" />
+                                <label class="lblLeft">Feature 1</label>
+                                <p>Lorem ipsume dummy text come</p>
+                            </div>                             <div class="inprow">
+                            	<input type="checkbox" />
+                                <label class="lblLeft">Feature 1</label>
+                                <p>Lorem ipsume dummy text come</p>
+                            </div>                             <div class="inprow">
+                            	<input type="checkbox" />
+                                <label class="lblLeft">Feature 1</label>
+                                <p>Lorem ipsume dummy text come</p>
+                            </div>                             <div class="inprow">
+                            	<input type="checkbox" />
+                                <label class="lblLeft">Feature 1</label>
+                                <p>Lorem ipsume dummy text come</p>
+                            </div>                             <div class="inprow">
+                            	<input type="checkbox" />
+                                <label class="lblLeft">Feature 1</label>
+                                <p>Lorem ipsume dummy text come</p>
+                            </div>                             <div class="inprow">
+                            	<input type="checkbox" />
+                                <label class="lblLeft">Feature 1</label>
+                                <p>Lorem ipsume dummy text come</p>
+                            </div>                             <div class="inprow">
+                            	<input type="checkbox" />
+                                <label class="lblLeft">Feature 1</label>
+                                <p>Lorem ipsume dummy text come</p>
+                            </div>                             <div class="inprow">
+                            	<input type="checkbox" />
+                                <label class="lblLeft">Feature 1</label>
+                                <p>Lorem ipsume dummy text come</p>
+                            </div>                             <div class="inprow">
+                            	<input type="checkbox" />
+                                <label class="lblLeft">Feature 1</label>
+                                <p>Lorem ipsume dummy text come</p>
+                            </div>                             <div class="inprow">
+                            	<input type="checkbox" />
+                                <label class="lblLeft">Feature 1</label>
+                                <p>Lorem ipsume dummy text come</p>
+                            </div>                             <div class="inprow">
+                            	<input type="checkbox" />
+                                <label class="lblLeft">Feature 1</label>
+                                <p>Lorem ipsume dummy text come</p>
+                            </div>                    </div>
+              </fieldset>-->
+           	  <input class="mrT2 btn btn-medium btn-primary" value="Update" title="Update" type="submit">
+             </form>
+        </div>
+        <!--//2nd Tabs-->
+        
+        <!--3rd Tabs-->
+        <div aria-hidden="true" aria-expanded="false" style="display: none;" role="tabpanel" aria-labelledby="ui-id-4" id="tabs-3" class="tabs ui-tabs-panel ui-widget-content ui-corner-bottom">
+            <form novalidate="novalidate" id="aboutDataForm" action="" enctype="multipart/form-data">
+             <div class="rowsTabs">
+                      <label class="lblBlock">Title</label>
+                      <input class="valid" name="title" id="aboutTitle" value="about title " type="text">
+            </div>
+        	<div class="rowsTabs">
+                    <label class="lblBlock">Meta Tags keyword</label>
+                    <textarea class="mtag valid" id="aboutKeyword" name="mKeyword">meta for about is the </textarea>
+                     <input name="domainId" id="domainId" value="testingex.yoyo" type="hidden">
+             </div>
+            <div class="rowsTabs">
+                    <label class="lblBlock">Meta Tags Description</label>
+                    <textarea class="mtag valid" id="aboutDescription" name="mDescription">description for about is thw </textarea>
+            </div>
+            <fieldset class="fieldset">
+            	<legend class="legend">Banner Setting</legend>
+                <div class="rowsTabs">
+                          <label class="lblBlock">Welcome Image (file should be in .jpg, .png, .gif - formats and max. size 200kb and resoulution is 100X100 in pixels)</label>
+                            <input name="file" type="file">
+                     </div>
+<!--                 <div class="inprow">
+                    <input type="checkbox" id="bannerStatus" name="bannerStatus"  class="enableCheck mrT1"/>
+                    <label class="lblLeft">Visible Banner</label>
+                 </div>-->
+         	   	 <div class="banner-data">
+                    <div class="inprow">
+                        <label class="lblLeft">Banner heading</label>
+                        <input class="valid" id="bannerHeading" name="heading" value="banner heading " type="text">
+                    </div>
+                    <div class="inprow">
+                        <label class="lblLeft">Banner Sub-heading</label>
+                        <input class="valid" id="bannerSubHead" name="subHeading" value="banner sub heading " type="text">
+                    </div>
+                    <div class="inprow">
+                        <label class="lblLeft">Banner button text</label>
+                            <input class="valid" id="buttonText" name="text" value="bitton text " type="text">
+                   </div>
+                  <div class="inprow">
+                  		<label class="lblLeft">Banner button url</label>
+                                <input class="valid" id="buttonLink" name="link" value="http://dsfadsfasdf.com" type="text">
+                  </div>
+            </div>
+            </fieldset>
+             <div class="rowsTabs">
+                    <label class="lblBlock">Who you are</label>
+                    <textarea class="valid" id="whoUR" name="whoUR">who am i </textarea>
+            </div>
+            <div class="rowsTabs">
+                <label class="lblBlock">Your Vision</label>
+                <textarea class="valid" id="vision" name="vision">my vision</textarea>
+             </div>
+            <div class="rowsTabs">
+                <label class="lblBlock">Your Mission</label>
+                <textarea class="valid" id="mission" name="mission">my mission</textarea>
+           </div>
+            <input class="mrT2 btn btn-medium btn-primary" value="Update" title="Update" type="submit">
+         </form>   
+        </div>
+        <!--//3rd Tabs-->
+        
+        <!--4th Tabs-->
+        <div aria-hidden="true" aria-expanded="false" style="display: none;" role="tabpanel" aria-labelledby="ui-id-5" id="tabs-4" class="tabs ui-tabs-panel ui-widget-content ui-corner-bottom">
+            <form novalidate="novalidate" id="pricingDataForm" action="" enctype="multipart/form-data">
+                <div class="rowsTabs">
+                      <label class="lblBlock">Title</label>
+                      <input class="valid" name="title" id="pricingTitle" value="pricing titile " type="text">
+                </div>
+                <div class="rowsTabs">
+                        <label class="lblBlock">Meta Tags keyword</label>
+                        <textarea class="mtag valid" id="pricingKeyword" name="mKeyword">pricing meta keyword</textarea>
+                         <input name="domainId" id="domainId" value="testingex.yoyo" type="hidden">
+                </div>
+                <div class="rowsTabs">
+                        <label class="lblBlock">Meta Tags Description</label>
+                        <textarea class="mtag valid" id="pricingDescription" name="mDescription">pricing description </textarea>
+                </div>                
+                <fieldset class="fieldset">
+                <legend class="legend">Banner</legend>
+                     <div class="rowsTabs">
+                          <label class="lblBlock">Welcome Image (file should be in .jpg, .png, .gif - formats and max. size 200kb and resoulution is 100X100 in pixels)</label>
+                            <input name="file" type="file">
+                     </div>
+                    <div class="inprow">
+                            <label class="lblLeft">Heading</label>
+                            <input class="valid" name="heading" id="pricingHeading" value="heading " type="text">
+                    </div>
+                    <div class="inprow">
+                            <label class="lblLeft">Sub heading</label>
+                            <input class="valid" name="subHeading" id="pricingSubHeading" value="subheading" type="text">
+                    </div>
+                    <div class="inprow">
+                            <label class="lblLeft">Banner button text</label>
+                            <input class="valid" name="text" id="pricingBannerbuttonText" value="text " type="text">
+                    </div>
+                    <div class="inprow">
+                            <label class="lblLeft">Banner button url</label>
+                            <input class="valid" name="link" value="http://jdsklfas.com" type="text">
+                    </div>
+             </fieldset>
+                 
+         	
+            
+            <fieldset class="fieldset">   
+                <legend class="legend">Bank Details</legend>
+                                 <div class="bankdetail-data fl">                    <div class="inprow"><label class="lblLeft">Bank Name</label><input value="bank name" name="bankName[]" class="bankName" type="text"></div>                    <div class="inprow"><label class="lblLeft">IFSC Code</label><input value="ifsccode" name="ifsc[]" class="ifsc" type="text"></div>                    <div class="inprow"><label class="lblLeft">Account No.</label><input value="456132" name="accountNo[]" class="accountNo" type="text"></div>                    <div class="inprow"><label class="lblLeft">Account Name</label><input value="dfasfdsf" name="accountName[]" class="accountName" type="text"></div>                    <div class="actwrap fr" onclick="deleteBankDiv(this);"><i class="ic-24 delR"></i></div>                    </div><div class="cl"></div><a onclick="addMoreDetail();" class="themeLink addmoreDetaillink" title="Add More Bank Detail">Add More</a>
+            </fieldset>
+             <input class="mrT2 btn btn-medium btn-primary" value="Update" title="Update" type="submit">
+            </form>
+        </div>
+        <!--//4th Tabs-->
+        
+        <!--5th Tabs-->
+        <div aria-hidden="false" aria-expanded="true" style="display: block;" role="tabpanel" aria-labelledby="ui-id-6" id="tabs-5" class="tabs ui-tabs-panel ui-widget-content ui-corner-bottom">
+            <form novalidate="novalidate" id="contactDataForm" action="" enctype="multipart/form-data">
+          		   <div class="rowsTabs">
+                      <label class="lblBlock">Title</label>
+                      <input class="valid" name="title" id="contactTitle" value="contact title" type="text">
+             </div>
+        	<div class="rowsTabs">  
+                    <label class="lblBlock">Meta Tags keyword</label>
+                    <textarea class="mtag valid" id="contactKeyword" name="mKeyword">contact meta</textarea>
+                     <input name="domainId" id="domainId" value="testingex.yoyo" type="hidden">
+             </div>
+            <div class="rowsTabs">  
+                    <label class="lblBlock">Meta Tags Description</label>
+                   <textarea class="mtag valid" id="contactDescription" name="mDescription"> contact description</textarea>
+            </div>
+
+				<fieldset class="fieldset">
+<!--                <legend class="legend">Banner Setting</legend>
+                    <div class="inprow">
+                           <input type="checkbox" name="cntBnrStatus" id="cntBnrStatus"  class="enableCheck mrT1"/>
+                            <label class="lblLeft">Visible Banner</label>
+                      </div>-->
+                      
+              	  <div class="banner-data">
+                      <div class="inprow"><label class="lblLeft">Banner heading</label><input class="valid" name="heading" id="contactHeading" value="dsfasdfa" type="text"></div>
+                      <div class="inprow"><label class="lblLeft">Banner Sub-heading</label><input class="valid" name="subHeading" id="contactSubHeading" value="dsfadfaf" type="text"></div>
+                      <div class="inprow"><label class="lblLeft">Banner button text</label><input class="valid" name="text" id="contactBtnText" value="fasdfsdf" type="text"></div>
+                      <div class="inprow"><label class="lblLeft">Banner button url</label><input class="valid" name="link" id="contactBtnLink" value="http://jdsklfas.com" type="text"></div>
+                </div>
+                </fieldset>
+            
+            <fieldset class="fieldset">
+<!--                <legend class="legend">Contact Form</legend>
+                <div class="inprow">
+                        <input type="checkbox" class="enableCheck mrT1" name="contactFormStatus" id="contactFormStatus"  /><label class="lblLeft">Contact Form</label>
+                </div>-->
+                <div class="inprow">
+                        <label class="lblLeft">Your Email ID</label> 
+                        <input class="valid" name="contactFormEmail" id="contactFormEmail" value="dfas@email.com" type="text">
+                  </div>
+               
+            </fieldset>
+            
+           <fieldset class="fieldset">
+<!--               <legend class="legend">Location</legend>
+               <div class="inprow">
+                	 <input type="checkbox" name="mapLocationStatus" id="mapLocationStatus"  class="enableCheck mrT1" />
+                     <label class="lblLeft">Map Location</label>
+                </div>-->
+                <label class="lblBlock">Google map embeded code</label>
+                <div>
+                    <textarea class="error" name="gMapEmbededCode" id="gMapEmbededCode">http://map.google.com</textarea><label class="error" for="gMapEmbededCode">Please enter valid text </label>
+                </div>
+            </fieldset>
+            <input class="mrT2 btn btn-medium btn-primary" value="Update" title="Update" type="submit">
+            </form>
+        </div>
+        <!--//5th Tabs-->
+        
+         <!--6th Tabs-->
+         <div aria-hidden="true" aria-expanded="false" style="display: none;" role="tabpanel" aria-labelledby="ui-id-7" id="tabs-6" class="tabs ui-tabs-panel ui-widget-content ui-corner-bottom">
+         	<form action="">
+				<div class="tmplWrp">
+				<div style="background-image:url(images/tmpl1.png)" class="tmpl">
+					<div class="overlay"></div>
+					<div class="tmplAct">
+                                            <a class="btn btn-medium btn-warning " href="javascript:void(0);" onclick="updateThemes('testingex.yoyo','1')">Select</a>
+						<a class="btn btn-medium btn-primary" href="javascript:void(0);">Preview</a>
+					</div>
+				</div>
+				<div style="background-image:url(images/tmpl2.png)" class="tmpl">
+					<div class="overlay"></div>
+					<div class="tmplAct">
+						<a class="btn btn-medium btn-warning " href="javascript:void(0);" onclick="updateThemes('testingex.yoyo','2')">Select</a>
+						<a class="btn btn-medium btn-primary" href="javascript:void(0);">Preview</a>
+					</div>
+				</div>
+<!--				<div style="background-image:url(images/tmpl3.png)" class="tmpl">
+					<div class="overlay"></div>
+					<div class="tmplAct">
+						<a class="btn btn-medium btn-warning " href="javascript:void(0);" onclick="updateThemes('testingex.yoyo','3')">Select</a>
+						<a class="btn btn-medium btn-primary" href="javascript:void(0);">Preview</a>
+					</div>
+				</div>-->
+			</div>
+			<div class="cl"></div>			
+			</form>
+         </div>
+         <!--//6th Tabs-->
+        
+    </div> 
+    <!--//Tabs Wrapper-->
+</div>
+
+
+
+<!--//Add Wesbite Content-->
+<script type="text/javascript">
+selectPlan();
+</script>
+<script type="text/javascript">
+    
+    
+/*AY - add new blank BANK detail fields - website.js */
+addMoreDetail();
+/**/  
+function addNewRow(tbody)
+{
+    console.log(tbody);
+    var tr = $('#'+tbody+' tr:last').clone();
+	console.log($('#'+tbody+' tr:last').clone());
+	if(tr.hasClass('even'))
+		tr.removeClass('even').addClass('odd');
+	else
+		tr.removeClass('odd').addClass('even');
+	
+    $('.balance',tr).val('');
+	$('.lbl',tr).html('...');
+	
+	tr.appendTo($('#'+tbody));
+}
+
+function deleteRow(ths,id,type,domainId)
+{
+	var tr = ths.parents('tr');
+	if($('#'+id+' tr').length > 1)
+	{		
+		tr.remove();
+	}
+	else
+	{
+		$('.balance',tr).val('');
+		$('.lbl',tr).html('...');
+		$('select',tr).val('Select').prop('selected',true);
+	}
+        if(type == 2)
+        {
+            $.ajax({
+                url:"controller/websiteController.php",
+                data:{"action":"deleteResellerTariff","id":domainId},
+                dataType:"JSON",
+                success:function(response){
+                    console.log(response);
+                }
+            })
+        }
+}
+
+function showCurrency(ths)
+{
+	var findIn = ths.parents('tr');
+    $('.lbl',findIn).html(_planCurrencyVariable[ths.val()][1]);
+    $('.curr',findIn).val(_planCurrencyVariable[ths.val()][0]);
+}
+
+function updateThemes(domainName,themeId)
+{
+    $.ajax({
+        url:"controller/websiteController.php",
+        type:"POST",
+        data:{"domainName":domainName,"themeId":themeId,"action":"updateThemeDetails"},
+        dataType:"JSON",
+        success:function(response){
+            show_message(response.msg,response.status);
+        }
+    })
+}
+
+//$(document).ready(function(){
+//    $('.id_100 option[value=val2]').attr('selected','selected');
+//})
+
+
+
+</script>
+
+<script type="text/javascript">
+var control;
+var _jsFlag =false;
+var ids = ['contactSubHeading','contactBtnText','contactHeading','contactDescription','contactKeyword','contactTitle','pricingBannerbuttonText','pricingSubHeading','pricingHeading',
+        'pricingDescription','pricingKeyword','pricingTitle','mission','vision','whoUR','buttonText','bannerSubHead','bannerHeading','aboutDescription','aboutKeyword','aboutTitle','welcomeContent',
+        'homeBannerText','homeSubHeading','homeHeading','homeDescription','homeKeyword','homeTitle','address','cName'];    
+control='';
+function loadJSAPI(){
+$.getScript('/js/jsapi.js').done(function(){
+    if (!$("#transliterationcss").length)
+    {
+        $("head").append("<link id='transliterationcss'>");
+
+        css = $("head").children(":last");
+        css.attr({
+            rel: "stylesheet",
+            type: "text/css",
+            href: "/css/transliteration.css"
+        });
+    }
+        $.getScript('/js/transliteration.js').done(function(){
+            
+           
+// Load the Google Transliterate API
+google.load("elements", "1", {
+	packages: "transliteration"
+});
+
+//var ids = ['transliterateTextarea','transliterateTextarea1'];
+     
+//      function onLoad() {
+          
+         
+        var options = {
+            sourceLanguage:
+                'en',
+            destinationLanguage:
+            ['hi','am','ar','bn','zh','el','gu','kn','ml','mr','ne','or','fa','pa','ru','sa','si','sr','ta','te','ti','ur'],
+//            shortcutKey: 'ctrl+g',
+            transliterationEnabled: true
+        };
+
+        // Create an instance on TransliterationControl with the required
+        // options.
+        control = new google.elements.transliteration.TransliterationControl(options);
+    
+       
+            
+        var destinationLanguage = control.getLanguagePair().destinationLanguage;
+
+        
+        control.makeTransliteratable(ids);
+        console.log($("#transControl").children().length);
+//        if (!$("#transControl").children().length)
+            control.showControl('transControl');
+        
+         control.addEventListener(
+            google.elements.transliteration.TransliterationControl.EventType.STATE_CHANGED,transliterateStateChangeHandler);
+        // Set the checkbox to the correct state.
+        document.getElementById('checkboxId').checked = control.isTransliterationEnabled();
+        
+        
+        
+//      };
+     
+       // Handler for checkbox's click event.  Calls toggleTransliteration to toggle
+//      // the transliteration state.
+      
+      
+
+// Handler for STATE_CHANGED event which makes sure checkbox status
+      // reflects the transliteration enabled or disabled status.
+      function transliterateStateChangeHandler(e) {
+        document.getElementById('checkboxId').checked = e.transliterationEnabled;
+      }
+      
+      
+      _jsFlag = true;
+//      function languageChangeHandler() {
+//        var dropdown = document.getElementById('languageDropDown');
+//        control.setLanguagePair(
+//            google.elements.transliteration.LanguageCode.ENGLISH,
+//            dropdown.options[dropdown.selectedIndex].value);
+//        }
+
+
+//google.setOnLoadCallback(onLoad);
+})
+
+
+}); 
+
+}
+function checkboxClickHandler() {
+    
+    
+    if(_jsFlag == true){
+        control.toggleTransliteration();
+        $("#transControl").toggle();
+    }
+    else
+        loadJSAPI();
+}
+
+$(function() {
+	$( "#tabs" ).tabs({
+		create: function(event, ui) {},
+		select: function(event, ui) {}
+	});
+
+});
+</script>
+<script type="text/javascript" src="Phone91%20My%20Panel_files/website.js"></script> 
+
+</div>
+        <div class="clear"></div>
+        <div id="dialog-confirm" class="dn" title="Are you sure you want to delete this website?">
+            <p><span class="ui-icon ui-icon-alert" style="float:left; margin:0 7px 20px 0;"></span>These items will be permanently deleted and cannot be recovered. Are you sure?</p>
+        </div>          
+
+<script type="text/javascript">
+dynamicPageName('Manage website')
+slideAndBack('.slideLeft,.showAtFront','.slideRight,.showAtBack');
+
+/* set active
+manageWeb: "2"
+window['localStorage'] stores above values. this helps to get current state.
+*/
+var storage = window['localStorage'];
+
+
+
+function selectedWebLi(domainName,e,id){
+    console.log(id);
+	//	var id = domainName.replace(/\./g,'');
+	$('#webList li').removeClass('active');    
+	$('#web_'+id).addClass('active');
+	
+	if(!$(e.target)){
+		if($('#web_'+id).length > 0){
+				var top = $('#web_'+id).position().top;
+				$('#webList').scrollTop(top-100);		
+		}		
+	}
+	
+	if(!$(e.target).hasClass('delIc'))
+	{
+		storage.setItem('manageWeb',domainName);
+		storage.setItem('manageWebId',id);
+//console.log("request");
+		window.location.hash = '!manage-websites.php|add-website.php?id='+domainName;
+	}
+	
+}
+
+function getDomainList()
+{
+    $.ajax({
+        url:"controller/websiteController.php",
+        type:"POST",
+        dataType:"JSON",
+        data:{"action":"getDomainList"},
+        success:function(response){
+            if(response == null)
+                return false;
+            var str = "";
+            
+        $.each(response,function(key,item){
+            str +='<li class="slideAndBack" class="" id="web_'+item.id+'" onclick="selectedWebLi(\''+item.domainName+'\',event,\''+item.id+'\')">\
+				 <div class="jh clear">\
+				 <p>'+item.companyName+'</p>\
+				 <p>'+item.language+'</p>\
+				 </div>\
+				 <h3 class="ellp">'+item.domainName+'</h3>\
+				 <p class="">'+item.theme+'</p>\
+				 <div class="actwrap delBtn" onclick="DeleteWebsite(this);" websiteId="'+item.domainName+'">\
+				 <i class="ic-24 delR"></i>\
+				 </div>\
+				 </li>';
+            })
+            $('#webList').html(str);
+            slideAndBack('.slideLeft,.showAtFront','.slideRight,.showAtBack');
+			
+            if(storage.getItem('manageWeb')){
+				selectedWebLi(storage.getItem('manageWeb'),'',storage.getItem('manageWebId'));	
+        	}
+        }
+    })
+}
+
+$(document).ready(function(){
+    getDomainList();
+})
+
+
+function DeleteWebsite(ths){
+    
+    var domainId = $(ths).attr('websiteId');
+    
+    
+    
+    $( "#dialog-confirm" ).dialog({
+      resizable: false,
+      height:140,
+      width:400,
+      modal: true,
+      buttons: {
+        "Delete Website": function() {
+          $( this ).dialog( "close" );
+       
+    
+    $.ajax({
+                   url : "controller/websiteController.php?action=deleteWebsite",
+                   type: "POST", 
+                   data:{domainId:domainId},
+                   dataType: "json",
+                   success:function (text)
+                   {
+                       
+                       show_message(text.msg,text.status);
+                       if(text.status == "success"){
+                          $(ths).parent('li').hide(); 
+                          $(ths).parents('ul').find('li:first').addClass('active').trigger('click');
+                           
+                       }
+
+                   }
+                });
+    
+     },
+        Cancel: function() {
+          $( this ).dialog( "close" );
+        }
+      }
+    });
+    
+    
+}
+
+
+</script>
+
+</div></div><div class="tourBg"></div></div>
+
+
+
+<!--Small Screen Header-->
+
+
+<!--//Small Screen Header-->
+<!--Header-->
+
+<!--//Header-->
+<!-- <input type="text" name="searchUser" id="searchUser">-->
+
+ 
+<!-- Include some useful javascript--> 
+<script type="text/javascript" src="Phone91%20My%20Panel_files/group.js"></script>
+<!--<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script> 
+<script type="text/javascript" src="js/jquery-ui-1.10.3.custom.min.js"></script> 
+<script type="text/javascript" src="js/highcharts.js"></script>
+<script type="text/javascript" src="js/toastr.js"></script>
+<script type="text/javascript" src="js/jquery.form.js"></script> 
+<script type="text/javascript" src="js/jquery.validate.min.js"></script> 
+<script type="text/javascript" src="js/jquery.quicksearch.js"></script> 
+<script type="text/javascript" src="js/jquery.paginate.js"></script>
+<script type="text/javascript" src="js/tiptip.js"></script>-->
+<script type="text/javascript" src="Phone91%20My%20Panel_files/panel.js"></script>
+<script type="text/javascript" src="Phone91%20My%20Panel_files/contact.js"></script> 
+<script type="text/javascript" src="Phone91%20My%20Panel_files/reseller.js"></script> 
+<script type="text/javascript" src="Phone91%20My%20Panel_files/website.js"></script>
+<script type="text/javascript" src="Phone91%20My%20Panel_files/tourjson.js"></script>
+
+<script type="text/javascript">
+var loadingInterval;
+function motion(obj,col,width,height){
+	var  bgPosX=0, bgPosY=0,r=1, c=1;
+	if(loadingInterval)
+	clearInterval(loadingInterval);
+	loadingInterval = setInterval(function(){
+	
+	if(c == col){c = 1;bgPosX=0;r=1;bgPosY=0;}
+	{$(obj).css({'background-position':bgPosX+'px '+bgPosY+'px'}); c++; bgPosX=bgPosX-width;}
+	
+	},120);		
+}
+
+var storage = window['localStorage'];
+
+function menuHandler(){
+    var menu = $(this).attr('menuval');
+    var icId = $(this).attr('icId');
+    var lPage = $(this).attr('lPage');
+    var title = $(this).text();
+    
+    if(menu.length>1)
+    {
+      storage.setItem('menu', menu);
+      storage.setItem('icId', icId);
+      storage.setItem('lPage', lPage);
+      storage.setItem('title', title);
+    }
+    
+    $(".userTopMenu").hide();
+    $(".icClass").hide();
+    $("."+menu+"MenuLi").show();
+    $("#"+icId+"").show();
+    uiDrop(this,'#showUsType', false)
+    $("#userTitle").text($(this).text());
+    window.location.href=lPage;   
+}
+
+var loginAs = 0;
+
+$(function(){
+	$(".UserTypeMenu").on("click",menuHandler);
+	var isReseller = 1;
+	if(storage.getItem('menu')){
+		var menu = storage.getItem('menu');
+		var icId = storage.getItem('icId');
+		var lPage = storage.getItem('lPage');
+		var title = storage.getItem('title');
+	
+		if(!loginAs){
+			$(".userTopMenu").hide();    
+			$("."+menu+"MenuLi").show();
+			$(".icClass").hide();
+			$("#"+icId+"").show();    
+			$("#userTitle").text(title);		
+		}
+		else
+		{
+			$(".userTopMenu").hide();    
+			$(".userMenuLi").show();
+			$(".icClass").hide();
+			$("#uSign").show();    
+			$("#userTitle").text('User');
+		}
+	}
+});
+
+</script>
+<!--<script type="text/javascript" src="js/jquery.mmenu.min.js"></script>-->
+<script type="text/javascript">
+	//	The menu on the left
+	$(function() {
+		$('nav#menu-left').mmenu();
+	});
+
+	//	The menu on the right
+	$(function() {
+		$('nav#menu-right').mmenu({
+			position	: 'right',
+			counters	: true,
+			searchfield	: true
+		});
+
+		//	Click a menu-item
+		var $confirm = $('#confirmation');
+		$('#menu-right a').not( '.mm-subopen' ).not( '.mm-subclose' ).bind(
+			'click.example',
+			function( e )
+			{
+				e.preventDefault();
+				$confirm.show().text( 'You clicked "' + $(this).text() + '"' );
+				$('#menu-right').trigger( 'close' );
+			}
+		);
+	});
+</script>
+
+<!--html + script for controlling the tour-->
+
+
+
+<div id="mm-blocker"></div></body></html>

@@ -1,0 +1,112 @@
+{
+	"globals": {
+		"_remove_me_to_set_TITLE"                 : "Phone91",
+		"_remove_me_to_set_TITLE_FILE"            : "Phone91 Log [%f]",
+		"_remove_me_to_set_NAV_TITLE"             : "",
+		"_remove_me_to_set_FOOTER"                : "&copy; <a href=\"http:\/\/www.phone91.com\" target=\"doc\">Phone91<\/a> 2014 - <a href=\"http:\/\/phone91.com\" target=\"doc\">Phone91 Log<\/a>",
+		"_remove_me_to_set_LOGS_MAX"              : 10,
+		"_remove_me_to_set_LOGS_REFRESH"          : 7,
+		"_remove_me_to_set_LOCALE"                : "fr_FR",
+		"_remove_me_to_set_NOTIFICATION"          : true,
+		"_remove_me_to_set_NOTIFICATION_TITLE"    : "New logs [%f]",
+		"_remove_me_to_set_GOOGLE_ANALYTICS"      : "UA-XXXXX-X",
+		"_remove_me_to_set_PULL_TO_REFRESH"       : true,
+		"_remove_me_to_set_GEOIP_URL"             : "http:\/\/www.geoiptool.com\/en\/?IP=%p",
+		"_remove_me_to_set_CHECK_UPGRADE"         : true,
+		"_remove_me_to_set_MAX_SEARCH_LOG_TIME"   : 3,
+		"_remove_me_to_set_FILE_SELECTOR"         : "bs",
+		"_remove_me_to_set_USER_TIME_ZONE"        : "Europe\/Paris"
+	},
+
+	"badges": {
+		"severity": {
+			"debug"       : "success",
+			"info"        : "success",
+			"notice"      : "default",
+			"Notice"      : "info",
+			"warn"        : "warning",
+			"error"       : "danger",
+			"crit"        : "danger",
+			"alert"       : "danger",
+			"emerg"       : "danger",
+			"Notice"      : "info",
+			"fatal error" : "danger",
+			"parse error" : "danger",
+			"Warning"     : "warning"
+		},
+		"http": {
+			"1" : "info",
+			"2" : "success",
+			"3" : "default",
+			"4" : "warning",
+			"5" : "danger"
+		}
+	},
+	"files": {
+		"apache1": {
+			"display" : "Apache Access #1",
+			"path"    : "\/home\/voicepho\/public_html\/error_reporting\/errorTalkLogFile15-07-2014.txt",
+			"refresh" : 0,
+			"max"     : 10,
+			"notify"  : false,
+			"format"  : {
+				"type" : "NCSA",
+				"regex": "|^((\\S*) )*(\\S*) (\\S*) (\\S*) \\[(.*)\\] \"(\\S*) (.*) (\\S*)\" ([0-9]*) (.*)( \"(.*)\" \"(.*)\"( [0-9]*/([0-9]*))*)*$|U",
+				"match": {
+					"Date"    : 6,
+					"IP"      : 3,
+					"CMD"     : 7,
+					"URL"     : 8,
+					"Code"    : 10,
+					"Size"    : 11,
+					"Referer" : 13,
+					"UA"      : 14,
+					"User"    : 5,
+					"\u03bcs" : 16
+				},
+				"types": {
+					"Date"    : "date:H:i:s",
+					"IP"      : "ip:geo",
+					"URL"     : "txt",
+					"Code"    : "badge:http",
+					"Size"    : "numeral:0b",
+					"Referer" : "link",
+					"UA"      : "ua:{os.name} {os.version} | {browser.name} {browser.version}\/100",
+					"\u03bcs" : "numeral:0,0"
+				},
+				"exclude": {
+					"URL": ["\/favicon.ico\/", "\/\\.pml\\.php\\.*$\/"],
+					"CMD": ["\/OPTIONS\/"]
+				}
+			}
+		},
+	"php2": {
+		"display" : "PHP Error #2",
+		"path"    : "\/home\/voicepho\/public_html\/error_reporting\/errorTalkLogFile15-07-2014.txt",
+		"refresh" : 5,
+		"max"     : 10,
+		"notify"  : true,
+		"format"    : {
+			"type"     : "PHP",
+			"regex"    : "@^\\[(.*)-(.*)-(.*) (.*):(.*):(.*) .*\\] ((PHP (.*):  (.*) in (.*) on line (.*))|(.*))$@U",
+			"match"    : {
+				"Date"     : [ 2 , " " , 1 , " " , 4 , ":" , 5 , ":" , 6 , " " , 3 ],
+				"Severity" : 9,
+				"Error"    : [ 10 , 13 ],
+				"File"     : 11,
+				"Line"     : 12
+			},
+			"types"    : {
+				"Date"     : "date:H:i:s",
+				"Severity" : "badge:severity",
+				"File"     : "pre:\/-69",
+				"Line"     : "numeral",
+				"Error"    : "pre"
+			},
+			"exclude": {
+				"Log": ["\/PHP Stack trace:\/", "\/PHP *[0-9]*\\. \/"]
+			}
+		}
+	}
+	}
+}

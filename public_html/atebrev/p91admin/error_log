@@ -1,0 +1,150 @@
+[04-Mar-2013 23:10:12 America/Chicago] PHP Warning:  include_once(/home/vtermina/public_html/newapi/sendsms_class.php): failed to open stream: No such file or directory in /home/voip91/public_html/admin/index.php on line 1
+[04-Mar-2013 23:10:12 America/Chicago] PHP Warning:  include_once(): Failed opening '/home/vtermina/public_html/newapi/sendsms_class.php' for inclusion (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/voip91/public_html/admin/index.php on line 1
+[04-Mar-2013 23:10:12 America/Chicago] PHP Fatal error:  Call to a member function check_admin() on a non-object in /home/voip91/public_html/admin/index.php on line 6
+[04-Mar-2013 23:20:49 America/Chicago] PHP Warning:  include_once(/home/vtermina/public_html/newapi/sendsms_class.php): failed to open stream: No such file or directory in /home/voip91/public_html/admin/index.php on line 1
+[04-Mar-2013 23:20:49 America/Chicago] PHP Warning:  include_once(): Failed opening '/home/vtermina/public_html/newapi/sendsms_class.php' for inclusion (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/voip91/public_html/admin/index.php on line 1
+[04-Mar-2013 23:20:49 America/Chicago] PHP Fatal error:  Call to a member function check_admin() on a non-object in /home/voip91/public_html/admin/index.php on line 6
+[04-Mar-2013 23:20:51 America/Chicago] PHP Warning:  include_once(/home/vtermina/public_html/newapi/sendsms_class.php): failed to open stream: No such file or directory in /home/voip91/public_html/admin/index.php on line 1
+[04-Mar-2013 23:20:51 America/Chicago] PHP Warning:  include_once(): Failed opening '/home/vtermina/public_html/newapi/sendsms_class.php' for inclusion (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/voip91/public_html/admin/index.php on line 1
+[04-Mar-2013 23:20:51 America/Chicago] PHP Fatal error:  Call to a member function check_admin() on a non-object in /home/voip91/public_html/admin/index.php on line 6
+[04-Mar-2013 23:20:54 America/Chicago] PHP Warning:  include_once(/home/vtermina/public_html/newapi/sendsms_class.php): failed to open stream: No such file or directory in /home/voip91/public_html/admin/index.php on line 1
+[04-Mar-2013 23:20:54 America/Chicago] PHP Warning:  include_once(): Failed opening '/home/vtermina/public_html/newapi/sendsms_class.php' for inclusion (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/voip91/public_html/admin/index.php on line 1
+[04-Mar-2013 23:20:54 America/Chicago] PHP Fatal error:  Call to a member function check_admin() on a non-object in /home/voip91/public_html/admin/index.php on line 6
+[04-Mar-2013 23:21:08 America/Chicago] PHP Warning:  include_once(/home/vtermina/public_html/newapi/sendsms_class.php): failed to open stream: No such file or directory in /home/voip91/public_html/admin/index.php on line 1
+[04-Mar-2013 23:21:08 America/Chicago] PHP Warning:  include_once(): Failed opening '/home/vtermina/public_html/newapi/sendsms_class.php' for inclusion (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/voip91/public_html/admin/index.php on line 1
+[04-Mar-2013 23:21:08 America/Chicago] PHP Fatal error:  Call to a member function check_admin() on a non-object in /home/voip91/public_html/admin/index.php on line 6
+[04-Mar-2013 23:22:37 America/Chicago] PHP Fatal error:  Call to a member function check_admin() on a non-object in /home/voip91/public_html/admin/index.php on line 6
+[04-Mar-2013 23:23:51 America/Chicago] PHP Warning:  include_once(/home/vtermina/public_html/newapi/superAdmin.php): failed to open stream: No such file or directory in /home/voip91/public_html/admin/inc/header.php on line 2
+[04-Mar-2013 23:23:51 America/Chicago] PHP Warning:  include_once(): Failed opening '/home/vtermina/public_html/newapi/superAdmin.php' for inclusion (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/voip91/public_html/admin/inc/header.php on line 2
+[04-Mar-2013 23:23:51 America/Chicago] PHP Fatal error:  Class 'superAdmin' not found in /home/voip91/public_html/admin/inc/header.php on line 3
+[04-Mar-2013 23:30:27 America/Chicago] PHP Fatal error:  Call to a member function getUserBalance() on a non-object in /home/voip91/public_html/admin/inc/header.php on line 42
+[05-Mar-2013 00:01:20 America/Chicago] PHP Fatal error:  Call to a member function getUserBalance() on a non-object in /home/voip91/public_html/admin/inc/header.php on line 42
+[05-Mar-2013 00:04:41 America/Chicago] PHP Fatal error:  Call to a member function getUserBalance() on a non-object in /home/voip91/public_html/admin/inc/header.php on line 42
+[05-Mar-2013 00:04:49 America/Chicago] PHP Fatal error:  Call to a member function getUserBalance() on a non-object in /home/voip91/public_html/admin/inc/header.php on line 42
+[05-Mar-2013 01:00:49 America/Chicago] PHP Fatal error:  Call to a member function check_admin() on a non-object in /home/voip91/public_html/admin/index.php on line 6
+[05-Mar-2013 05:08:53 America/Chicago] PHP Warning:  include(config.php): failed to open stream: No such file or directory in /home/voip91/public_html/admin/rechargeHistory.php on line 2
+[05-Mar-2013 05:08:53 America/Chicago] PHP Warning:  include(): Failed opening 'config.php' for inclusion (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/voip91/public_html/admin/rechargeHistory.php on line 2
+[05-Mar-2013 05:08:53 America/Chicago] PHP Fatal error:  Call to a member function connect() on a non-object in /home/voip91/public_html/admin/rechargeHistory.php on line 3
+[05-Mar-2013 05:09:53 America/Chicago] PHP Warning:  include(~/config.php): failed to open stream: No such file or directory in /home/voip91/public_html/admin/rechargeHistory.php on line 2
+[05-Mar-2013 05:09:53 America/Chicago] PHP Warning:  include(): Failed opening '~/config.php' for inclusion (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/voip91/public_html/admin/rechargeHistory.php on line 2
+[05-Mar-2013 05:09:53 America/Chicago] PHP Fatal error:  Call to a member function connect() on a non-object in /home/voip91/public_html/admin/rechargeHistory.php on line 3
+[06-Mar-2013 00:16:04 America/Chicago] PHP Fatal error:  session_start(): Failed to initialize storage module: memcache (path: /tmp) in /home/voip91/public_html/newapi/panel_config.php on line 27
+[06-Mar-2013 01:28:17 America/Chicago] PHP Fatal error:  session_start(): Failed to initialize storage module: memcache (path: /tmp) in /home/voip91/public_html/newapi/panel_config.php on line 27
+[08-Mar-2013 01:17:34 America/Chicago] PHP Warning:  include_once(/home/vtermina/public_html/newapi/general_class.php): failed to open stream: No such file or directory in /home/voip91/public_html/admin/change_password.php on line 5
+[08-Mar-2013 01:17:34 America/Chicago] PHP Warning:  include_once(): Failed opening '/home/vtermina/public_html/newapi/general_class.php' for inclusion (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/voip91/public_html/admin/change_password.php on line 5
+[08-Mar-2013 01:17:34 America/Chicago] PHP Fatal error:  Class 'general_function' not found in /home/voip91/public_html/admin/change_password.php on line 6
+[08-Mar-2013 01:41:07 America/Chicago] PHP Warning:  include_once(/home/vtermina/public_html/newapi/user_function_class.php): failed to open stream: No such file or directory in /home/voip91/public_html/admin/manage_resellers.php on line 2
+[08-Mar-2013 01:41:07 America/Chicago] PHP Warning:  include_once(): Failed opening '/home/vtermina/public_html/newapi/user_function_class.php' for inclusion (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/voip91/public_html/admin/manage_resellers.php on line 2
+[08-Mar-2013 01:41:07 America/Chicago] PHP Fatal error:  Call to a member function check_admin() on a non-object in /home/voip91/public_html/admin/manage_resellers.php on line 4
+[08-Mar-2013 02:46:56 America/Chicago] PHP Warning:  include_once(/home/vtermina/public_html/newapi/user_function_class.php): failed to open stream: No such file or directory in /home/voip91/public_html/admin/manage_admin.php on line 2
+[08-Mar-2013 02:46:56 America/Chicago] PHP Warning:  include_once(): Failed opening '/home/vtermina/public_html/newapi/user_function_class.php' for inclusion (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/voip91/public_html/admin/manage_admin.php on line 2
+[08-Mar-2013 02:46:56 America/Chicago] PHP Fatal error:  Call to a member function check_admin() on a non-object in /home/voip91/public_html/admin/manage_admin.php on line 4
+[08-Mar-2013 02:47:01 America/Chicago] PHP Warning:  include_once(/home/vtermina/public_html/newapi/user_function_class.php): failed to open stream: No such file or directory in /home/voip91/public_html/admin/manage_admin.php on line 2
+[08-Mar-2013 02:47:01 America/Chicago] PHP Warning:  include_once(): Failed opening '/home/vtermina/public_html/newapi/user_function_class.php' for inclusion (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/voip91/public_html/admin/manage_admin.php on line 2
+[08-Mar-2013 02:47:01 America/Chicago] PHP Fatal error:  Call to a member function check_admin() on a non-object in /home/voip91/public_html/admin/manage_admin.php on line 4
+[08-Mar-2013 02:47:22 America/Chicago] PHP Warning:  include_once(/home/vtermina/public_html/newapi/user_function_class.php): failed to open stream: No such file or directory in /home/voip91/public_html/admin/manage_admin.php on line 2
+[08-Mar-2013 02:47:22 America/Chicago] PHP Warning:  include_once(): Failed opening '/home/vtermina/public_html/newapi/user_function_class.php' for inclusion (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/voip91/public_html/admin/manage_admin.php on line 2
+[08-Mar-2013 02:47:22 America/Chicago] PHP Fatal error:  Call to a member function check_admin() on a non-object in /home/voip91/public_html/admin/manage_admin.php on line 4
+[08-Mar-2013 02:49:07 America/Chicago] PHP Warning:  include_once(/home/vtermina/public_html/newapi/user_function_class.php): failed to open stream: No such file or directory in /home/voip91/public_html/admin/manage_admin.php on line 2
+[08-Mar-2013 02:49:07 America/Chicago] PHP Warning:  include_once(): Failed opening '/home/vtermina/public_html/newapi/user_function_class.php' for inclusion (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/voip91/public_html/admin/manage_admin.php on line 2
+[08-Mar-2013 02:49:07 America/Chicago] PHP Fatal error:  Call to a member function check_admin() on a non-object in /home/voip91/public_html/admin/manage_admin.php on line 4
+[08-Mar-2013 03:37:19 America/Chicago] PHP Warning:  include_once(/home/vtermina/public_html/newapi/user_function_class.php): failed to open stream: No such file or directory in /home/voip91/public_html/admin/manage_admin.php on line 2
+[08-Mar-2013 03:37:19 America/Chicago] PHP Warning:  include_once(): Failed opening '/home/vtermina/public_html/newapi/user_function_class.php' for inclusion (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/voip91/public_html/admin/manage_admin.php on line 2
+[08-Mar-2013 03:37:19 America/Chicago] PHP Fatal error:  Call to a member function check_admin() on a non-object in /home/voip91/public_html/admin/manage_admin.php on line 4
+[08-Mar-2013 03:37:20 America/Chicago] PHP Warning:  include_once(/home/vtermina/public_html/newapi/user_function_class.php): failed to open stream: No such file or directory in /home/voip91/public_html/admin/manage_admin.php on line 2
+[08-Mar-2013 03:37:20 America/Chicago] PHP Warning:  include_once(): Failed opening '/home/vtermina/public_html/newapi/user_function_class.php' for inclusion (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/voip91/public_html/admin/manage_admin.php on line 2
+[08-Mar-2013 03:37:20 America/Chicago] PHP Fatal error:  Call to a member function check_admin() on a non-object in /home/voip91/public_html/admin/manage_admin.php on line 4
+[08-Mar-2013 03:37:24 America/Chicago] PHP Warning:  include_once(/home/vtermina/public_html/newapi/user_function_class.php): failed to open stream: No such file or directory in /home/voip91/public_html/admin/manage_admin.php on line 2
+[08-Mar-2013 03:37:24 America/Chicago] PHP Warning:  include_once(): Failed opening '/home/vtermina/public_html/newapi/user_function_class.php' for inclusion (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/voip91/public_html/admin/manage_admin.php on line 2
+[08-Mar-2013 03:37:24 America/Chicago] PHP Fatal error:  Call to a member function check_admin() on a non-object in /home/voip91/public_html/admin/manage_admin.php on line 4
+[08-Mar-2013 05:45:34 America/Chicago] PHP Warning:  mysql_query() expects parameter 2 to be resource, string given in /home/voip91/public_html/admin/update_password.php on line 9
+[08-Mar-2013 05:46:28 America/Chicago] PHP Warning:  mysql_query() expects parameter 2 to be resource, string given in /home/voip91/public_html/admin/update_password.php on line 9
+[08-Mar-2013 06:32:43 America/Chicago] PHP Fatal error:  Call to undefined function show_message() in /home/voip91/public_html/admin/update_password.php on line 14
+[08-Mar-2013 06:35:43 America/Chicago] PHP Fatal error:  Call to undefined function show_message() in /home/voip91/public_html/admin/update_password.php on line 12
+[08-Mar-2013 06:38:24 America/Chicago] PHP Fatal error:  Call to undefined function show_message() in /home/voip91/public_html/admin/update_password.php on line 10
+[12-Mar-2013 06:32:55 America/Chicago] PHP Warning:  include_once(/home/vtermina/public_html/newapi/general_class.php): failed to open stream: No such file or directory in /home/voip91/public_html/admin/manage_admin.php on line 10
+[12-Mar-2013 06:32:55 America/Chicago] PHP Warning:  include_once(): Failed opening '/home/vtermina/public_html/newapi/general_class.php' for inclusion (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/voip91/public_html/admin/manage_admin.php on line 10
+[12-Mar-2013 06:32:55 America/Chicago] PHP Fatal error:  Class 'general_function' not found in /home/voip91/public_html/admin/manage_admin.php on line 11
+[13-Mar-2013 00:19:27 America/Chicago] PHP Parse error:  syntax error, unexpected end of file in /home/voip91/public_html/admin/change_password.php on line 108
+[13-Mar-2013 06:12:30 America/Chicago] PHP Parse error:  syntax error, unexpected '}' in /home/voip91/public_html/admin/manage_admin.php on line 529
+[13-Mar-2013 07:58:59 America/Chicago] PHP Parse error:  syntax error, unexpected '}' in /home/voip91/public_html/admin/manage_admin.php on line 536
+[13-Mar-2013 08:01:03 America/Chicago] PHP Parse error:  syntax error, unexpected ''<str' (T_ENCAPSED_AND_WHITESPACE) in /home/voip91/public_html/admin/manage_admin.php on line 518
+[13-Mar-2013 08:04:52 America/Chicago] PHP Parse error:  syntax error, unexpected '}' in /home/voip91/public_html/admin/manage_admin.php on line 537
+[14-Mar-2013 00:08:55 America/Chicago] PHP Parse error:  syntax error, unexpected '{' in /home/voip91/public_html/admin/manage_admin.php on line 1
+[14-Mar-2013 00:11:44 America/Chicago] PHP Parse error:  syntax error, unexpected '{' in /home/voip91/public_html/admin/manage_admin.php on line 1
+[16-Mar-2013 00:27:40 America/Chicago] PHP Parse error:  syntax error, unexpected '$s_id' (T_VARIABLE) in /home/voip91/public_html/admin/change_password.php on line 1
+[16-Mar-2013 00:32:39 America/Chicago] PHP Parse error:  syntax error, unexpected '$s_id' (T_VARIABLE) in /home/voip91/public_html/admin/change_password.php on line 1
+[16-Mar-2013 00:34:47 America/Chicago] PHP Parse error:  syntax error, unexpected '{' in /home/voip91/public_html/admin/change_password.php on line 1
+[16-Mar-2013 00:38:48 America/Chicago] PHP Parse error:  syntax error, unexpected '{' in /home/voip91/public_html/admin/change_password.php on line 1
+[16-Mar-2013 00:39:18 America/Chicago] PHP Parse error:  syntax error, unexpected '$s_id' (T_VARIABLE) in /home/voip91/public_html/admin/change_password.php on line 1
+[16-Mar-2013 00:39:48 America/Chicago] PHP Parse error:  syntax error, unexpected '$s_id' (T_VARIABLE) in /home/voip91/public_html/admin/change_password.php on line 1
+[16-Mar-2013 00:40:40 America/Chicago] PHP Parse error:  syntax error, unexpected '$s_id' (T_VARIABLE) in /home/voip91/public_html/admin/change_password.php on line 1
+[16-Mar-2013 00:41:29 America/Chicago] PHP Parse error:  syntax error, unexpected '}' in /home/voip91/public_html/admin/change_password.php on line 1
+[16-Mar-2013 00:41:31 America/Chicago] PHP Parse error:  syntax error, unexpected '}' in /home/voip91/public_html/admin/change_password.php on line 1
+[16-Mar-2013 00:43:05 America/Chicago] PHP Parse error:  syntax error, unexpected '}' in /home/voip91/public_html/admin/change_password.php on line 1
+[16-Mar-2013 00:43:21 America/Chicago] PHP Parse error:  syntax error, unexpected '}' in /home/voip91/public_html/admin/change_password.php on line 1
+[16-Mar-2013 00:44:47 America/Chicago] PHP Parse error:  syntax error, unexpected '$s_id' (T_VARIABLE) in /home/voip91/public_html/admin/change_password.php on line 1
+[16-Mar-2013 00:45:49 America/Chicago] PHP Parse error:  syntax error, unexpected '$s_id' (T_VARIABLE) in /home/voip91/public_html/admin/change_password.php on line 1
+[16-Mar-2013 00:45:59 America/Chicago] PHP Parse error:  syntax error, unexpected '$s_id' (T_VARIABLE) in /home/voip91/public_html/admin/change_password.php on line 1
+[16-Mar-2013 00:47:20 America/Chicago] PHP Parse error:  syntax error, unexpected '}' in /home/voip91/public_html/admin/change_password.php on line 1
+[16-Mar-2013 00:47:29 America/Chicago] PHP Parse error:  syntax error, unexpected '}' in /home/voip91/public_html/admin/change_password.php on line 1
+[16-Mar-2013 00:52:55 America/Chicago] PHP Parse error:  syntax error, unexpected '}' in /home/voip91/public_html/admin/change_password.php on line 1
+[16-Mar-2013 00:52:58 America/Chicago] PHP Parse error:  syntax error, unexpected '}' in /home/voip91/public_html/admin/change_password.php on line 1
+[16-Mar-2013 00:53:10 America/Chicago] PHP Parse error:  syntax error, unexpected '}' in /home/voip91/public_html/admin/change_password.php on line 1
+[16-Mar-2013 00:59:37 America/Chicago] PHP Parse error:  syntax error, unexpected '$s_id' (T_VARIABLE) in /home/voip91/public_html/admin/change_password.php on line 1
+[16-Mar-2013 01:00:47 America/Chicago] PHP Parse error:  syntax error, unexpected '$s_id' (T_VARIABLE) in /home/voip91/public_html/admin/change_password.php on line 1
+[16-Mar-2013 01:00:55 America/Chicago] PHP Parse error:  syntax error, unexpected '$s_id' (T_VARIABLE) in /home/voip91/public_html/admin/change_password.php on line 1
+[16-Mar-2013 01:03:03 America/Chicago] PHP Parse error:  syntax error, unexpected '$s_id' (T_VARIABLE) in /home/voip91/public_html/admin/change_password.php on line 1
+[16-Mar-2013 01:03:10 America/Chicago] PHP Parse error:  syntax error, unexpected '$s_id' (T_VARIABLE) in /home/voip91/public_html/admin/change_password.php on line 1
+[16-Mar-2013 01:03:22 America/Chicago] PHP Parse error:  syntax error, unexpected '$s_id' (T_VARIABLE) in /home/voip91/public_html/admin/change_password.php on line 1
+[16-Mar-2013 01:06:15 America/Chicago] PHP Parse error:  syntax error, unexpected '$s_id' (T_VARIABLE) in /home/voip91/public_html/admin/change_password.php on line 1
+[16-Mar-2013 01:06:25 America/Chicago] PHP Parse error:  syntax error, unexpected '$s_id' (T_VARIABLE) in /home/voip91/public_html/admin/change_password.php on line 1
+[16-Mar-2013 01:07:26 America/Chicago] PHP Parse error:  syntax error, unexpected '$s_id' (T_VARIABLE) in /home/voip91/public_html/admin/change_password.php on line 1
+[16-Mar-2013 01:07:29 America/Chicago] PHP Parse error:  syntax error, unexpected '$s_id' (T_VARIABLE) in /home/voip91/public_html/admin/change_password.php on line 1
+[16-Mar-2013 01:09:05 America/Chicago] PHP Parse error:  syntax error, unexpected '}' in /home/voip91/public_html/admin/change_password.php on line 1
+[16-Mar-2013 01:12:27 America/Chicago] PHP Parse error:  syntax error, unexpected '$s_id' (T_VARIABLE) in /home/voip91/public_html/admin/change_password.php on line 1
+[16-Mar-2013 01:15:49 America/Chicago] PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO) in /home/voip91/public_html/admin/change_password.php on line 1
+[16-Mar-2013 01:16:58 America/Chicago] PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO) in /home/voip91/public_html/admin/change_password.php on line 1
+[16-Mar-2013 01:17:01 America/Chicago] PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO) in /home/voip91/public_html/admin/change_password.php on line 1
+[16-Mar-2013 01:19:11 America/Chicago] PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO) in /home/voip91/public_html/admin/change_password.php on line 1
+[16-Mar-2013 01:20:05 America/Chicago] PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO) in /home/voip91/public_html/admin/change_password.php on line 1
+[16-Mar-2013 01:21:55 America/Chicago] PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO) in /home/voip91/public_html/admin/change_password.php on line 1
+[16-Mar-2013 01:22:02 America/Chicago] PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO) in /home/voip91/public_html/admin/change_password.php on line 1
+[16-Mar-2013 01:40:05 America/Chicago] PHP Parse error:  syntax error, unexpected '$s_id' (T_VARIABLE) in /home/voip91/public_html/admin/change_password.php on line 1
+[16-Mar-2013 01:41:12 America/Chicago] PHP Parse error:  syntax error, unexpected '$userid' (T_VARIABLE) in /home/voip91/public_html/admin/change_password.php on line 1
+[16-Mar-2013 01:42:45 America/Chicago] PHP Parse error:  syntax error, unexpected '$uid' (T_VARIABLE) in /home/voip91/public_html/admin/change_password.php on line 1
+[16-Mar-2013 07:30:43 America/Chicago] PHP Warning:  include_once(/home/vtermina/public_html/panel_config.php): failed to open stream: No such file or directory in /home/voip91/public_html/admin/addMailTemplate.php on line 2
+[16-Mar-2013 07:30:43 America/Chicago] PHP Warning:  include_once(): Failed opening '/home/vtermina/public_html/panel_config.php' for inclusion (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/voip91/public_html/admin/addMailTemplate.php on line 2
+[16-Mar-2013 07:30:43 America/Chicago] PHP Warning:  include_once(/home/vtermina/public_html/sendMail/mailTemplate.php): failed to open stream: No such file or directory in /home/voip91/public_html/admin/addMailTemplate.php on line 3
+[16-Mar-2013 07:30:43 America/Chicago] PHP Warning:  include_once(): Failed opening '/home/vtermina/public_html/sendMail/mailTemplate.php' for inclusion (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/voip91/public_html/admin/addMailTemplate.php on line 3
+[16-Mar-2013 07:30:43 America/Chicago] PHP Warning:  include_once(/home/vtermina/public_html/newapi/general_class.php): failed to open stream: No such file or directory in /home/voip91/public_html/admin/addMailTemplate.php on line 4
+[16-Mar-2013 07:30:43 America/Chicago] PHP Warning:  include_once(): Failed opening '/home/vtermina/public_html/newapi/general_class.php' for inclusion (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/voip91/public_html/admin/addMailTemplate.php on line 4
+[16-Mar-2013 07:30:43 America/Chicago] PHP Fatal error:  Class 'general_function' not found in /home/voip91/public_html/admin/addMailTemplate.php on line 5
+[16-Mar-2013 07:49:31 America/Chicago] PHP Warning:  include_once(/home/voip91/public_html/panel_config.php): failed to open stream: No such file or directory in /home/voip91/public_html/admin/addMailTemplate.php on line 2
+[16-Mar-2013 07:49:31 America/Chicago] PHP Warning:  include_once(): Failed opening '/home/voip91/public_html/panel_config.php' for inclusion (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/voip91/public_html/admin/addMailTemplate.php on line 2
+[16-Mar-2013 07:49:31 America/Chicago] PHP Parse error:  syntax error, unexpected 'include_once' (T_INCLUDE_ONCE) in /home/voip91/public_html/sendMail/mailconfig.php on line 1
+[16-Mar-2013 08:13:55 America/Chicago] PHP Fatal error:  Call to a member function hasNext() on a non-object in /home/voip91/public_html/admin/addMailTemplate.php on line 106
+[16-Mar-2013 08:13:57 America/Chicago] PHP Fatal error:  Call to a member function hasNext() on a non-object in /home/voip91/public_html/admin/addMailTemplate.php on line 106
+[19-Mar-2013 01:31:16 America/Chicago] PHP Fatal error:  Call to a member function hasNext() on a non-object in /home/voip91/public_html/admin/addMailTemplate.php on line 106
+[22-Mar-2013 23:35:49 America/Chicago] PHP Fatal error:  Call to a member function hasNext() on a non-object in /home/voip91/public_html/admin/addMailTemplate.php on line 106
+[22-Mar-2013 23:36:45 America/Chicago] PHP Fatal error:  Call to a member function hasNext() on a non-object in /home/voip91/public_html/admin/addMailTemplate.php on line 106
+[22-Mar-2013 23:37:32 America/Chicago] PHP Fatal error:  Call to a member function hasNext() on a non-object in /home/voip91/public_html/admin/addMailTemplate.php on line 106
+[22-Mar-2013 23:38:18 America/Chicago] PHP Fatal error:  Call to a member function hasNext() on a non-object in /home/voip91/public_html/admin/addMailTemplate.php on line 106
+[23-Mar-2013 00:25:16 America/Chicago] PHP Fatal error:  Call to a member function hasNext() on a non-object in /home/voip91/public_html/admin/addMailTemplate.php on line 106
+[23-Mar-2013 03:05:25 America/Chicago] PHP Fatal error:  Call to a member function hasNext() on a non-object in /home/voip91/public_html/admin/addMailTemplate.php on line 106
+[13-Apr-2013 05:57:59 America/Chicago] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/voip91/public_html/admin/updateCurrCallRoute.php on line 21
+[13-Apr-2013 05:58:48 America/Chicago] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/voip91/public_html/admin/updateCurrCallRoute.php on line 21
+[15-Apr-2013 00:15:50 America/Chicago] PHP Fatal error:  Call to a member function hasNext() on a non-object in /home/voip91/public_html/admin/addMailTemplate.php on line 106
+[15-Apr-2013 00:16:48 America/Chicago] PHP Fatal error:  Call to a member function hasNext() on a non-object in /home/voip91/public_html/admin/addMailTemplate.php on line 106
+[10-May-2013 04:57:38 America/Chicago] PHP Warning:  include_once(/newapi/function_layer.php) [<a href='function.include-once'>function.include-once</a>]: failed to open stream: No such file or directory in /home/voip91/public_html/admin/updateCurrCallRoute.php on line 2
+[10-May-2013 04:57:38 America/Chicago] PHP Warning:  include_once() [<a href='function.include'>function.include</a>]: Failed opening '/newapi/function_layer.php' for inclusion (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/voip91/public_html/admin/updateCurrCallRoute.php on line 2
+[10-May-2013 04:57:38 America/Chicago] PHP Fatal error:  Call to a member function connect() on a non-object in /home/voip91/public_html/admin/updateCurrCallRoute.php on line 6
+[24-May-2013 04:41:31 America/Chicago] PHP Fatal error:  Call to a member function hasNext() on a non-object in /home/voip91/public_html/admin/addMailTemplate.php on line 106
+[27-May-2013 00:41:54 America/Chicago] PHP Fatal error:  Call to a member function hasNext() on a non-object in /home/voip91/public_html/admin/addMailTemplate.php on line 106
+[12-Aug-2013 10:49:01 America/Chicago] PHP Warning:  include_once(/home/voip91/public_html/newapi/general_class.php) [<a href='function.include-once'>function.include-once</a>]: failed to open stream: No such file or directory in /home/voip91/public_html/p91admin/index.php on line 2
+[12-Aug-2013 10:49:01 America/Chicago] PHP Warning:  include_once() [<a href='function.include'>function.include</a>]: Failed opening '/home/voip91/public_html/newapi/general_class.php' for inclusion (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/voip91/public_html/p91admin/index.php on line 2
+[12-Aug-2013 10:49:01 America/Chicago] PHP Warning:  include_once(/home/voip91/public_html/newapi/panel_config.php) [<a href='function.include-once'>function.include-once</a>]: failed to open stream: No such file or directory in /home/voip91/public_html/p91admin/index.php on line 3
+[12-Aug-2013 10:49:01 America/Chicago] PHP Warning:  include_once() [<a href='function.include'>function.include</a>]: Failed opening '/home/voip91/public_html/newapi/panel_config.php' for inclusion (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/voip91/public_html/p91admin/index.php on line 3
+[12-Aug-2013 10:49:01 America/Chicago] PHP Warning:  include_once(/home/voip91/public_html/newapi/function_layer.php) [<a href='function.include-once'>function.include-once</a>]: failed to open stream: No such file or directory in /home/voip91/public_html/p91admin/index.php on line 4
+[12-Aug-2013 10:49:01 America/Chicago] PHP Warning:  include_once() [<a href='function.include'>function.include</a>]: Failed opening '/home/voip91/public_html/newapi/function_layer.php' for inclusion (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/voip91/public_html/p91admin/index.php on line 4
+[12-Aug-2013 10:49:01 America/Chicago] PHP Fatal error:  Class 'general_function' not found in /home/voip91/public_html/p91admin/index.php on line 5

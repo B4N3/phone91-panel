@@ -1,0 +1,29 @@
+[29-Oct-2013 06:01:23 America/Chicago] PHP Warning:  include_once(/inc/head.php) [<a href='function.include-once'>function.include-once</a>]: failed to open stream: No such file or directory in /home/voip91/public_html/admin/index.php on line 163
+[29-Oct-2013 06:01:23 America/Chicago] PHP Warning:  include_once() [<a href='function.include'>function.include</a>]: Failed opening '/inc/head.php' for inclusion (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/voip91/public_html/admin/index.php on line 163
+[29-Oct-2013 06:02:08 America/Chicago] PHP Warning:  include_once(/inc/head.php) [<a href='function.include-once'>function.include-once</a>]: failed to open stream: No such file or directory in /home/voip91/public_html/admin/index.php on line 163
+[29-Oct-2013 06:02:08 America/Chicago] PHP Warning:  include_once() [<a href='function.include'>function.include</a>]: Failed opening '/inc/head.php' for inclusion (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/voip91/public_html/admin/index.php on line 163
+[29-Oct-2013 06:02:22 America/Chicago] PHP Fatal error:  Call to undefined method fun::connect_db() in /home/voip91/public_html/function_layer.php on line 477
+[07-Nov-2013 00:54:02 America/Chicago] PHP Fatal error:  Class 'reseller_class' not found in /home/voip91/public_html/admin/manage-client.php on line 12
+[16-Dec-2013 07:14:42 America/Chicago] PHP Parse error:  syntax error, unexpected $end in /home/voip91/public_html/function_layer.php on line 1710
+[07-Jan-2014 04:19:12 America/Chicago] PHP Parse error:  syntax error, unexpected $end, expecting T_FUNCTION in /home/voip91/public_html/function_layer.php on line 2275
+[07-Jan-2014 04:19:12 America/Chicago] PHP Parse error:  syntax error, unexpected $end in /home/voip91/public_html/function_layer.php on line 3519
+[13-Feb-2014 05:56:15 America/Chicago] PHP Warning:  PHP Startup: hello: Unable to initialize module
+Module compiled with module API=20090626
+PHP    compiled with module API=20100525
+These options need to match
+ in Unknown on line 0
+[13-Feb-2014 05:56:20 America/Chicago] PHP Warning:  PHP Startup: hello: Unable to initialize module
+Module compiled with module API=20090626
+PHP    compiled with module API=20100525
+These options need to match
+ in Unknown on line 0
+[13-Feb-2014 05:56:21 America/Chicago] PHP Warning:  PHP Startup: hello: Unable to initialize module
+Module compiled with module API=20090626
+PHP    compiled with module API=20100525
+These options need to match
+ in Unknown on line 0
+[07-Apr-2014 05:09:20 America/Chicago] PHP Fatal error:  Call to undefined method reseller_class::getAcmName() in /home/voicepho/public_html/classes/reseller_class.php on line 1680
+[08-Apr-2014 06:41:29 America/Chicago] PHP Fatal error:  Class 'reseller_class' not found in /home/voicepho/public_html/admin/manage-client.php on line 12
+[14-Apr-2014 04:00:46 America/Chicago] PHP Fatal error:  Call to undefined method reseller_class::getAcmName() in /home/voicepho/public_html/classes/reseller_class.php on line 1681
+[14-Apr-2014 04:00:52 America/Chicago] PHP Fatal error:  Call to undefined method reseller_class::getAcmName() in /home/voicepho/public_html/classes/reseller_class.php on line 1681
+[14-Apr-2014 04:00:59 America/Chicago] PHP Fatal error:  Call to undefined method reseller_class::getAcmName() in /home/voicepho/public_html/classes/reseller_class.php on line 1681

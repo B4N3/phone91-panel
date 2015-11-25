@@ -1,0 +1,2 @@
+[22-Apr-2013 10:05:27 America/Chicago] PHP Warning:  mysql_connect() [<a href='function.mysql-connect'>function.mysql-connect</a>]: Unknown MySQL server host 'dbserver' (25) in /home/voip91/public_html/login/config/dbconfig.php on line 10
+[22-Apr-2013 10:12:39 America/Chicago] PHP Warning:  mysql_connect() [<a href='function.mysql-connect'>function.mysql-connect</a>]: Unknown MySQL server host 'dbserver' (25) in /home/voip91/public_html/login/config/dbconfig.php on line 10

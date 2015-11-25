@@ -1,0 +1,56 @@
+<!-- sameer -->
+<html>
+<head>
+  <title>Phone91 - Video chat</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+  <link href="fancy.css" rel="stylesheet" type="text/css">
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
+<script type="text/javascript" src="peer.min.js"></script>
+<!-- <script type="text/javascript" src="https://cdn.peerjs.com/0.3/peer.min.js"></script>-->
+<style>
+    .msgForm
+    {
+        position: absolute;
+        bottom: 0;
+        
+    }
+/*    .connection{
+        position: absolute;
+        bottom: 0;
+        right: 10px;
+    }*/
+</style>
+</head>
+
+<body ondragstart="return false;" ondrop="return false;" ondragenter="return false;" ondragover="return false;">
+<div id="num"> 
+    <label>Please enter your phone Number</label>
+    <label>Note ::  This number will be your unique id to communicate with other user</label>
+    <input id="number" value="" type="text" />
+    <input type="button" id="btn" value="Register" onclick="register()"/>
+ </div>   
+    <script>
+    function register()
+    {
+        var id = $('#number').val();
+        if(id.length != 12 || /[^0-9]/.test(id) ==true)
+        {
+            alert("please enter your valid phone number must");
+            return false;
+        }
+        window.localStorage.setItem("userUniqueId",id);
+        $('#num').load("load.html");
+        
+    }
+
+console.log(window.localStorage.getItem("userUniqueId") );  
+if(window.localStorage.getItem("userUniqueId") != "" && window.localStorage.getItem("userUniqueId") != null )
+	$('#num').load("load.html"); 
+   
+//document.domain ='111.118.250.23';
+ </script>
+
+
+<body>
+</html>

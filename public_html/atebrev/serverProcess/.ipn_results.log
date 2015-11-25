@@ -1,0 +1,46 @@
+[02/27/2010 3:26 AM] - SUCCESS!
+IPN POST Vars from Paypal:
+mc_gross=10.00, protection_eligibility=Eligible, address_status=confirmed, payer_id=E5HWQ2TQBGV48, tax=0.00, address_street=1 Main St, payment_date=00:26:46 Feb 27, 2010 PST, payment_status=Completed, charset=windows-1252, address_zip=95131, first_name=Test, mc_fee=0.59, address_country_code=US, address_name=Test User, notify_version=2.9, custom=18563, payer_status=unverified, business=arpit__1245162853_biz@yahoo.com, address_country=United States, address_city=San Jose, quantity=1, verify_sign=Agxs2ikozdYl71LeIz.FaWKP4h1kA1z3ZKNVI8v0ogkogGngCkhWqGUK, payer_email=test_1265613819_per@yahoo.com, txn_id=0BY76367Y69486201, payment_type=instant, last_name=User, address_state=CA, receiver_email=arpit__1245162853_biz@yahoo.com, payment_fee=0.59, receiver_id=B352JYFM5RNVU, txn_type=web_accept, item_name=Recharge Phone91.com, mc_currency=USD, item_number=, residence_country=US, test_ipn=1, handling_amount=0.00, transaction_subject=18563, payment_gross=10.00, shipping=0.00, 
+IPN Response from Paypal Server:
+ HTTP/1.1 200 OK
+Date: Sat, 27 Feb 2010 08:26:53 GMT
+Server: Apache/1.3.33 (Unix) mod_fastcgi/2.4.2 mod_gzip/1.3.26.1a mod_ssl/2.8.22 OpenSSL/0.9.7e
+Set-Cookie: c9MWDuvPtT9GIMyPc3jwol1VSlO=ik9WD-RhdE0a2CVsdhWoVtNASflV7lNPEqohAbvhnF1gfQyXfSKNChPag4_CijNsQuFxZD2RtRRr2xbkCpp_geWZrvRkbgY9JpdwiIOqgnZXLWWi9oA-Zt4f3P1zfbtAeNE3kG%7cchexH7ES3RmRHq3IEElvzJf0_79ajFClsq8blvM8a47Ta0P2s6DsVruazOKmKfI6XR8Ky0%7cJ-RqpDyFaywwjx2RaauxGlIDJEiZmZTnyPBP5eFBHAykXFMn9C5IklY3mfsq8yW6wsrA8m%7c1267259214; domain=.paypal.com; path=/
+Set-Cookie: cookie_check=yes; expires=Tue, 25-Feb-2020 08:26:54 GMT; domain=.paypal.com; path=/
+Set-Cookie: navcmd=_notify-validate; domain=.paypal.com; path=/
+Set-Cookie: navlns=0; expires=Fri, 22-Feb-2030 08:26:54 GMT; domain=.paypal.com; path=/
+Set-Cookie: Apache=10.191.196.11.138341267259213800; path=/; expires=Fri, 15-Jan-04 01:58:37 GMT
+Connection: close
+Transfer-Encoding: chunked
+Content-Type: text/html; charset=UTF-8
+
+8  
+VERIFIED
+0
+
+
+
+[03/22/2010 7:53 AM] - SUCCESS!
+IPN POST Vars from Paypal:
+mc_gross=6.00, protection_eligibility=Ineligible, address_status=unconfirmed, payer_id=U7ZLNXA38AX4A, tax=0.00, address_street=15, shanti kunj
+In front of bombay hospital, payment_date=04:53:01 Mar 22, 2010 PDT, payment_status=Completed, charset=windows-1252, address_zip=452010, first_name=Shubhendra, mc_fee=0.50, address_country_code=IN, address_name=HostNsoft, notify_version=2.9, custom=22966, payer_status=verified, business=phone@phone91.com, address_country=India, address_city=Indore, quantity=1, verify_sign=A0asK6oiIZmtBFrRCq-Iiqf8lrk.ARugV-b1uU97u-mM9lWOul0UCL7N, payer_email=sms@msg91.com, txn_id=1FB70930AD749845U, payment_type=instant, payer_business_name=HostNsoft, last_name=Agrawal, address_state=MP, receiver_email=phone@phone91.com, payment_fee=0.50, receiver_id=VZPUS4MPBMHR4, txn_type=web_accept, item_name=Recharge Phone91.com, mc_currency=USD, item_number=, residence_country=IN, handling_amount=0.00, transaction_subject=22966, payment_gross=6.00, shipping=0.00, 
+IPN Response from Paypal Server:
+ HTTP/1.1 200 OK
+Date: Mon, 22 Mar 2010 11:53:06 GMT
+Server: Apache
+Set-Cookie: cwrClyrK4LoCV1fydGbAxiNL6iG=XWyafSs0bPSl5xRDs9Kom7Pyi8Qf-4TIAEsrt8Et4Q96VNIjB6zpUucKoMZ18SAZsoI_uZMP53GXNLu_JxnFaxJMwZ7z9OnuL2CQrCu2GmJxta97hQ2o0xvJBSk4EqA9S4P0em%7c6LJSNRV-s2xhYMEfSlei_NtRT2eR-Go1tlacH_naXZ5FPZpyUg6iqQMbyu2E4NAPYdCIAW%7ctmq4mCeT2joeaIjwpxOiMQQrb5TFYvnlAUnLv2EdQH3NEzsAv-olk6hiagVwOcuJvEX_00%7c1269258787; domain=.paypal.com; path=/
+Set-Cookie: cookie_check=yes; expires=Thu, 19-Mar-2020 11:53:07 GMT; domain=.paypal.com; path=/
+Set-Cookie: navcmd=_notify-validate; domain=.paypal.com; path=/
+Set-Cookie: navlns=0; expires=Sun, 17-Mar-2030 11:53:07 GMT; domain=.paypal.com; path=/
+Vary: Accept-Encoding
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+Transfer-Encoding: chunked
+Content-Type: text/html; charset=UTF-8
+
+8
+VERIFIED
+0
+
+
+

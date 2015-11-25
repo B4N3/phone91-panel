@@ -1,0 +1,101 @@
+/* RESPONSIVE CSS FOR ALL MODULES */
+@media (min-width: 1025px) and (max-width: 1260px) {
+.deskMenu  { display:block;}
+.menuLeft,.menuRight,.pageName {display:none;}
+}
+
+@media (min-width: 601px) and (max-width: 1024px) {
+.deskMenu,.hidden-tablet,.hidden-desktop, .backPhone { display:none}
+.menuLeft,.menuRight,.pageName {display:block}
+.fpinfo{width:100%}
+.cntLeft{right: 60%;}
+.cntMid{left: 40%; right: 0;}
+#midsec .innerSection{right:0;}
+#srchrow .sett {float:none; position:absolute; right:0; top:0}
+#srchrow {position:relative}
+.cntList .edit, .depList .edit{margin:6px;}
+}
+
+@media only screen and (min-width: 1261px){
+.deskMenu  { display:block;}
+.menuLeft,.menuRight,.pageName {display:none;}
+}
+
+@media only screen and (max-width: 1024px){
+.resellerMCHead{float:left; width:100%; margin:10px 20px;}
+.checkFiltr span{display:block;}
+.tour{display:none;}
+#uType{width:auto;}
+.setList{border-right:none;}
+.settRightSec{padding-left:0;}
+#wlids .box-sync {float:left; width:87.5%;}
+} 
+
+@media only screen and (max-width: 800px){
+.accRes p{padding:0; margin-bottom:10px; width:100%;}
+.accessBox{right:inherit;}
+.dialPad{display:none;}
+.wcBox{margin-right:15px;}
+}
+
+@media only screen and (max-width: 600px) {	
+body{background:#eee;}
+.footDiv{margin-right:0;}
+#cFoot{display:none;}
+.deskMenu, .hidden-tablet,.hideInTablet, .iconBtnLbl, .showAtBack, .exportbtn, .cmntbl thead, .cntRight, .cntMid, .commRightSec, .settingRight, .mngClntList .empty{display:none}
+.cntLeft, .cntMid, .settingRight, .commLeftSec, .commRightSec, #firstName{left:0; right:0;}
+.menuLeft,.menuRight,.pageName, .hidden-desktop{display:block}
+#container{clear:both; position: absolute; top: 72px;left: 10px;right: 10px;bottom: 10px;}
+.settingMenu{background:#fff; position: absolute; top: 0; left: 0; bottom: 0; right:0; width:auto !important; z-index:9999;}
+.innerSection{right:0;}
+.cntList{top:0; position:relative; margin-top:10px;}
+#callLogList{position:relative;}
+.btn-large{padding: 10px 20px;}
+.searchCont{padding:0}
+.leftPhone, .isInput35Fix, #emptyCallLog, textarea.desc, #leftwrap, .settRightSec, .setList, .cols2, .addClntForm input, .addClntForm .selectricWrapper, #buyCont .whiteWrapp, input.srchPrice, #transactionTable {width:100%;}
+.addClntForm, #panelPricingWrp {width:86%;}
+.mascot, .btname, #delBtWrap, .priceHd h3{float:none;}
+.btname{position:static; margin:10px 0 -10px 20px;}
+.buyMoreNoteCnt, #rightwrap, .addClntForm .fields label.error, .buyOr{margin:0;}
+#detailsLog{margin-top:0}
+.addClntForm .fields label{display:block; text-align:left; margin:0 0 5px 0; float:none;}
+.addClntForm .sporow .selectricWrapper{top:23px; left:125px;}
+.addClntForm #currencyName {top:30px}
+.cmntbl tr{display:block; border-bottom:1px solid #e5e5e5; padding:10px 0; margin-top:10px; background:#eee !important;}
+.cmntbl tr.zerobal{display:none}
+.cmntbl tr td{display:block; border:none; overflow:hidden; padding:3px 10px;}
+#trfTbl tr{display:table-row; padding:0;}
+#trfTbl td{display:table-cell;}
+.cmntbl tr:last-child td{border:none !important;}
+.cmntbl td.alR{text-align:left !important}
+.cmntbl td .hidden-desktop{float:left; color:#a9a9a9; margin-right:5px; text-shadow:1px 1px #fff;}
+.cmntbl .debit,.cmntbl .credit{float:left; margin-right:5px;}
+.hField{float:left; width:400px; margin-bottom:5px;}
+.cmntbl td .hideInDesk{font-size:10px; color:#999; display:block; line-height:18px; margin-left:5px; float:left;}
+.showAtFront, input.allTypeUser{margin-top:10px;}
+.slideLeft,.showAtFront,.slideRight,.showAtBack {  
+  -webkit-transition:all 0.3s ease-in-out;
+  -moz-transition:all 0.3s ease-in-out;
+  -o-transition:all 0.3s ease-in-out;
+  transition:all 0.3s ease-in-out;
+}
+#appendForm {margin-left:0; width:100%; min-width:inherit;}
+.cmntbl tr:hover td{background:inherit;}
+.ui-dialog{width:90% !important;}
+#add-Cshop{padding:20px}
+#rightwrap{width:240px;}
+.logWrap{position:relative; top:0;}
+.logLeft{position: relative; overflow-y:hidden; width:100%;}
+.logRight{position: relative; left:0;}
+.colInner, #resellerLog, .logGrid{margin-left:0}
+.assTo{margin: 0 100% 10px 0;width: 84px;}
+.child{margin-bottom:10px;}
+.addCntrow{padding-bottom:5px;}
+}
+
+@media only screen and (max-width: 390px) {	
+.additionalTransLbl{display:none}
+#cFoot input{margin-top:10px}
+.transHd div:first-child{margin-bottom:5px;}
+.codeInput .contact{width:112px;}#dialPadInput{width:130px;}
+}

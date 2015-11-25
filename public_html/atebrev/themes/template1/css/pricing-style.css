@@ -1,0 +1,44 @@
+.col2 { width:50% }
+.col3 { width:33.333% }
+.col4 { width:25% }
+.col5 { width:18.6% }
+.col6 { width:16.666% }
+.col7 { width:14.285% }
+.col8 { width:12.5% }
+#stcnt { }
+.national { border:1px solid #E6E6E6; min-height:103px; background:#fff; padding:10px 6px 10px 13px; margin:5px; }
+.f10 { font-size: 22px }
+.fs4 { font-size: 16px }
+.national div .grayClr2 span { vertical-align:middle; }
+.national div .grayClr2 { margin:15px 0 0 10px; }
+.national a { margin:10px 0 0 10px; }
+.get { margin-bottom:10px }
+/*Pricing Table*/
+.search { font-size:15px; margin:35px 0 0; }
+input[type="text"].srchPrice { font-size: 16px; height: 50px; padding: 10px; }
+#searchWrap { margin:0 0 30px 0 }
+.ui-helper-hidden-accessible { display: block; font-size: 14px; margin: 10px 0 5px; color:#17A7DB; }
+.ui-autocomplete {     border: 1px solid #CCCCCC; background:#fff;   box-shadow: 0 4px 5px rgba(0, 0, 0, 0.15);    cursor: default; position: absolute;z-index: 9999;box-shadow:0 4px 5px rgba(0, 0, 0, .15); -moz-box-shadow:0 4px 5px rgba(0, 0, 0, .15); -webkit-box-shadow:0 4px 5px rgba(0, 0, 0, .15); top:644px !important }
+.ui-autocomplete li { border-bottom: 1px solid #ccc; cursor: pointer; list-style: none outside none; padding: 10px 11px; }
+.ui-autocomplete li:hover { background:#296FA2; color:#fff } .ui-autocomplete li:hover a{ color:#fff;}
+.restxt { font-size: 24px; font-weight: lighter; line-height: 44px; }
+#result-container h4 { font-size: 23px; font-weight: normal; margin: 20px 0; }
+#table-wrapper { position: relative; }
+#table-scroll { height: 300px; overflow-y: scroll; padding-bottom:20px; background:#fbfbfb }
+#table-wrapper table { width: 100%; }
+#prctbl { font-size: 18px; margin:0 auto 20px; }
+#prctbl thead th { text-align: left; width:30%; }
+#table-wrapper table thead th:first-child .text { background:#e6e6e6; color:#333 }
+#table-wrapper table thead th .text { background:#17A7DB; font-weight: lighter; height: 28px; padding: 10px 30px; position: absolute; text-align: center; top: -4px; width:27.2%; z-index: 2; color:#fff }
+#prctbl tbody td.first { text-align: left; }
+#prctbl tbody td { padding: 10px 30px; text-align: center; width:30% }
+.tbbtn { background: none repeat scroll 0 0 #666666; color: #FFFFFF; font-size: 16px; padding: 4px 10px 6px; }
+.tbbtn:hover { background:#296FA2; }
+.priceTable thead th:first-child {    text-align: left;}
+.priceTable thead th {    background: none repeat scroll 0 0 #E6E6E6;    color: #333333;    font-size: 22px;    font-weight: lighter;    padding: 10px 30px;   text-align: center;   width: 30%;}
+.priceTable thead th.themeBg {   background:  #296FA2;    color: #FFFFFF;}
+
+@media only screen and (max-width: 480px) {
+.priceTable thead th {    font-size: 17px;    padding: 10px;}
+#prctbl tbody td {    font-size: 14px;    padding: 10px; }
+}

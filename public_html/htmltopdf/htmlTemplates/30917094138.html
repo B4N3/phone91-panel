@@ -1,0 +1,176 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Payment Successful</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<style type="text/css">
+    
+    
+@font-face {
+	font-family: 'icomoon';
+	src:url('https://utteru-walkoverinc.netdna-ssl.com/css/fonts/icomoon.eot?es4lcm');
+	src:url('https://utteru-walkoverinc.netdna-ssl.com/css/fonts/icomoon.eot?#iefixes4lcm') format('embedded-opentype'),
+		url('https://utteru-walkoverinc.netdna-ssl.com/css/fonts/icomoon.woff?es4lcm') format('woff'),
+		url('https://utteru-walkoverinc.netdna-ssl.com/css/fonts/icomoon.ttf?es4lcm') format('truetype'),
+		url('https://utteru-walkoverinc.netdna-ssl.com/css/fonts/icomoon.svg?es4lcm#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+.pickDown:before {content: url("https://utteru-walkoverinc.netdna-ssl.com/images/currency-pick-down-black.png"); display: inline-block; padding-left: 11px; position: relative; right: 5px; top: -1px; }
+
+.flag-24 { width:24px; height:22px; background-image:url(https://utteru-walkoverinc.netdna-ssl.com/images/flags-24x24.png); display:block; float:left; margin-right: 6px;}
+
+#livechat-compact-container{display:none;}  
+
+.livechat_button {bottom: 9px; position: fixed; right: 0; opacity:.9}
+
+
+</style>
+<script type="text/javascript" src="https://utteru-walkoverinc.netdna-ssl.com/js/basket.full.min.js"></script>
+<script src="https://utteru-walkoverinc.netdna-ssl.com/js/jquery-2.1.1.min.js"></script>
+<script src="https://utteru-walkoverinc.netdna-ssl.com/js/jquery-ui.min.js"></script>
+<script type="text/javascript">
+    
+    
+    console.log('{"status":0,"msg":"Email not Found!!!"}');
+    
+    
+var version = "0.0.2";
+    function cacheControl(){
+
+        if(version != localStorage.getItem('version')){
+            localStorage.clear();
+        }
+
+        localStorage.setItem("version",version);
+
+    }
+    cacheControl();   
+    
+    
+//	    basket.require({ url: "https://utteru-walkoverinc.netdna-ssl.com/js/jquery-2.1.1.min.js" },
+//	    { url: "https://utteru-walkoverinc.netdna-ssl.com/js/jquery-ui.min.js" },
+//	    {url:"https://utteru-walkoverinc.netdna-ssl.com/js/jquery.validate.min.js"},
+//	    {url:"https://utteru-walkoverinc.netdna-ssl.com/js/jquery.validate.min.js"},
+//	    {url:"https://utteru-walkoverinc.netdna-ssl.com/js/jquery.browser.min.js"},
+//	    {url:"https://utteru-walkoverinc.netdna-ssl.com/js/toastr.min.js"},
+//	    {url:"https://utteru-walkoverinc.netdna-ssl.com/js/jquery.quicksearch.js"})
+//    .then(function () {
+//         basket.require({ url: "https://utteru-walkoverinc.netdna-ssl.com/js/menu.js" },
+//			{url: "https://utteru-walkoverinc.netdna-ssl.com/js/script.js"});
+//    }, function (error) {
+//        // There was an error fetching the script
+//        console.log(error);
+//    });
+
+//basket.require({ url: "/js/jquery-2.1.1.min.js" })
+//    .then(function () {
+         basket.require(
+	    {url:"/js/jquery.validate.min.js"},
+	    {url:"/js/jquery.validate.min.js"},
+	    {url:"/js/jquery.browser.min.js"},
+	    {url:"/js/toastr.min.js"},
+	    {url:"/js/jquery.quicksearch.js"}).
+				then(function(){
+//				    basket.require({ url: "/js/menu.js" },
+//						   {url: "/js/script.js"}); 
+				    
+				});
+//    }, function (error) {
+//        // There was an error fetching the script
+//        console.log(error);
+//    });
+
+/**
+*@author sudhir pandey <sudhir@hostnsoft.com>
+*@since 2/12/2014
+*@function use to unset local storage value. 
+*/ 
+function unsetLocalStorage(){
+    localStorage.removeItem('contact');
+    localStorage.removeItem('AssignAccessNoEdit');
+    localStorage.removeItem('editContact');
+    localStorage.removeItem('findAccessContact');
+    localStorage.removeItem('selectedCountry');
+ }   
+ 
+
+
+</script>
+
+
+<!--<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600' rel='stylesheet' type='text/css'>-->
+<link rel="stylesheet" type="text/css" href="https://utteru-walkoverinc.netdna-ssl.com/css/utteru.css">
+<link rel="stylesheet" type="text/css" href="https://utteru-walkoverinc.netdna-ssl.com/css/jquery-ui.min.css">
+<link rel="stylesheet" type="text/css" href="https://utteru-walkoverinc.netdna-ssl.com/css/toastr.css">
+<link rel="icon" href="images/favz.ico" type="image/x-icon">
+
+<!--
+
+<script src="https://utteru-walkoverinc.netdna-ssl.com/js/jquery.validate.min.js"></script>
+<script type="text/javascript" src="https://utteru-walkoverinc.netdna-ssl.com/js/jquery.quicksearch.js"></script> 
+<script src="https://utteru-walkoverinc.netdna-ssl.com/js/jquery.browser.min.js"></script>
+<script src="https://utteru-walkoverinc.netdna-ssl.com/js/toastr.min.js"></script>
+-->
+<script src="https://utteru-walkoverinc.netdna-ssl.com/js/menu.js"></script>
+
+<script src="https://utteru-walkoverinc.netdna-ssl.com/js/script.js"></script>
+<script type="text/javascript">
+    
+//        var __lc = {};
+//        
+//        (function() {
+//            var lc = document.createElement('script'); lc.type = 'text/javascript'; lc.async = true;
+//            lc.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'cdn.livechatinc.com/tracking.js';
+//            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(lc, s);
+//        })();
+
+var __lc = {};
+__lc.license = 5399181;
+__lc.params = [
+    { name: 'username', value: 'sudrock' },
+    { name: 'number', value: '919630738974' }
+
+];
+
+
+console.log('0');
+
+
+console.log(__lc.params);
+
+
+
+(function() {
+	var lc = document.createElement('script'); lc.type = 'text/javascript'; lc.async = true;
+	lc.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'cdn.livechatinc.com/tracking.js';
+	var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(lc, s);
+})();
+
+</script>
+<div data-id="TeM3DB_2k8m" class="livechat_button"><a href="http://www.livechatinc.com/?partner=lc_5399181&amp;utm_source=chat_button">live chat software</a></div>
+<style>
+.mainBox{width:300px; text-align:center; border-bottom: 1px solid #E4DBAC;}
+.recImg{background:#FFE4B5; border: 1px solid #E4DBAC; border-radius:6px 6px 0 0}
+.ddLit{font-size:15px}
+</style>
+</head>
+<body>
+	<div class="mainBox">
+    	<div class="recImg pd3">
+        	<img src="images/pay_success.png" />
+        </div>
+        <div class="pd2">
+        	<h1 class="blue bold mrB1 mrT"><b>Congratulations!</b></h1>
+        	<p class="ddLit">Your account has been succesfully recharged with <span class="blue">1329.3978 INR</span></p>
+                
+                <!--<a class="btn mrT2 btn-medium btn-primary" href="/share.php" target="_blank" title="share">share</a>-->
+        </div>
+    </div>
+</body>
+</html>

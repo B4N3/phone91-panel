@@ -1,0 +1,34 @@
+<script id="manageSubsite" type="text/template">
+div.oh
+	h1 Manage Subsite
+	hr.mrT1.mrB1
+	input.fl.col5.bdr#search(name = 'search', type='text', placeholder="Search", style="height:30px")
+	a.mrL2(class="btn bluBtn fl", href="#", float="right") Add New
+div#subDiv
+	div.mrT1
+		table.mrT1.t4n
+			thead
+				tr
+					th Company Name
+					th Domain Name
+					th Logo
+					th Copywrite
+					th Language
+					th Theme
+					th Tariff
+					th Edit
+					th Delete
+					th Context
+			tbody#tbodySiteData
+				each data, i in values
+					tr(id="#{data[6]}")
+						td
+							input.pd1(type="text", value="#{data[0]}", id="com_#{data[6]}")
+						td
+							input.pd1(type="text", value="#{data[1]}", id="dom_#{data[6]}")
+						td
+							(value="#{data[2]}", id="logo_#{data[6]}")
+						
+script
+	//breadcrumbs(['Home','ManageWebsite']);	
+</script>

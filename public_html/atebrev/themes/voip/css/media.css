@@ -1,0 +1,36 @@
+/* CSS Document */
+.wrapper { width:1000px; margin:0 auto; }
+
+@media only screen and (max-width : 1024px), (max-device-width:1024px) {
+.wrapper, .innerBanner { width:90%; margin:0 auto;}
+.bannerImg { display:none;}
+.searchFields.col2 { width: 100%;}
+.innerContainer, .howItsWorks, #footer div, #bottomFooter .innerFooter { width:90%; overflow:hidden;}
+}
+
+@media only screen and (max-width : 800px), (max-device-width:768px) {
+.vidoesPhone { width: 100%; height:inherit;}
+.vidoesPhone iframe { width:100%; min-height:380px; height:inherit;}
+#stcnt .col4{width:50%;}
+#internationalCall .col4 {width:28.5%;}
+section.innerFooter aside {margin-right:20px;}
+}
+
+@media only screen and (max-width : 600px), (max-device-width:600px) {
+#resMenu{display:block}
+.formGet input[type="submit"] { width:15%;}
+.formGet input[type="text"] { width: 85%;}
+#internationalCall .col4 {width:94%;}
+section.innerFooter aside { width:100%; float:none; margin-bottom:20px;clear:both;}
+#signupForm, .searchFields form input[type="text"], .searchFields form input[type="password"], .searchFields form input[type="email"], #stcnt .col4, .leftSide, .rightSide,.cmninpt, .cmnsel, .cmntxt, .form-row .lbl { width: 100%;}
+.form-row .lbl{text-align:left;}
+a#logo { float:none; margin:10px auto;}
+#header{margin-bottom:25px}
+#header nav {display:none;}
+.contactuS{border-right:none; border-bottom: 1px solid #eee; margin-bottom:20px; padding-bottom:20px; text-align:left;}
+.imagePay{width:275px; height:275px;}
+.rightPayCont{width:100%; margin-left:0;}
+.rightsecNav, .whBtn{margin-top:8px}
+}
+
+@media only screen and (max-width : 480px), (max-device-width:480px) {}

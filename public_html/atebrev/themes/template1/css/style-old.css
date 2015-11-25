@@ -1,0 +1,203 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700);
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video, hr, input, textarea, select, radio, a { margin: 0; padding: 0; outline:none}
+body, input, textarea, select { font-family: 'Open Sans', sans-serif; font-weight:400; font-size:13px; color: #999}
+a { text-decoration:none; color:#17A7DB}
+.ligt { font-weight:300}
+.semi { font-weight:600}
+.bold { font-weight:700}
+.fwN { font-weight:normal}
+
+/*---------------common css---------------*/
+#nav a, #nav a, h3 > p, .themeLink{ text-transform:capitalize; background-attachment:}
+.clear:before, .clear:after { display: table; line-height: 0; content: ""}
+.clear:after, #footer { clear: both}
+.fl { float:left}
+.fr { float:right}
+.clL { clear:left}
+.clR { clear:right}
+.alC { text-align:center}
+.alR { text-align:right}
+.pr { position:relative}
+.pa { position:absolute}
+.cp { cursor:pointer}
+.ln { list-style:none}
+.db { display:block}
+.dn { display:none}
+/*---------------some heading sizes------------*/
+h1 {color: #FFFFFF;    font-size: 50px;    font-weight: lighter;    text-shadow: 0 0 2px #000000;    text-transform: capitalize}
+h2 { font-size:23px; color:#fff; text-transform: capitalize;  text-shadow: 0 0 2px #000000}
+h3 { font-size:18px}
+h4 { font-size:18px}
+.f18 { font-size:18px}
+.f16 { font-size:16px}
+/*--------------------line height------------------*/
+.lh22 { line-height:22px}
+.lh24 { line-height:24px}
+.lh26 { line-height:26px}
+.lh28 { line-height:28px}
+.lh30 { line-height:30px}
+.lh32 { line-height:32px}
+.lh40 { line-height:40px}
+/*--------------------common margins------------------*/
+.mrT1 { margin-top:10px}
+.mrT2 { margin-top:20px}
+.mrR3 { margin-right:30px}
+/*--------------------common padding------------------*/
+.pd2 { padding:20px}
+.pdR2 { padding-right:20px}
+.pdR3 { padding-right:30px}
+.pdL3 { padding-left:30px}
+/****************some common properties****************/
+textarea, input, select, button, .boxsize, .pricelist-wrapper li, .btn { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; border:0; outline:none}
+input[type="submit"]::-moz-focus-inner, input[type="button"]::-moz-focus-inner    {border : 0px; outline : none} 
+select { border:1px solid #F3F3F3}
+.clrTrns { -webkit-transition: color .25s linear;-moz-transition: color .25s linear;-o-transition: color .25s linear; transition: color .25s linear}
+.bdrTrns { -webkit-transition: border .25s linear; -moz-transition: border .25s linear; -o-transition: border .25s linear; transition: border .25s linear}
+.bgTrns { -webkit-transition: background .25s linear; -moz-transition: background .25s linear; -o-transition: background .25s linear; transition: background .25s linear}
+.resizeTrans, #header, #banner-wrap, .wrapper, [class^="col-"], #nav, body, .resizeNav, #home-banner-wrap .btn, .col-2 {transition:all .5s ease-in-out;     -o-transition:all .5s ease-in-out;     -moz-transition:all .5s ease-in-out;     -webkit-transition:all .5s ease-in-out}
+/*------------scaffolding properties-------*/
+[class^="col-"] { float:left}
+.col-1 { width:100%}
+.col-2 { width:50%}
+.col-3 { width:33.33%}
+.col-4 { width:25%}
+.col-5 { width:20%}
+.col-5 { width:20%}
+.col-6 { width:16.66%}
+.col-3-4 { width:246px}
+.col-1-3 { width:70%}
+.themeLink:hover { text-decoration:underline}
+#nav a:hover, #nav a.active, h3 > p, h3 {    color: #262626}
+/*-----------------structure properties-------------*/
+.wrapper { width:1000px; margin:0 auto}
+#header {   padding-bottom: 10px;  width: 100%;    z-index: 999999999}
+#head-inner { padding-top:8px; height:100px; border-bottom:2px dashed #fff}
+#logowrap  {margin:10px 0 0 0; display:block}
+#nav { padding-top:24px; float:right}
+#nav a {    color: #FFFFFF;    display: inline-block;    font-size: 17px;    font-weight: normal;    height: 40px;    line-height: 40px;    margin-left: 15px;    padding: 0 15px; border-radius:2px}
+#nav a:hover, #nav a.active { background:#fff}
+.banner {  background-position: center center;    background-size: cover;    padding:60px 0;    text-align: center;		 -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover;  -webkit-transition: all .6s ease; -webkit-backface-visibility: hidden}
+#home-banner-wrap h2 { margin:35px 0 55px}
+.btn { color:#fff; font-weight:lighter; display:inline-block; border-radius:2px;  font-size: 22px;    padding: 9px 20px;    text-transform: capitalize}
+.btn.orange { background:#e06e2c}
+.pageName{ font-size: 15px;    position: relative;    text-align: right;    text-transform: capitalize;    top: -28px; display:none; color:#f1f1f1}
+.btn.blue { background:#17a7db}
+#all-banner-wrap h1 { font-size:40px}
+#all-banner-wrap h2 { margin:10px 0 20px; font-size:24px}
+#container { padding:50px 0; min-height:550px}
+#container h3 { display:block; width:100%; margin-bottom:10px}
+.hmText { font-size:15px; line-height:25px; margin-bottom:50px}
+h3{ font-size:25px; ; position:relative; font-weight:normal}
+h3 span{ position:absolute; top:0; left:0; background:#17A7DB; height:5px; width:50px}
+h3 > p { border-top:1px solid #f5f5f5; margin-bottom:10px}
+.circle { width:100px; height:100px; border-radius:50%; display:inline-block; margin-bottom:10px; border:1px solid #f1f1f1}
+.box h4{    color: #777;    font-size: 20px;    font-weight: normal;    margin: 0 0 14px}
+.box p{  line-height: 21px;    margin-bottom: 15px}
+/*=====================footer==============*/
+#footer .inner { padding:30px 0}
+#footer h4 { color:#fff; margin-bottom:10px}
+#footer p, #footer a { color:#d5d5d5; line-height:24px}
+#footer .col-3 { width:40%}
+#footer .col-3  .pd2 { padding:20px 20px 20px 0}
+#subfooter { background-color:rgba(0, 0, 0, 0.4); line-height:30px; color:#cecece; font-size:12px; padding:15px 0}
+/*contact page*/
+#form h4 { font-size:24px}
+#form p { font-weight:600; line-height:22px}
+#form input { margin-top:20px}
+#form textarea { width:100%; height:100px; margin-top:20px}
+#form #submit { color:#fff; font-size:18px; padding:10px; width:100px; display:block; border:none; cursor:pointer; text-transform:capitalize}
+#form #submit:hover { background-color:#555}
+input[type="text"], input[type="email"], input[type="password"], textarea { background: #fdfdfd; border: 1px solid #F3F3F3; padding: 0 5px; width: 100%}
+#form textarea { resize:none; padding:5px}
+input[type="text"], input[type="email"], input[type="password"], select { height: 34px}
+/*pricing page*/
+.price-tabs { padding:10px 20px; background:#f2f2f2; float:left; border-bottom: 1px solid rgba(50, 50, 50, 0.1); cursor:pointer; color:#787878}
+.price-tabs:hover, .price-tabs.active { background:#ff6760; color:#fff}
+.dnon { display:none}
+.pricelist-wrapper { margin: 30px 0 50px; width: 100%}
+.pricelist-wrapper .topcicon { background:url(../images/icons.png) -108px -16px no-repeat; display: block; height: 30px; margin: -4px auto; width: 30px}
+.pricelist-wrapper ul { position: relative; list-style:none}
+.pricelist-wrapper li.inistage { right: 20%; width: 20%}
+.pricelist-wrapper li { background:#FFF; border: 1px solid #E7E7E7; float: left; font-size: 17px; margin-left: -1px}
+.pricelist-wrapper li.noselections .plistrow1 { background:#555; color: #FFF}
+.pricelist-wrapper li.noselections div { color: #333}
+.pricelist-wrapper .plistrow, .pricelist-wrapper .plistrowbg { padding: 12px 0; text-align: center}
+.pricelist-wrapper .plistrow.first, .pricelist-wrapper .plistrowbg.first { font-size:14px; font-weight:500; padding: 14px 0}
+.pricelist-wrapper .plistrow1 { border-bottom: 1px solid rgba(50, 50, 50, 0.1); font-size: 15px; padding: 14px 0 15px; text-align: center}
+.pricelist-wrapper .plistrow1.first { background:#fff !important}
+.pricelist-wrapper li.plistselected .plistrowbg { background: none repeat scroll 0 0 rgba(50, 50, 50, 0.1); color: #FFF}
+.pricelist-wrapper li.noselections .plistrowbg { background:#F7F7F7}
+.pricelist-wrapper li.plistselected div { color: #FFF}
+.pricelist-wrapper li.plistselected { background: none repeat scroll 0 0 #ff6760; border-left: 1px solid #ff6760; margin: -10px 0; padding: 10px 0; z-index: 10}
+/*payment section*/
+.payli  { margin-top:30px}
+.payli li { float:left}
+.payli li h4 { margin-bottom:10px}
+.payli li p { line-height:24px}
+
+
+.dropdwn{   background-clip: padding-box;    background-color: rgb(255, 255, 255);    border: 1px solid rgba(0, 0, 0, 0.2);    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);    display: none;    list-style: none outside none;    min-width: 150px;    position: absolute;    right: -1px;    top: 19px;    z-index: 99}
+.resizeNav { float:right}
+#nav .resizeNav .resizeIcn {    border-radius: 2px 2px 2px 2px;    color: rgb(255, 255, 255);    display: inline-block;    font-size: 13px;    font-weight: normal;    height: 20px;    line-height: 17px;    margin-left: 0;    padding: 0 3px 0 1px; letter-spacing:-2px}
+#nav .resizeNav .resizeIcn.active, #nav .resizeNav .resizeIcn:hover { color:#444}
+#nav .dropdwn a {  background: rgba(0, 0, 0, 0);    color: rgb(51, 51, 51);    display: block;    float: none;    font-size: 15px;    height: 20px;    line-height: 20px;    margin: 0;    padding: 10px; border-radius:0}
+ #nav .dropdwn a:hover,  #nav .dropdwn a.active { background:rgb(224, 110, 44); color:#fff}
+
+
+
+
+
+
+@media screen and (max-width:1440px) {
+.wrapper  { width:auto}
+#head-inner { padding:0 20px}
+#container, #footer .inner, #subfooter { padding-left:20px; padding-right:20px}}
+
+@media screen and (max-width:900px) {
+#container .col-3 { width:100%; float:none; display:block; clear:both; overflow:hidden}
+.resizeNav { display:block}
+.defltNav { display:none}
+.formGet input[type="text"] { width:92.7%}	
+.formGet input[type="submit"] { width:7.3%}
+.pageName { display:block}
+#stcnt .col-4 { width:100%; float:none}}
+
+@media screen and (max-width:760px) {
+.formGet input[type="text"] { width:88.7%}	
+.formGet input[type="submit"] { width:11.3%}
+.home-banner-wrap {    padding: 20px 20px 0}
+.home-banner-wrap .btn { float:none; width:100%; margin:0 auto; display:block}
+.home-banner-wrap .btn { margin:20px 0}
+#all-banner-wrap h1, #home-banner-wrap h1{ font-size:26px}
+#all-banner-wrap h2, #home-banner-wrap h2 {    font-size: 20px}
+.home-banner-wrap h2 { margin:10px 0 0 0}
+.pageName{   padding: 0;    position: relative;    text-align: right;    top: -24px}
+#footer .col-3 {    display: block; width: 100%; float:none}
+#footer .col-3 .pd2 , #footer .col-5 .pd2 { padding:0 0 20px 0}
+.contact .col-2{ float:none; width:100%}
+.contact .col-2 .pdL3 { padding:0}
+.internationalCall .col-4 { width:100%}
+.formSL .fields label  { margin:0 0 6px 0; float:none}
+.termsConditin { margin:0}}
+
+@media (min-width: 321px) and (max-width: 500px) { 
+.formGet input[type="text"] { width:82.7%}	
+.formGet input[type="submit"] { width:17.3%}
+.formSL .fields input[type="submit"], .formSL .fields input[type="button"], button, .loginFrm .fields input[type="submit"] { margin-left:0}
+.loginFrm, .hVaC { width:100%; float:left; margin:10px 0; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box}
+.loginFrm .fields input[type="text"], .loginFrm .fields input[type="password"] { margin-top:6px}
+.loginFrm .fields label { float:none; display:block}}
+@media screen and (max-width:320px) {
+.formGet input[type="text"] { width:84.7%}
+.formGet input[type="submit"] { width:15.3%}
+.formGet .seachIcons { right:8px}
+#nav { margin:0 auto; float:none}
+#head-inner .col-3-4{ width:165px}
+#home-banner-wrap { padding-top:122px}
+.formSL .fields input[type="submit"], .formSL .fields input[type="button"], button, .loginFrm .fields input[type="submit"] { margin-left:0}
+.loginFrm, .hVaC { width:100%; float:left; margin:10px 0; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box}
+.loginFrm .fields input[type="text"], .loginFrm .fields input[type="password"] { margin-top:6px}
+.loginFrm .fields label { float:none; display:block}}
+@media only screen and (max-width: 500px) {
+.contact .col-2{ width:100%; float:none}	
+}

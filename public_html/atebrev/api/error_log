@@ -1,0 +1,229 @@
+[25-Nov-2013 23:14:20 America/Chicago] PHP Parse error:  syntax error, unexpected $end in /home/voip91/public_html/api/api_sameer.php on line 354
+[25-Nov-2013 23:27:39 America/Chicago] PHP Fatal error:  Call to a member function real_escape_string() on a non-object in /home/voip91/public_html/api/api_sameer.php on line 263
+[25-Nov-2013 23:28:17 America/Chicago] PHP Warning:  mysqli::real_escape_string() [<a href='mysqli.real-escape-string'>mysqli.real-escape-string</a>]: Couldn't fetch fun in /home/voip91/public_html/api/api_sameer.php on line 263
+[25-Nov-2013 23:28:17 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/voip91/public_html/api/api_sameer.php:263) in /home/voip91/public_html/api/Rest.inc_sameer.php on line 113
+[25-Nov-2013 23:28:17 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/voip91/public_html/api/api_sameer.php:263) in /home/voip91/public_html/api/Rest.inc_sameer.php on line 114
+[26-Nov-2013 00:08:50 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/voip91/public_html/api/api_sameer.php:301) in /home/voip91/public_html/api/Rest.inc_sameer.php on line 113
+[26-Nov-2013 00:08:50 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/voip91/public_html/api/api_sameer.php:301) in /home/voip91/public_html/api/Rest.inc_sameer.php on line 114
+[26-Nov-2013 00:36:33 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/voip91/public_html/api/api_sameer.php:283) in /home/voip91/public_html/api/Rest.inc_sameer.php on line 113
+[26-Nov-2013 00:36:33 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/voip91/public_html/api/api_sameer.php:283) in /home/voip91/public_html/api/Rest.inc_sameer.php on line 114
+[26-Nov-2013 00:37:57 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/voip91/public_html/api/api_sameer.php:283) in /home/voip91/public_html/api/Rest.inc_sameer.php on line 113
+[26-Nov-2013 00:37:57 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/voip91/public_html/api/api_sameer.php:283) in /home/voip91/public_html/api/Rest.inc_sameer.php on line 114
+[26-Nov-2013 00:39:31 America/Chicago] PHP Fatal error:  Call to undefined function print_() in /home/voip91/public_html/api/api_sameer.php on line 284
+[26-Nov-2013 00:39:46 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/voip91/public_html/api/api_sameer.php:283) in /home/voip91/public_html/api/Rest.inc_sameer.php on line 113
+[26-Nov-2013 00:39:46 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/voip91/public_html/api/api_sameer.php:283) in /home/voip91/public_html/api/Rest.inc_sameer.php on line 114
+[26-Nov-2013 00:41:04 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/voip91/public_html/api/api_sameer.php:283) in /home/voip91/public_html/api/Rest.inc_sameer.php on line 113
+[26-Nov-2013 00:41:04 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/voip91/public_html/api/api_sameer.php:283) in /home/voip91/public_html/api/Rest.inc_sameer.php on line 114
+[26-Nov-2013 00:41:27 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/voip91/public_html/api/api_sameer.php:283) in /home/voip91/public_html/api/Rest.inc_sameer.php on line 113
+[26-Nov-2013 00:41:27 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/voip91/public_html/api/api_sameer.php:283) in /home/voip91/public_html/api/Rest.inc_sameer.php on line 114
+[26-Nov-2013 00:42:24 America/Chicago] PHP Parse error:  syntax error, unexpected $end, expecting T_VARIABLE or T_DOLLAR_OPEN_CURLY_BRACES or T_CURLY_OPEN in /home/voip91/public_html/api/api_sameer.php on line 132
+[26-Nov-2013 00:42:42 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/voip91/public_html/api/api_sameer.php:283) in /home/voip91/public_html/api/Rest.inc_sameer.php on line 113
+[26-Nov-2013 00:42:42 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/voip91/public_html/api/api_sameer.php:283) in /home/voip91/public_html/api/Rest.inc_sameer.php on line 114
+[26-Nov-2013 00:43:38 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/voip91/public_html/api/api_sameer.php:283) in /home/voip91/public_html/api/Rest.inc_sameer.php on line 113
+[26-Nov-2013 00:43:38 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/voip91/public_html/api/api_sameer.php:283) in /home/voip91/public_html/api/Rest.inc_sameer.php on line 114
+[26-Nov-2013 00:44:09 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/voip91/public_html/api/api_sameer.php:283) in /home/voip91/public_html/api/Rest.inc_sameer.php on line 113
+[26-Nov-2013 00:44:09 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/voip91/public_html/api/api_sameer.php:283) in /home/voip91/public_html/api/Rest.inc_sameer.php on line 114
+[26-Nov-2013 00:45:31 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/voip91/public_html/api/api_sameer.php:283) in /home/voip91/public_html/api/Rest.inc_sameer.php on line 113
+[26-Nov-2013 00:45:31 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/voip91/public_html/api/api_sameer.php:283) in /home/voip91/public_html/api/Rest.inc_sameer.php on line 114
+[26-Nov-2013 00:46:08 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/voip91/public_html/api/api_sameer.php:284) in /home/voip91/public_html/api/Rest.inc_sameer.php on line 113
+[26-Nov-2013 00:46:08 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/voip91/public_html/api/api_sameer.php:284) in /home/voip91/public_html/api/Rest.inc_sameer.php on line 114
+[26-Nov-2013 00:51:28 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/voip91/public_html/api/api_sameer.php:304) in /home/voip91/public_html/api/Rest.inc_sameer.php on line 113
+[26-Nov-2013 00:51:28 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/voip91/public_html/api/api_sameer.php:304) in /home/voip91/public_html/api/Rest.inc_sameer.php on line 114
+[27-Nov-2013 00:30:16 America/Chicago] PHP Fatal error:  Call to undefined method reseller_class::getUserId() in /home/voip91/public_html/api/api_sameer.php on line 363
+[27-Nov-2013 01:42:47 America/Chicago] PHP Fatal error:  Uncaught exception 'InvalidArgumentException' with message 'Invalid type of value.' in /home/voip91/public_html/SuperMySQLi.php:391
+Stack trace:
+#0 /home/voip91/public_html/SuperMySQLi.php(96): SuperMySQLi->set(Array)
+#1 /home/voip91/public_html/classes/transaction_class.php(201): SuperMySQLi->insert('91_transactionL...', Array)
+#2 /home/voip91/public_html/classes/transaction_class.php(130): transaction_class->addTransactional_sub(NULL, NULL, 0, 0, 'voip', 0, 0, 0, NULL, NULL)
+#3 /home/voip91/public_html/classes/reseller_class.php(107): transaction_class->addTransactional(NULL, NULL, 0, 0, NULL, NULL, '', NULL, NULL)
+#4 /home/voip91/public_html/api/api_sameer.php(373): reseller_class->editFund(NULL, NULL)
+#5 /home/voip91/public_html/api/api_sameer.php(49): API->updateclientbalance()
+#6 /home/voip91/public_html/api/api_sameer.php(482): API->processApi()
+#7 {main}
+  thrown in /home/voip91/public_html/SuperMySQLi.php on line 391
+[27-Nov-2013 01:54:34 America/Chicago] PHP Warning:  session_start() [<a href='function.session-start'>function.session-start</a>]: Cannot send session cache limiter - headers already sent (output started at /home/voip91/public_html/api/api_sameer.php:103) in /home/voip91/public_html/session.php on line 114
+[27-Nov-2013 02:10:31 America/Chicago] PHP Warning:  session_start() [<a href='function.session-start'>function.session-start</a>]: Cannot send session cache limiter - headers already sent (output started at /home/voip91/public_html/api/api_sameer.php:103) in /home/voip91/public_html/session.php on line 114
+[27-Nov-2013 02:17:26 America/Chicago] PHP Warning:  session_start() [<a href='function.session-start'>function.session-start</a>]: Cannot send session cache limiter - headers already sent (output started at /home/voip91/public_html/api/api_sameer.php:103) in /home/voip91/public_html/session.php on line 114
+[27-Nov-2013 02:17:54 America/Chicago] PHP Warning:  session_start() [<a href='function.session-start'>function.session-start</a>]: Cannot send session cache limiter - headers already sent (output started at /home/voip91/public_html/api/api_sameer.php:103) in /home/voip91/public_html/session.php on line 114
+[27-Nov-2013 02:21:22 America/Chicago] PHP Fatal error:  Uncaught exception 'InvalidArgumentException' with message 'Invalid type of value.' in /home/voip91/public_html/SuperMySQLi.php:391
+Stack trace:
+#0 /home/voip91/public_html/SuperMySQLi.php(96): SuperMySQLi->set(Array)
+#1 /home/voip91/public_html/classes/transaction_class.php(201): SuperMySQLi->insert('91_transactionL...', Array)
+#2 /home/voip91/public_html/classes/transaction_class.php(130): transaction_class->addTransactional_sub('2', '32258', '11', 20, 'voip', '11', 0, 0, NULL, NULL)
+#3 /home/voip91/public_html/classes/reseller_class.php(107): transaction_class->addTransactional('2', '32258', '11', '11', NULL, NULL, 'prepaid', '', NULL)
+#4 /home/voip91/public_html/api/api_sameer.php(374): reseller_class->editFund(Array, '2')
+#5 /home/voip91/public_html/api/api_sameer.php(49): API->updateclientbalance()
+#6 /home/voip91/public_html/api/api_sameer.php(483): API->processApi()
+#7 {main}
+  thrown in /home/voip91/public_html/SuperMySQLi.php on line 391
+[27-Nov-2013 02:26:30 America/Chicago] PHP Fatal error:  Uncaught exception 'InvalidArgumentException' with message 'Invalid type of value.' in /home/voip91/public_html/SuperMySQLi.php:391
+Stack trace:
+#0 /home/voip91/public_html/SuperMySQLi.php(96): SuperMySQLi->set(Array)
+#1 /home/voip91/public_html/classes/transaction_class.php(201): SuperMySQLi->insert('91_transactionL...', Array)
+#2 /home/voip91/public_html/classes/transaction_class.php(130): transaction_class->addTransactional_sub('2', '32258', '11', 20, 'voip', '11', 0, 0, NULL, NULL)
+#3 /home/voip91/public_html/classes/reseller_class.php(107): transaction_class->addTransactional('2', '32258', '11', '11', NULL, NULL, 'prepaid', '', NULL)
+#4 /home/voip91/public_html/api/api_sameer.php(374): reseller_class->editFund(Array, '2')
+#5 /home/voip91/public_html/api/api_sameer.php(49): API->updateclientbalance()
+#6 /home/voip91/public_html/api/api_sameer.php(483): API->processApi()
+#7 {main}
+  thrown in /home/voip91/public_html/SuperMySQLi.php on line 391
+[27-Nov-2013 02:27:28 America/Chicago] PHP Fatal error:  Uncaught exception 'InvalidArgumentException' with message 'Invalid type of value.' in /home/voip91/public_html/SuperMySQLi.php:391
+Stack trace:
+#0 /home/voip91/public_html/SuperMySQLi.php(96): SuperMySQLi->set(Array)
+#1 /home/voip91/public_html/classes/transaction_class.php(201): SuperMySQLi->insert('91_transactionL...', Array)
+#2 /home/voip91/public_html/classes/transaction_class.php(130): transaction_class->addTransactional_sub('2', '32258', '11', 20, 'voip', '11', 0, 0, NULL, NULL)
+#3 /home/voip91/public_html/classes/reseller_class.php(107): transaction_class->addTransactional('2', '32258', '11', '11', NULL, NULL, 'prepaid', '', NULL)
+#4 /home/voip91/public_html/api/api_sameer.php(374): reseller_class->editFund(Array, '2')
+#5 /home/voip91/public_html/api/api_sameer.php(49): API->updateclientbalance()
+#6 /home/voip91/public_html/api/api_sameer.php(483): API->processApi()
+#7 {main}
+  thrown in /home/voip91/public_html/SuperMySQLi.php on line 391
+[27-Nov-2013 02:27:46 America/Chicago] PHP Fatal error:  Uncaught exception 'InvalidArgumentException' with message 'Invalid type of value.' in /home/voip91/public_html/SuperMySQLi.php:391
+Stack trace:
+#0 /home/voip91/public_html/SuperMySQLi.php(96): SuperMySQLi->set(Array)
+#1 /home/voip91/public_html/classes/transaction_class.php(201): SuperMySQLi->insert('91_transactionL...', Array)
+#2 /home/voip91/public_html/classes/transaction_class.php(130): transaction_class->addTransactional_sub('2', '32258', '11', 20, 'voip', '11', 0, 0, NULL, NULL)
+#3 /home/voip91/public_html/classes/reseller_class.php(107): transaction_class->addTransactional('2', '32258', '11', '11', NULL, NULL, 'prepaid', '', NULL)
+#4 /home/voip91/public_html/api/api_sameer.php(374): reseller_class->editFund(Array, '2')
+#5 /home/voip91/public_html/api/api_sameer.php(49): API->updateclientbalance()
+#6 /home/voip91/public_html/api/api_sameer.php(483): API->processApi()
+#7 {main}
+  thrown in /home/voip91/public_html/SuperMySQLi.php on line 391
+[27-Nov-2013 02:27:48 America/Chicago] PHP Fatal error:  Uncaught exception 'InvalidArgumentException' with message 'Invalid type of value.' in /home/voip91/public_html/SuperMySQLi.php:391
+Stack trace:
+#0 /home/voip91/public_html/SuperMySQLi.php(96): SuperMySQLi->set(Array)
+#1 /home/voip91/public_html/classes/transaction_class.php(201): SuperMySQLi->insert('91_transactionL...', Array)
+#2 /home/voip91/public_html/classes/transaction_class.php(130): transaction_class->addTransactional_sub('2', '32258', '11', 20, 'voip', '11', 0, 0, NULL, NULL)
+#3 /home/voip91/public_html/classes/reseller_class.php(107): transaction_class->addTransactional('2', '32258', '11', '11', NULL, NULL, 'prepaid', '', NULL)
+#4 /home/voip91/public_html/api/api_sameer.php(374): reseller_class->editFund(Array, '2')
+#5 /home/voip91/public_html/api/api_sameer.php(49): API->updateclientbalance()
+#6 /home/voip91/public_html/api/api_sameer.php(483): API->processApi()
+#7 {main}
+  thrown in /home/voip91/public_html/SuperMySQLi.php on line 391
+[27-Nov-2013 02:29:24 America/Chicago] PHP Fatal error:  Uncaught exception 'InvalidArgumentException' with message 'Invalid type of value.' in /home/voip91/public_html/SuperMySQLi.php:391
+Stack trace:
+#0 /home/voip91/public_html/SuperMySQLi.php(96): SuperMySQLi->set(Array)
+#1 /home/voip91/public_html/classes/transaction_class.php(201): SuperMySQLi->insert('91_transactionL...', Array)
+#2 /home/voip91/public_html/classes/transaction_class.php(130): transaction_class->addTransactional_sub('2', '32258', '11', 20, 'voip', '11', 0, 0, NULL, NULL)
+#3 /home/voip91/public_html/classes/reseller_class.php(110): transaction_class->addTransactional('2', '32258', '11', '11', NULL, NULL, 'prepaid', '', NULL)
+#4 /home/voip91/public_html/api/api_sameer.php(374): reseller_class->editFund(Array, '2')
+#5 /home/voip91/public_html/api/api_sameer.php(49): API->updateclientbalance()
+#6 /home/voip91/public_html/api/api_sameer.php(483): API->processApi()
+#7 {main}
+  thrown in /home/voip91/public_html/SuperMySQLi.php on line 391
+[27-Nov-2013 02:32:24 America/Chicago] PHP Fatal error:  Uncaught exception 'InvalidArgumentException' with message 'Invalid type of value.' in /home/voip91/public_html/SuperMySQLi.php:391
+Stack trace:
+#0 /home/voip91/public_html/SuperMySQLi.php(96): SuperMySQLi->set(Array)
+#1 /home/voip91/public_html/classes/transaction_class.php(201): SuperMySQLi->insert('91_transactionL...', Array)
+#2 /home/voip91/public_html/classes/transaction_class.php(130): transaction_class->addTransactional_sub('2', '32258', '11', 20, 'voip', '11', 0, 0, NULL, NULL)
+#3 /home/voip91/public_html/classes/reseller_class.php(110): transaction_class->addTransactional('2', '32258', '11', '11', 'Cash', NULL, 'prepaid', '', NULL)
+#4 /home/voip91/public_html/api/api_sameer.php(375): reseller_class->editFund(Array, '2')
+#5 /home/voip91/public_html/api/api_sameer.php(49): API->updateclientbalance()
+#6 /home/voip91/public_html/api/api_sameer.php(484): API->processApi()
+#7 {main}
+  thrown in /home/voip91/public_html/SuperMySQLi.php on line 391
+[27-Nov-2013 02:33:15 America/Chicago] PHP Fatal error:  Uncaught exception 'InvalidArgumentException' with message 'Invalid type of value.' in /home/voip91/public_html/SuperMySQLi.php:391
+Stack trace:
+#0 /home/voip91/public_html/SuperMySQLi.php(96): SuperMySQLi->set(Array)
+#1 /home/voip91/public_html/classes/transaction_class.php(201): SuperMySQLi->insert('91_transactionL...', Array)
+#2 /home/voip91/public_html/classes/transaction_class.php(130): transaction_class->addTransactional_sub('2', '32258', '11', 20, 'voip', '11', 0, 0, 'dfasdfa', NULL)
+#3 /home/voip91/public_html/classes/reseller_class.php(110): transaction_class->addTransactional('2', '32258', '11', '11', 'Cash', 'dfasdfa', 'prepaid', '', NULL)
+#4 /home/voip91/public_html/api/api_sameer.php(376): reseller_class->editFund(Array, '2')
+#5 /home/voip91/public_html/api/api_sameer.php(49): API->updateclientbalance()
+#6 /home/voip91/public_html/api/api_sameer.php(485): API->processApi()
+#7 {main}
+  thrown in /home/voip91/public_html/SuperMySQLi.php on line 391
+[27-Nov-2013 04:34:29 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/voip91/public_html/api/api_sameer.php:68) in /home/voip91/public_html/api/Rest.inc_sameer.php on line 113
+[27-Nov-2013 04:34:29 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/voip91/public_html/api/api_sameer.php:68) in /home/voip91/public_html/api/Rest.inc_sameer.php on line 114
+[27-Nov-2013 04:35:00 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/voip91/public_html/api/api_sameer.php:68) in /home/voip91/public_html/api/Rest.inc_sameer.php on line 113
+[27-Nov-2013 04:35:00 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/voip91/public_html/api/api_sameer.php:68) in /home/voip91/public_html/api/Rest.inc_sameer.php on line 114
+[27-Nov-2013 04:37:00 America/Chicago] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, string given in /home/voip91/public_html/api/api_sameer.php on line 87
+[27-Nov-2013 04:37:00 America/Chicago] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, string given in /home/voip91/public_html/api/api_sameer.php on line 93
+[27-Nov-2013 04:37:00 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/voip91/public_html/api/api_sameer.php:87) in /home/voip91/public_html/api/Rest.inc_sameer.php on line 113
+[27-Nov-2013 04:37:00 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/voip91/public_html/api/api_sameer.php:87) in /home/voip91/public_html/api/Rest.inc_sameer.php on line 114
+[27-Nov-2013 04:37:00 America/Chicago] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, string given in /home/voip91/public_html/api/api_sameer.php on line 87
+[27-Nov-2013 04:37:00 America/Chicago] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, string given in /home/voip91/public_html/api/api_sameer.php on line 93
+[27-Nov-2013 04:37:00 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/voip91/public_html/api/api_sameer.php:87) in /home/voip91/public_html/api/Rest.inc_sameer.php on line 113
+[27-Nov-2013 04:37:00 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/voip91/public_html/api/api_sameer.php:87) in /home/voip91/public_html/api/Rest.inc_sameer.php on line 114
+[27-Nov-2013 04:39:17 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/voip91/public_html/api/api_sameer.php:94) in /home/voip91/public_html/api/Rest.inc_sameer.php on line 113
+[27-Nov-2013 04:39:17 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/voip91/public_html/api/api_sameer.php:94) in /home/voip91/public_html/api/Rest.inc_sameer.php on line 114
+[27-Nov-2013 04:53:10 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/voip91/public_html/api/api_sameer.php:75) in /home/voip91/public_html/api/Rest.inc_sameer.php on line 113
+[27-Nov-2013 04:53:10 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/voip91/public_html/api/api_sameer.php:75) in /home/voip91/public_html/api/Rest.inc_sameer.php on line 114
+[27-Nov-2013 05:09:22 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/voip91/public_html/api/api_sameer.php:62) in /home/voip91/public_html/api/Rest.inc_sameer.php on line 113
+[27-Nov-2013 05:09:22 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/voip91/public_html/api/api_sameer.php:62) in /home/voip91/public_html/api/Rest.inc_sameer.php on line 114
+[27-Nov-2013 05:10:01 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/voip91/public_html/api/api_sameer.php:62) in /home/voip91/public_html/api/Rest.inc_sameer.php on line 113
+[27-Nov-2013 05:10:01 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/voip91/public_html/api/api_sameer.php:62) in /home/voip91/public_html/api/Rest.inc_sameer.php on line 114
+[27-Nov-2013 05:10:23 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/voip91/public_html/api/api_sameer.php:62) in /home/voip91/public_html/api/Rest.inc_sameer.php on line 113
+[27-Nov-2013 05:10:23 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/voip91/public_html/api/api_sameer.php:62) in /home/voip91/public_html/api/Rest.inc_sameer.php on line 114
+[27-Nov-2013 05:10:24 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/voip91/public_html/api/api_sameer.php:62) in /home/voip91/public_html/api/Rest.inc_sameer.php on line 113
+[27-Nov-2013 05:10:24 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/voip91/public_html/api/api_sameer.php:62) in /home/voip91/public_html/api/Rest.inc_sameer.php on line 114
+[27-Nov-2013 05:10:59 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/voip91/public_html/api/api_sameer.php:62) in /home/voip91/public_html/api/Rest.inc_sameer.php on line 113
+[27-Nov-2013 05:10:59 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/voip91/public_html/api/api_sameer.php:62) in /home/voip91/public_html/api/Rest.inc_sameer.php on line 114
+[27-Nov-2013 05:11:29 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/voip91/public_html/api/api_sameer.php:62) in /home/voip91/public_html/api/Rest.inc_sameer.php on line 113
+[27-Nov-2013 05:11:29 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/voip91/public_html/api/api_sameer.php:62) in /home/voip91/public_html/api/Rest.inc_sameer.php on line 114
+[27-Nov-2013 07:07:36 America/Chicago] PHP Parse error:  syntax error, unexpected $end in /home/voip91/public_html/api/api_sameer.php on line 517
+[27-Nov-2013 07:07:57 America/Chicago] PHP Parse error:  syntax error, unexpected $end in /home/voip91/public_html/api/api_sameer.php on line 517
+[11-Dec-2013 04:28:46 America/Chicago] PHP Parse error:  syntax error, unexpected $end in /home/voip91/public_html/function_layer.php on line 750
+[19-Dec-2013 06:24:58 America/Chicago] PHP Parse error:  syntax error, unexpected $end in /home/voip91/public_html/api/api_sameer.php on line 121
+[08-Jan-2014 17:37:04 Asia/Kolkata] PHP Warning:  sip_delete() expects exactly 1 parameter, 2 given in /home/voip91/public_html/function_layer.php on line 3692
+[08-Jan-2014 17:37:04 Asia/Kolkata] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/voip91/public_html/function_layer.php:3692) in /home/voip91/public_html/api/Rest.inc_sameer.php on line 113
+[08-Jan-2014 17:37:04 Asia/Kolkata] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/voip91/public_html/function_layer.php:3692) in /home/voip91/public_html/api/Rest.inc_sameer.php on line 114
+[08-Jan-2014 17:38:02 Asia/Kolkata] PHP Warning:  sip_delete() expects exactly 1 parameter, 2 given in /home/voip91/public_html/function_layer.php on line 3692
+[08-Jan-2014 17:38:02 Asia/Kolkata] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/voip91/public_html/function_layer.php:3692) in /home/voip91/public_html/api/Rest.inc_sameer.php on line 113
+[08-Jan-2014 17:38:02 Asia/Kolkata] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/voip91/public_html/function_layer.php:3692) in /home/voip91/public_html/api/Rest.inc_sameer.php on line 114
+[08-Jan-2014 18:47:39 Asia/Kolkata] PHP Warning:  sip_delete() expects exactly 1 parameter, 2 given in /home/voip91/public_html/function_layer.php on line 3692
+[08-Jan-2014 18:47:39 Asia/Kolkata] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/voip91/public_html/function_layer.php:3692) in /home/voip91/public_html/api/Rest.inc_sameer.php on line 113
+[08-Jan-2014 18:47:39 Asia/Kolkata] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/voip91/public_html/function_layer.php:3692) in /home/voip91/public_html/api/Rest.inc_sameer.php on line 114
+[08-Jan-2014 18:52:19 Asia/Kolkata] PHP Fatal error:  Uncaught exception 'InvalidArgumentException' with message 'Enter the table.' in /home/voip91/public_html/SuperMySQLi.php:113
+Stack trace:
+#0 /home/voip91/public_html/function_layer.php(295): SuperMySQLi->delete(NULL)
+#1 /home/voip91/public_html/function_layer.php(3698): fun->deleteData(NULL, 'userId=33573')
+#2 /home/voip91/public_html/api/api_sameer.php(824): fun->enableSip('33573', '0')
+#3 /home/voip91/public_html/api/api_sameer.php(61): API->addRemoveSip()
+#4 /home/voip91/public_html/api/api_sameer.php(1212): API->processApi()
+#5 {main}
+  thrown in /home/voip91/public_html/SuperMySQLi.php on line 113
+[09-Jan-2014 16:09:20 Asia/Kolkata] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/voip91/public_html/api/api_sameer.php:859) in /home/voip91/public_html/api/Rest.inc_sameer.php on line 113
+[09-Jan-2014 16:09:20 Asia/Kolkata] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/voip91/public_html/api/api_sameer.php:859) in /home/voip91/public_html/api/Rest.inc_sameer.php on line 114
+[09-Jan-2014 16:26:15 Asia/Kolkata] PHP Notice:  problem while insert data in 91_verifiedSipId query:INSERT INTO 91_verifiedSipId SET userId='31140' , userName='bansal_snehaR' , passwd='121212' , chainId='111113s1' , isCallShopUser=0 back trace[{"file":"\/home\/voip91\/public_html\/function_layer.php","line":3680,"function":"insertData","class":"fun","object":{"errorHandler":null,"lastInsertId":null,"querry":"INSERT INTO 91_verifiedSipId SET userId='31140' , userName='bansal_snehaR' , passwd='121212' , chainId='111113s1' , isCallShopUser=0","affected_rows":null,"client_info":null,"client_version":null,"connect_errno":null,"connect_error":null,"errno":null,"error":null,"field_count":null,"host_info":null,"info":null,"insert_id":null,"server_info":null,"server_version":null,"stat":null,"sqlstate":null,"protocol_version":null,"thread_id":null,"warning_count":null,"db":{"affected_rows":null,"client_info":null,"client_version":null,"connect_errno":null,"connect_error":null,"errno":null,"error":null,"field_count":null,"host_info":null,"info":null,"insert_id":null in /home/voip91/public_html/function_layer.php on line 331
+[09-Jan-2014 16:26:15 Asia/Kolkata] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/voip91/public_html/function_layer.php:331) in /home/voip91/public_html/api/Rest.inc_sameer.php on line 113
+[09-Jan-2014 16:26:15 Asia/Kolkata] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/voip91/public_html/function_layer.php:331) in /home/voip91/public_html/api/Rest.inc_sameer.php on line 114
+[09-Jan-2014 16:32:50 Asia/Kolkata] PHP Notice:  problem while insert data in 91_verifiedSipId query:INSERT INTO 91_verifiedSipId SET userId='31140' , userName='bansal_snehaR' , passwd='121212' , chainId='111113s1' , isCallShopUser=0 back trace[{"file":"\/home\/voip91\/public_html\/function_layer.php","line":3680,"function":"insertData","class":"fun","object":{"errorHandler":null,"lastInsertId":null,"querry":"INSERT INTO 91_verifiedSipId SET userId='31140' , userName='bansal_snehaR' , passwd='121212' , chainId='111113s1' , isCallShopUser=0","affected_rows":null,"client_info":null,"client_version":null,"connect_errno":null,"connect_error":null,"errno":null,"error":null,"field_count":null,"host_info":null,"info":null,"insert_id":null,"server_info":null,"server_version":null,"stat":null,"sqlstate":null,"protocol_version":null,"thread_id":null,"warning_count":null,"db":{"affected_rows":null,"client_info":null,"client_version":null,"connect_errno":null,"connect_error":null,"errno":null,"error":null,"field_count":null,"host_info":null,"info":null,"insert_id":null in /home/voip91/public_html/function_layer.php on line 331
+[09-Jan-2014 16:32:50 Asia/Kolkata] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/voip91/public_html/function_layer.php:331) in /home/voip91/public_html/api/Rest.inc_sameer.php on line 113
+[09-Jan-2014 16:32:50 Asia/Kolkata] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/voip91/public_html/function_layer.php:331) in /home/voip91/public_html/api/Rest.inc_sameer.php on line 114
+[09-Jan-2014 16:33:57 Asia/Kolkata] PHP Notice:  problem while insert data in 91_verifiedSipId query:INSERT INTO 91_verifiedSipId SET userId='31140' , userName='bansal_snehaR' , passwd='121212' , chainId='111113s1' , isCallShopUser=0 back trace[{"file":"\/home\/voip91\/public_html\/function_layer.php","line":3680,"function":"insertData","class":"fun","object":{"errorHandler":null,"lastInsertId":null,"querry":"INSERT INTO 91_verifiedSipId SET userId='31140' , userName='bansal_snehaR' , passwd='121212' , chainId='111113s1' , isCallShopUser=0","affected_rows":null,"client_info":null,"client_version":null,"connect_errno":null,"connect_error":null,"errno":null,"error":null,"field_count":null,"host_info":null,"info":null,"insert_id":null,"server_info":null,"server_version":null,"stat":null,"sqlstate":null,"protocol_version":null,"thread_id":null,"warning_count":null,"db":{"affected_rows":null,"client_info":null,"client_version":null,"connect_errno":null,"connect_error":null,"errno":null,"error":null,"field_count":null,"host_info":null,"info":null,"insert_id":null in /home/voip91/public_html/function_layer.php on line 331
+[09-Jan-2014 16:33:57 Asia/Kolkata] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/voip91/public_html/function_layer.php:331) in /home/voip91/public_html/api/Rest.inc_sameer.php on line 113
+[09-Jan-2014 16:33:57 Asia/Kolkata] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/voip91/public_html/function_layer.php:331) in /home/voip91/public_html/api/Rest.inc_sameer.php on line 114
+[09-Jan-2014 16:38:26 Asia/Kolkata] PHP Notice:  problem while insert data in 91_verifiedSipId query:INSERT INTO 91_verifiedSipId SET userId='31140' , userName='bansal_snehaR' , passwd='121212' , chainId='111113s1' , isCallShopUser=0 back trace[{"file":"\/home\/voip91\/public_html\/function_layer.php","line":3680,"function":"insertData","class":"fun","object":{"errorHandler":null,"lastInsertId":null,"querry":"INSERT INTO 91_verifiedSipId SET userId='31140' , userName='bansal_snehaR' , passwd='121212' , chainId='111113s1' , isCallShopUser=0","affected_rows":null,"client_info":null,"client_version":null,"connect_errno":null,"connect_error":null,"errno":null,"error":null,"field_count":null,"host_info":null,"info":null,"insert_id":null,"server_info":null,"server_version":null,"stat":null,"sqlstate":null,"protocol_version":null,"thread_id":null,"warning_count":null,"db":{"affected_rows":null,"client_info":null,"client_version":null,"connect_errno":null,"connect_error":null,"errno":null,"error":null,"field_count":null,"host_info":null,"info":null,"insert_id":null in /home/voip91/public_html/function_layer.php on line 331
+[09-Jan-2014 16:38:26 Asia/Kolkata] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/voip91/public_html/function_layer.php:331) in /home/voip91/public_html/api/Rest.inc_sameer.php on line 113
+[09-Jan-2014 16:38:26 Asia/Kolkata] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/voip91/public_html/function_layer.php:331) in /home/voip91/public_html/api/Rest.inc_sameer.php on line 114
+[11-Mar-2014 05:40:42 America/Chicago] PHP Parse error:  syntax error, unexpected end of file in /home/voicepho/public_html/api/api_sameer.php on line 1557
+[14-Mar-2014 13:17:16 Asia/Kolkata] PHP Fatal error:  Call to undefined method phonebook_class::getContactInfo() in /home/voicepho/public_html/api/api_sameer.php on line 2538
+[14-Mar-2014 07:34:07 America/Chicago] PHP Parse error:  syntax error, unexpected end of file in /home/voicepho/public_html/api/api_sameer.php on line 2360
+[15-Mar-2014 06:10:51 America/Chicago] PHP Parse error:  syntax error, unexpected end of file in /home/voicepho/public_html/api/api_sameer.php on line 358
+[15-Mar-2014 06:12:04 America/Chicago] PHP Parse error:  syntax error, unexpected end of file in /home/voicepho/public_html/api/api_sameer.php on line 1442
+[15-Mar-2014 06:12:46 America/Chicago] PHP Parse error:  syntax error, unexpected end of file in /home/voicepho/public_html/api/api_sameer.php on line 1442
+[20-Mar-2014 09:02:09 America/Chicago] PHP Parse error:  syntax error, unexpected end of file in /home/voicepho/public_html/api/api_sameer.php on line 1237
+[30-Apr-2014 07:57:40 America/Chicago] PHP Parse error:  syntax error, unexpected end of file, expecting ';' or '{' in /home/voicepho/public_html/api/api_sameer.php on line 2886
+[30-Apr-2014 07:59:58 America/Chicago] PHP Parse error:  syntax error, unexpected end of file, expecting ')' in /home/voicepho/public_html/api/api_sameer.php on line 1843
+[30-Apr-2014 18:49:25 Asia/Kolkata] PHP Fatal error:  Call to undefined method API::getAccessNumberViaPrefix() in /home/voicepho/public_html/api/api_sameer.php on line 2814
+[30-Apr-2014 18:49:26 Asia/Kolkata] PHP Fatal error:  Call to undefined method API::getAccessNumberViaPrefix() in /home/voicepho/public_html/api/api_sameer.php on line 2814
+[30-Apr-2014 18:51:11 Asia/Kolkata] PHP Fatal error:  Call to undefined method API::getAccessNumberViaPrefix() in /home/voicepho/public_html/api/api_sameer.php on line 2814
+[30-Apr-2014 18:51:13 Asia/Kolkata] PHP Fatal error:  Call to undefined method API::getAccessNumberViaPrefix() in /home/voicepho/public_html/api/api_sameer.php on line 2814
+[30-Apr-2014 08:21:23 America/Chicago] PHP Parse error:  syntax error, unexpected end of file in /home/voicepho/public_html/api/api_sameer.php on line 2854
+[30-Apr-2014 08:22:30 America/Chicago] PHP Parse error:  syntax error, unexpected end of file in /home/voicepho/public_html/api/api_sameer.php on line 578
+[30-Apr-2014 08:22:33 America/Chicago] PHP Parse error:  syntax error, unexpected end of file, expecting ')' in /home/voicepho/public_html/api/api_sameer.php on line 1760
+[30-Apr-2014 08:23:19 America/Chicago] PHP Parse error:  syntax error, unexpected end of file in /home/voicepho/public_html/api/api_sameer.php on line 1870
+[30-Apr-2014 08:23:20 America/Chicago] PHP Parse error:  syntax error, unexpected ''use' (T_ENCAPSED_AND_WHITESPACE), expecting ')' in /home/voicepho/public_html/api/api_sameer.php on line 2965
+[30-Apr-2014 08:31:52 America/Chicago] PHP Parse error:  syntax error, unexpected end of file in /home/voicepho/public_html/api/api_sameer.php on line 2929
+[01-May-2014 00:29:43 America/Chicago] PHP Parse error:  syntax error, unexpected end of file in /home/voicepho/public_html/api/api_sameer.php on line 1870
+[01-May-2014 00:29:52 America/Chicago] PHP Parse error:  syntax error, unexpected end of file in /home/voicepho/public_html/api/api_sameer.php on line 1870
+[01-May-2014 00:29:54 America/Chicago] PHP Parse error:  syntax error, unexpected end of file in /home/voicepho/public_html/api/api_sameer.php on line 1992
+[01-May-2014 00:30:55 America/Chicago] PHP Parse error:  syntax error, unexpected ''Invalid ' (T_ENCAPSED_AND_WHITESPACE) in /home/voicepho/public_html/api/api_sameer.php on line 1168
+[01-May-2014 00:31:15 America/Chicago] PHP Parse error:  syntax error, unexpected end of file, expecting variable (T_VARIABLE) or ${ (T_DOLLAR_OPEN_CURLY_BRACES) or {$ (T_CURLY_OPEN) in /home/voicepho/public_html/api/api_sameer.php on line 2751
+[01-May-2014 00:34:33 America/Chicago] PHP Parse error:  syntax error, unexpected end of file in /home/voicepho/public_html/api/api_sameer.php on line 2680
+[01-May-2014 11:14:39 Asia/Kolkata] PHP Fatal error:  Call to undefined function NumberLong() in /home/voicepho/public_html/api/api_sameer.php on line 2847
+[01-May-2014 00:49:59 America/Chicago] PHP Parse error:  syntax error, unexpected end of file in /home/voicepho/public_html/api/api_sameer.php on line 976
+[01-May-2014 01:04:00 America/Chicago] PHP Parse error:  syntax error, unexpected end of file, expecting ',' or ')' in /home/voicepho/public_html/api/api_sameer.php on line 2786
+[01-May-2014 01:09:43 America/Chicago] PHP Parse error:  syntax error, unexpected end of file in /home/voicepho/public_html/api/api_sameer.php on line 2030
+[01-May-2014 01:13:14 America/Chicago] PHP Parse error:  syntax error, unexpected end of file in /home/voicepho/public_html/api/api_sameer.php on line 165

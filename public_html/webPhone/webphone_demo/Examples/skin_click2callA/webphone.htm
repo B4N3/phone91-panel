@@ -1,0 +1,96 @@
+﻿<!-- 
+  You must copy the webphone.jar in this directory for this example to work.
+  Then change at least the "serverAddress" variable below.
+  *You need at least the Standard license for this to work (the basic version doesn't contain the java script API)
+  *Make sure to have the webphone.jar near this html or set the file exact path with the "archive" applet parameter
+  Copy and paste the html code from between the <body> tags into your webpage
+-->
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<title>Mizutech Click2Call</title>
+
+</head>
+<body>
+
+<script src="js/jquery-1.8.3.min.js"></script>
+<script type="text/JavaScript" src="js/curvycorners.src.js"></script>
+<script type="text/JavaScript" src="js/wp_api.js"></script>
+<script type="text/JavaScript" src="js/wp_common.js"></script>
+<script type="text/javascript">var curvyCornersNoAutoScan = true;</script>
+
+<style type="text/css">
+#btn_callhangup{ height:51px; padding:0px; margin:0px; display:inline-block; cursor:pointer; float:left; text-align:center;
+	font-family: Arial, Verdana, Helvetica, sans-serif; font-size:16px; font-weight:bold;
+	border:2px solid; border-radius: 5px; -webkit-border-radius: 5px; -moz-border-radius: 5px; }
+#btn_callhangup_inner{ height:47px; padding:0px; margin:0px; display:inline-block; cursor:pointer; text-align:center; }
+#info{ height:14px; width:100%; display:inline-block; padding:0px; margin:0px; font-size:11px; clear:both; text-align:right; }
+#info_event{ height:14px; width:100%; clear:both; display:inline-block; padding:0px; margin:0px; font-size:11px; text-align:center; }
+SPAN#credit{ font-size:11px; float:left; font-weight:bold; }
+SPAN#dtmf{ font-size:11px; float:left; font-weight:bold; }
+SPAN#status{ font-size:11px; color:#333333; font-weight:bold; }
+SPAN#displayEvent{ font-size:11px; float:left; display:inline; text-align:center; width:100%; font-weight:bold; }
+SPAN#button_title{ float:left; clear:both; text-align:center; width:100%; }
+</style>
+<div id="js_not_enabled">The webphone needs JavaScript to be enabled</div>
+
+<script type="text/javascript">
+
+	if (document.getElementById('js_not_enabled') != null)  document.getElementById('js_not_enabled').style.display = 'none';
+	
+	wp_api.attributes = { id: 'webphone', code: 'webphone.webphone.class', name: 'webphone', archive: 'webphone.jar', codebase: '.', width: 1, height: 1, alt: 'Enable or install java: http://java.com/en/download/index.jsp', MAYSCRIPT: true };
+	
+	// Webphone Configuration Settings
+	
+	wp_api.parameters = {
+					JAVA_CODEBASE: '.',
+					MAYSCRIPT: true,
+					mayscript: 'yes',
+					scriptable: true,
+					jsscriptevent: 2,
+					autocfgsave: 4,
+					permissions: 'all-permissions',
+//					loglevel: 4,
+					hasincomingcall: true,
+					
+					serveraddress: '',	// yoursipdomain.com your VoIP server IP address or domain name
+					username: 'username_here',			// SIP account username
+					password: 'password_here',			// SIP account password
+					md5: '',		// Instead of using the password parameter you can pass an MD5 checksum for better protection: MD5(username:realm:password)
+									// (The parameters are separated with the ‘:’ character)
+					realm: ''		// The realm is usually your server domain name or IP address (otherwise it is set on your server) 
+					};
+	
+	
+	wp_api.isClick2Call = true;				  //  set to true for click 2 call skin
+    wp_api.destination_number = 'callto_here';		// destination number to call
+
+    wp_api.call_button_text = 'Call';			// text showed on call button
+    wp_api.hangup_button_text = 'Hangup';		// text showed on hangup button
+	wp_api.call_button_color = '#48cd55';		// call button color
+	wp_api.hangup_button_color = '#d43434';		// hangup button color
+	wp_api.status_text_color = '#333333';		// color of displayed status messages
+    wp_api.button_width = 220;					// width of button - don't specify measurement unit
+</script>
+
+<div id="webphone_bg_container">
+	<div id="btn_callhangup" onclick="wp_common.wp_RegisterCallHangup();">
+        <div id="btn_callhangup_inner">
+            <div id="info">
+                <span id="credit" title="My account balance / My number"></span><span id="dtmf"></span>&nbsp;<span id="status" title="Call status"></span>
+            </div>
+            <div id="info_event">
+                <span id="displayEvent">&nbsp;</span>
+            </div>
+            <span id="button_title"></span>
+        </div>
+	</div>
+</div>
+<script type="text/JavaScript" src="js/wp_layoutc2c.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,945 @@
+<?php
+
+include dirname(dirname(__FILE__)) . '/config.php';
+
+class reseller_class extends fun {
+
+    function getChiildList($userId) {
+        //$userid
+        $limit = 30;
+        if (isset($page_number)) {
+            $start = ($page_number - 1) * $limit;
+        }
+        else
+            $start = 0;
+        $table = "clientsshared";
+        $this->db->select('*')->from($table)->where("id_reseller = '" . $userId . "' ")->limit($limit)->offset($start);
+        $result = $this->db->execute();
+        //var_dump($result);
+        // processing the query result
+        if ($result->num_rows > 0) {
+            while ($row = $result->fetch_array(MYSQL_ASSOC)) {
+                $returnResult["id"] = $row["id_client"];
+                $returnResult["login"] = $row["login"];
+                $response[] = $returnResult;
+            }
+        } else {
+            $response[] = "";
+        }
+        return json_encode($response);
+    }
+
+    function searchChiildList($userId, $q) {
+        //$userid
+        $limit = 30;
+        if (isset($page_number)) {
+            $start = ($page_number - 1) * $limit;
+        }
+        else
+            $start = 0;
+        if (strlen($q) < 1) {
+            $returnResult["value"] = "Empty Query";
+            $returnResult["lable"] = "Empty Query";
+            $response[] = $returnResult;
+            return json_encode($response);
+        }
+        $table = "91_manageClient";
+        $this->db->select('*')->from($table)->where("resellerId = '" . $userId . "' and userName like '" . $q . "%' ")->limit($limit)->offset($start);
+//        var_dump($this->db->getQuery());
+        $result = $this->db->execute();
+        //var_dump($result);
+        // processing the query result
+        if ($result->num_rows > 0) {
+            while ($row = $result->fetch_array(MYSQL_ASSOC)) {
+                $returnResult["lable"] = $row["userId"];
+                $returnResult["value"] = $row["userName"];
+                $response[] = $returnResult;
+            }
+        } else {
+            $response[] = "";
+        }
+        return json_encode($response);
+    }
+
+    function changeResellerSettings($request, $userid) {
+
+
+        extract($request);
+        if (($key == 'mobile' || $key == 'email') && ($value == 1 || $value == 0)) {
+            $table = '91_reseller_setting';
+            $data = array($key => $value);
+            $condition = " userid=" . $userid . " ";
+            $this->db->update($table, $data)->where($condition);
+//                var_dump($this->db->getQuery());
+            if ($result = $this->db->execute()) {
+//                    var_dump($result);
+                if ($result) {
+                    $response["msg"] = "Update Successfully";
+                    $response["msg_type"] = "success";
+                }
+            }
+        } else {
+//              $response[]="";	
+            $response["msg"] = "Update";
+            $response["msg_type"] = "error";
+        }
+        return json_encode($response);
+    }
+
+    function checkParentReseller($request, $session) {
+        /**
+         * @author Rahul
+         * @since 03 Aug 2013
+         * @param array $request Contains ["id"]//Client Id
+         * @param array $request Contains ["password"] new password to set
+         * @param array $session Contains Reseller Id 
+         */
+        $table = '91_userBalance';
+        $this->db->select('*')->from($table)->where("userId = '" . $request['clientId'] . "' and resellerId=" . $session['id']);
+        $sql = $this->db->getQuery();
+        $result = $this->db->execute();
+        if ($result->num_rows > 0) {
+            return true;
+        } else {
+            die("You Are Not Authorized To View This Page");
+        }
+    }
+
+    function resetClientPassword($request, $session) {
+        /**
+         * @author Rahul
+         * @since 03 Aug 2013
+         * @param array $request Contains ["id"]//Client Id
+         * @param array $request Contains $request["newPass"] new password to set
+         * @param array $session Contains Reseller Id 
+         */
+        //need code to verify password here $request["newPass"]
+
+        $table = '91_userLogin';
+        $data = array("password" => $request["newPass"]);
+        $condition = " userId=" . $request['clientId'] . " ";
+
+        $this->db->update($table, $data)->where($condition);
+
+        $this->db->getQuery();
+
+        $result = $this->db->execute();
+//                    var_dump($result);
+        if ($result) {
+            $response["msg"] = "Update Sccessfully";
+            $response["msg_type"] = "success";
+        } else {
+//              $response[]="";	
+            $response["msg"] = "Update";
+            $response["msg_type"] = "error";
+        }
+        return json_encode($response);
+    }
+
+    function manageClients($request, $session) {
+
+
+        $userid = $session["userid"];
+        extract($request);
+       
+
+        
+        $jade["isSearchResult"] = "false";
+        $jade["searchQuery"] = "";
+        include_once("classes/profile_class.php");
+        $pro_obj = new profile_class();
+        $limit = 10;
+        $page_number = $page_number;
+        $first_limit = 0;
+        
+        
+
+        if (isset($q) and trim($q) != '') {
+                $q = strtolower($q);
+            $result = $this->loadUsers($q, $userid, $first_limit, $limit, 3);
+
+            $jade["isSearchResult"] = "true";
+            $jade["searchQuery"] = $q;
+            
+            #check result is empty or not 
+            if(count($result) <= 0){
+                    #check for $q is number or email id  
+                    if(preg_match('/^[0-9]+$/',$q)){
+                       # search by contact number  
+                       $useridArray = $this->searchByNumber($q); 
+                    }else{
+                       # search by email id 
+                        $useridArray = $this->searchByEmail($q); 
+                    }
+                    
+                   $condition  = implode(",", $useridArray);  
+                   $newcondition = " and userId IN (".$condition.")";
+                   $result = $this->loadUsers($q, $userid, $first_limit, $limit, 3,$newcondition);
+                        
+                    
+            }
+            
+        }
+        else {
+
+            if(isset($q)){
+             $jade["isSearchResult"] = "true";
+            }
+            $result = $this->loadUsers(0, $userid, $first_limit, $limit, 3);
+        }
+        
+        
+        
+        foreach ($result as $row) {
+            $id = $row['userId'];
+            
+
+            $contact_no = '';
+            $temptable = '91_verifiedNumbers';
+	    $this->db->select('*')->from($temptable)->where("userId = '" . $id . "' and isDefault = 1");
+            $this->db->getQuery();
+	    $result = $this->db->execute();
+	    // processing the query result  
+           // var_dump($result);
+	    if ($result->num_rows > 0){
+            $norow= $result->fetch_array(MYSQL_ASSOC); 
+
+            $countryCode = $norow['countryCode'];
+            $Number = $norow['verifiedNumber'];
+                     
+            $contact_no = $countryCode."-".$Number;
+            
+            }
+/*
+            $confirm = 'No';
+            $this->db->select('*')->from('91_verifiedNumbers')->where("userId = '" . $id . "' and isDefault=1 ");
+//        echo "ssss".$this->db->getQuery();
+            $contact_result = $this->db->execute();
+//        var_dump($email_result);  
+            // processing the query result
+            if ($contact_result->num_rows == 1) {
+                $rowNumber = $contact_result->fetch_array(MYSQL_ASSOC);
+//            var_dump($rowEmail);
+//	    $email  = $rowEmail["email"];
+//	    $ccode  = $rowEmail["cntry_code"];
+                $contact_no = $rowNumber["countryCode"] . $rowNumber["verifiedNumber"];
+                $confirm = "Yes";
+            } else if ($email_result->num_rows == 0) {
+                $email = "";
+            }
+*/
+
+            $uname = $row['userName'];
+
+            $name = $row['name'];
+            $client_type = $row['type'];
+            $id_currency = $row['currencyId'];
+            $planName = $row['planName'];
+            $balance = $row['balance'];
+          
+            $data["id"] = $id;
+            $data["name"] = $name;
+            $data["uname"] = $uname;
+            $data["planName"] = $planName;
+            //$data["ccode"] = ;
+
+            $data["contact_no"] = $contact_no;
+
+
+          
+            if ($id_currency == 147) {
+                $currency = "USD";
+            } else if ($id_currency == 63) {
+                $currency = "INR";
+            } else if ($id_currency == 1) {
+                $currency = "AED";
+            }
+
+            $data["id_currency_name"] = $currency; //
+            if ($client_type == 3)
+                $data["client_type"] = "user";
+            else if ($client_type == 2)
+                $data["client_type"] = "reseller";
+            else if ($client_type == 1)
+                $data["client_type"] = "Admin";
+
+
+
+//            $data["id_tariff_desc"] = $pro_obj->getTarrif($id_tariff, "description");
+            $data["balance"] = $balance;
+
+         
+           
+            $jade["client"][] = $data;
+//            var_dump($data);
+        }
+        
+      /*  
+        $tableHeading[] = "name";
+        $tableHeading[] = "uname";
+        $tableHeading[] = "ccode";
+        $tableHeading[] = "contact no";
+        $tableHeading[] = "client_type";
+        $tableHeading[] = "balance ";
+        $tableHeading[] = "id_currency ";
+        $tableHeading[] = "id_tariff ";
+        $tableHeading[] = "id_currency_name ";
+        $tableHeading[] = "id_tariff_desc ";
+        $tableHeading[] = "confirm ";
+        $tableHeading[] = "status1 ";
+        $tableHeading[] = "status2 ";
+        $tableHeading[] = "status3 ";
+        $jade["thead"] = $tableHeading;
+        $pageStr = '';
+        $jade["totalpage"] = $pages;
+        if ($pages > 1) {
+            if (isset($_REQUEST['submit2'])) {
+                $page = $pageName . "?s_uname=" . $_REQUEST['s_uname'] . "&s_name=" . $_REQUEST['s_name'] . "&s_mobno=" . $_REQUEST['s_mobno'] . "&utype=" . $_REQUEST['utype'] . "&submit2=submit";
+            } else {
+                if (strpos($page, "?") === FALSE)
+                    $page = $page . "?";
+                else
+                    $page = $page . "&";
+                $page = $page . "rand=" . rand(100000, 1000000);
+            }
+            if (isset($_REQUEST['page_number'])) {
+                $start_page = $_REQUEST['page_number'] - 7;
+                $end_page = $_REQUEST['page_number'] + 7;
+            } else {
+                $start_page = 1;
+                $end_page = 15;
+            }
+            if ($start_page <= 0)
+                $start_page = 1;
+            if (($end_page - $start_page) < 14)
+                $end_page = 15;
+            if ($end_page > $pages)
+                $end_page = $pages;
+            $pageStr = '<div class="pagination" id="pagination"><ul>';
+            for ($i = $start_page; $i <= $end_page; $i++) {
+                if ($i == 1) {
+                    $pageStr.='<li><a id="mng_client1" href="javascript:;" onclick="loadClientData(' . $i . ')">';
+                    if ((!isset($_REQUEST['page_number'])) || ($_REQUEST['page_number'] <= 1))
+                        $pageStr.= '<b>1</b>';
+                    else
+                        $pageStr.='1';
+                    $pageStr.='</a></li>';
+                }
+                else {
+                    $pageStr.='<li ><a id="mng_client' . $i . '" href="javascript:;" onclick="loadClientData(' . $i . ')">';
+                    if ($_REQUEST['page_number'] == $i)
+                        $pageStr.= '<b>' . $i . '</b>';
+                    else
+                        $pageStr.= $i;
+                    $pageStr.='</a></li>';
+                }
+            }
+            $pageStr.='</ul></div>';
+            //echo $pageStr;		
+            //$jade["pageParam"] = $pageStr;
+        }
+        $jade["startpage"] = $start_page;
+        $jade["endpage"] = $end_page;
+//echo json_encode(array('trdata'=>$str,'paging'=>$pageStr));*/
+       
+        return json_encode($jade);
+    }
+    
+    
+    
+    
+    #created by sudhir pandey (sudhir@hostnsoft.com)
+    #creation date 03/09/2013
+    #function use for search client by contact number 
+    function searchByNumber($q){
+        $useridArray = array();
+        $table = '91_verifiedNumbers';
+        $condition = "isDefault = 1 and verifiedNumber like '%".$q."%'";
+        $this->db->select('*')->from($table)->where($condition);
+        $this->db->getQuery();
+        $result = $this->db->execute();
+         if ($result->num_rows > 0) {
+          while ($row= $result->fetch_array(MYSQL_ASSOC) ) {
+              $useridArray[] = $row['userId'];
+          }
+         }else
+             $useridArray = array();
+         
+         return $useridArray;
+         
+    }
+    
+    #created by sudhir pandey (sudhir@hostnsoft.com)
+    #creation date 03/09/2013
+    #function use for search client by email id  
+    function searchByEmail($q){
+        
+        $table = '91_verifiedEmails';
+        $condition = "default_email = 1 and email like '%".$q."%'";
+        $this->db->select('*')->from($table)->where($condition);
+        $this->db->getQuery();
+        $result = $this->db->execute();
+         if ($result->num_rows > 0) {
+          while ($row= $result->fetch_array(MYSQL_ASSOC) ) {
+              $useridArray[] = $row['userid'];
+          }
+         }else
+             $useridArray = array();
+         
+         return $useridArray;
+         
+    }
+    
+    #created by sudhir pandey (sudhir@hostnsoft.com)
+    #creation date 04/09/2013
+    #function use to find bulk client batch 
+    function bulkUserBatch($resellerId){
+        
+        $table = '91_manageClient';
+        $condition = "userId = '".$resellerId."'";
+        $this->db->select('*')->from($table)->where($condition);
+        $this->db->getQuery();
+        $result = $this->db->execute();
+         if ($result->num_rows > 0) {
+             $row= $result->fetch_array(MYSQL_ASSOC);
+             $planName = $row['planName'];
+        }
+        
+        $table = '91_bulkUser';
+        $condition = "userId = '".$resellerId."' order by batchId desc limit 0,2";
+        $this->db->select('*')->from($table)->where($condition);
+        $this->db->getQuery();
+        $result = $this->db->execute();
+         if ($result->num_rows > 0) {
+          while ($row= $result->fetch_array(MYSQL_ASSOC) ) {
+		    
+              #from user
+              $data['batchId'] = $row['batchId'];
+              $data['batchName'] = $row['batchName'];
+              $data['numberOfClients'] = $row['numberOfClients'];
+              $data['expiryDate'] = $row['expiryDate'];
+              $data['resellerId'] = $row['userId'];
+              $data['createDate'] = $row['createDate'];
+              $data['planName'] = $planName;
+                         
+              
+              $userBatchData[] = $data;
+            }
+             
+         }else $userBatchData = array();
+        
+      return json_encode($userBatchData);       
+        
+    }
+    
+
+    #created by sudhir pandey (sudhir@hostnsoft.com)
+    #creation date 29-07-2013
+    #function use for add client detial
+
+    function addNewClient($parm, $resellerid) {
+        
+       
+        #check username is blank or not
+        if ($parm['username'] == '' || $parm['username'] == NULL) {
+            return json_encode(array("status" => "error", "msg" => "Please insert user name ."));
+        }
+
+        #check country name is selected or not  
+        if ($parm['country'] == "select_country") {
+            return json_encode(array("status" => "error", "msg" => "Please Select Country Name"));
+        }
+
+        #check contact no is valid or not 
+        if (!preg_match("/^[0-9]{8,15}$/", $parm['contactNumber'])) {
+            return json_encode(array("status" => "error", "msg" => "contact no. are not valid!"));
+        }
+
+        #check email id is valid or not 
+        if (!preg_match("/^([a-z0-9\+_\-]+)(\.[a-z0-9\+_\-]+)*@([a-z0-9\-]+\.)+[a-z]{2,6}$/ix", $parm['email'])) {
+            return json_encode(array("status" => "error", "msg" => "email id is not valid !"));
+        }
+
+        #check tariff paln is selected or not 
+        if ($parm['tariff'] == "select") {
+            return json_encode(array("status" => "error", "msg" => "Please Select Tariff Plan ! "));
+        }
+
+        #chech payment type is selected or not 
+        if ($parm['payType'] == "select") {
+            return json_encode(array("status" => "error", "msg" => "Please Select Payment Type ! "));
+        }
+
+        #check total no of pins is numeric or not 
+        if (!preg_match("/^[0-9]+$/", $parm['clientBalance'])) {
+            return json_encode(array("status" => "error", "msg" => "Numeric value required in balance field ! "));
+        }
+
+        //to check if phoneno existes or not
+        $table = '91_verifiedNumbers';
+        $this->db->select('*')->from($table)->where("verifiedNumber = '" . $parm['contactNumber'] . "' and countryCode = '" . $parm['contactNo_code'] . "'");
+        $this->db->getQuery();
+        $result = $this->db->execute();
+        if ($result->num_rows > 0) {
+            return json_encode(array("status" => "error", "msg" => "Phone number already in use by another user!"));
+        }
+
+        //to check  email address already exists or not 
+        $table = '91_verifiedEmails';
+        $this->db->select('*')->from($table)->where("email = '" . $parm['email'] . "'");
+        $this->db->getQuery();
+        $result = $this->db->execute();
+        if ($result->num_rows > 0) {
+            return json_encode(array("status" => "error", "msg" => "This email address already registered!"));
+        }
+
+        #insert userdetail into database 
+        $loginTable = '91_userLogin';
+        $this->db->select('*')->from($loginTable)->where("userName = '" . $parm['username'] . "'");
+        $this->db->getQuery();
+        $result = $this->db->execute();
+        if ($result->num_rows > 0) {
+            return json_encode(array("status" => "error", "msg" => "sorry username already registered!"));
+        }
+        
+        $personalTable = '91_personalInfo';
+        $name = $this->db->real_escape_string($parm['username']);
+        $data = array("name" => $name);
+        #insert query (insert data into 91_personalInfo table )
+        $this->db->insert($personalTable, $data);
+        $qur = $this->db->getQuery();
+        $result = $this->db->execute();
+        //var_dump($result);
+        #check data inserted or not 
+        if (!$result) {
+            $this->sendErrorMail("sudhir@hostnsoft.com", "insert query fail : $qur ");
+            return json_encode(array("status" => "error", "msg" => "add user process fail! $qur"));
+        }
+
+        #user id 
+        $userid = $this->db->insert_id;
+
+        #insert login detail into login table database 
+        $loginTable = '91_userLogin';
+        $pass = $this->db->real_escape_string($parm['password']);
+        $data = array("userId" => (int) $userid, "userName" => $name, "password" => $pass, "isBlocked" => 1, "type" => 3);
+
+        #insert query (insert data into 91_userLogin table )
+        $this->db->insert($loginTable, $data);
+        $qur = $this->db->getQuery();
+        $result = $this->db->execute();
+        //var_dump($result);
+        #check data inserted or not 
+        if (!$result) {
+            $this->sendErrorMail("sudhir@hostnsoft.com", "insert query fail : $qur ");
+            return json_encode(array("status" => "error", "msg" => "add user process fail ! $qur"));
+        }
+
+
+        #user balance from plan table  
+        $balance = $parm['clientBalance'];
+        #puls 
+        $puls = 60;
+        #currency id 
+        $currency_id = 2;
+        #call limit 
+        $call_limit = 2;
+        #payment type (cash,memo,bank).
+        if($parm['payType'] == "Other"){
+        $paymentType = $this->db->real_escape_string($parm['clientotherType']);     
+        }else
+        $paymentType = $parm['payType'];
+        #description
+        $description = '';
+        
+        
+        $funobj = new fun();
+        
+        #get last chain id from user balance table  
+        $lastchainId = $funobj->getlastChainId($resellerid);
+        
+               
+        #new chain id (incremented id of lastchain id )
+        $chainId = $funobj->newChainId($lastchainId);
+      
+        
+        #insert login detail into login table database 
+        $loginTable = '91_userBalance';
+        $data = array("userId" => (int) $userid,"chainId"=>$chainId, "tariffId" => (int) $parm['tariff'], "balance" => 0, "currencyId" => (int) $currency_id, "callLimit" => (int) $call_limit, "resellerId" => (int) $resellerid);
+
+        #insert query (insert data into 91_userLogin table )
+        $this->db->insert($loginTable, $data);
+        $tempsql = $this->db->getQuery();
+        $result = $this->db->execute();
+        //var_dump($result);
+        if (!$result) {
+            $this->sendErrorMail("sudhir@hostnsoft.com", "insert query fail : $tempsql ");
+            return json_encode(array("status" => "error", "msg" => "add user process fail! $tempsql"));
+        }
+
+
+
+        #variable country code and phone no use for store contact no into 91_tempcontact table
+        $country_code = $parm['contactNo_code'];
+        $phone = $parm['contactNumber'];
+        #contact no. store into tempcomtact table
+        include_once("contact_class.php");
+        $contact_obj = new contact_class();
+        $msg = $contact_obj->update_newcontact($country_code, $phone, $userid);
+
+
+
+        #email id store into tempemail table and send varification code into email 
+        
+        $msg = $contact_obj->addnew_emailid($parm['email'], $userid);
+
+
+
+
+         #add taransaction detail into taransation log table 
+        include_once("transaction_class.php");
+        $transaction_obj = new transaction_class();
+        
+        /* CALL ADD TRANSACTIONAL FUNCTION FOR ADD TRANSACTION  : 
+         * 
+         * $resellerid : FromUser
+         * $userid : toUser
+         * $balance : amount for credit or debit
+         * $balance : talktime amount 
+         * $paymentType : cash,memo,bank
+         * $description : description of transaction 
+         * type : prepaid ,postpaid , partial
+         * 
+         */
+        
+        $msg = $transaction_obj->addTransactional($resellerid, $userid, $balance,$balance, $paymentType, $description, "prepaid"); //$fromUser,$toUser,$amount,$paymentType,$description,$type
+        
+        #get current balance form 91_userBalance table
+        $currBalance = $transaction_obj->getcurrentbalance($userid);
+        $currentBalance = ((int)$currBalance + (int)$balance);
+        
+        #update current balance of user in userbalance table 
+        $transaction_obj->updateUserBalance($userid,$currentBalance);
+
+      
+        $resellerClient = $this->loadUsers(0, $resellerid, 0, 10, 3);
+        return json_encode(array('status' => 'success', 'msg' => 'successsully client added',"resellerClient"=>$resellerClient));//,"resellerClient"=>$resellerClient
+    }
+
+    
+    function loadUsers($q,$user_id,$start_limit,$limit,$sort,$checkCondition = null)
+	{
+            
+            $condition='';
+                if($sort==0)
+			$order="lower(userName)";
+		else if($sort==1)
+			$order="balance";
+		else if($sort==2)
+			$order="balance desc";	
+		else if($sort==3)
+			$order="  userId  desc ";
+                
+                if($checkCondition == null){
+                if(isset($q) &&  strlen($q)>1)
+                    $condition=" and lower(userName) like '%".$q."%' ";
+                }else
+                    $condition = $checkCondition;
+                
+		$sql="Select * from 91_manageClient where resellerId='".$user_id."'and type != 4 $condition order by ".$order." limit ".$start_limit.",".$limit;
+		
+                $result = $this->db->query($sql);
+                
+                $resultArray = array();
+                if ($result->num_rows > 0) {
+				
+				while ($row= $result->fetch_array(MYSQL_ASSOC) ) {
+                                    $resultArray[]=$row;					
+				}
+			}
+                return $resultArray;
+	}
+    
+    function loadUserDetails($user_id, $fields = '*', $resellerId) {
+
+        $sql = "select " . $fields . " from 91_manageClient where userId='" . $user_id . "' and resellerId=" . $resellerId;
+        $result = $this->db->query($sql);
+//                var_dump($result);
+
+        if ($result->num_rows > 0) {
+
+            while ($row = $result->fetch_array(MYSQL_ASSOC)) {
+//                                    var_dump($row);	
+                return $row;
+            }
+        }
+        if (!$result)
+            return ("Unable To Fetch User Data");
+//		return $result;
+    }
+
+    function sendErrorMail($email, $mailData) {
+        require('awsSesMailClass.php');
+        $sesObj = new awsSesMail();
+        $from = "support@phone91.com";
+        $subject = "Phone91 Error Report";
+        $to = $email;
+        $message = $mailData;
+        $response = $sesObj->mailAwsSes($to, $subject, $message, $from);
+    }
+    
+    
+    #created by sudhir pandey <sudhir@hostnsoft.com>
+    #creation date 27/08/2013
+    #function use for edit fund of user 
+    function editFund($parm,$userid){
+        
+      $funobj = new fun();
+      
+      #check permission for edit fund or not 
+      $resellerId = $funobj->getResellerId($parm['toUserEditFund']);  
+      
+      if($resellerId != $userid){
+          return json_encode(array("status" => "error", "msg" => "you have no permission for edit fund ."));
+      }
+        
+      #include transaction class   
+      include_once("transaction_class.php");
+      
+      #object of transaction class
+      $transaction_obj = new transaction_class();
+      
+      //********* update closing Amount 
+      
+      #get closing Amount of user 
+      $amount = $transaction_obj->getClosingBalance($parm['toUserEditFund']);  
+      
+      
+      $fundAmount = $parm['fundAmount'];
+      $talktime = $parm['balance'];
+      $pType = $parm['pType'];
+      
+      #check amount add or reduce in closing amount 
+      if($parm['changefunderEditFund'] == "add"){
+        #new updated amount current amount + given amount  
+        $updatedAmount = $amount + $parm['fundAmount']; 
+      }else{
+        $updatedAmount = $amount - $parm['fundAmount']; 
+        
+        $fundAmount = ((int)-$parm['fundAmount']);
+        $pType = "";
+        
+        
+      }
+      
+      
+      
+      //********** update balance of user 
+      
+      $balance = $transaction_obj->getcurrentbalance($parm['toUserEditFund']);
+      
+      #check balance add or reduce in currentbalance 
+      if($parm['changefunderEditFund'] == "add"){
+        #new updated amount current amount + given amount  
+        $updatedBalance = $balance + $parm['balance']; 
+      }else{
+        $updatedBalance = $balance - $parm['balance']; 
+        $talktime = ((int)-$parm['balance']); 
+        
+      }
+      
+      
+      
+      //********** entry in transaction log table
+      if($parm['fundPaymentType'] == "Other"){
+        $fundpaymentType = $this->db->real_escape_string($parm['otherPaymentType']);     
+      }else
+        $fundpaymentType = $parm['fundPaymentType'];
+        
+      #add transaction in case of voip91(payment type).
+      $result = $transaction_obj->addTransactional($userid,$parm['toUserEditFund'],$fundAmount,$talktime,$fundpaymentType,$parm['fundDescription'],$pType,$parm['partialAmt']);
+      
+      #update user balance table 91_userbalance table
+      $transaction_obj->updateUserBalance($parm['toUserEditFund'],$updatedBalance); 
+      
+      if($parm['changefunderEditFund'] != "add"){
+      #update user closing Amount into 91_closingAmount table
+      $transaction_obj->updateClosingBalance($parm['toUserEditFund'],$updatedAmount); 
+      }
+      if($result == 1){
+          return json_encode(array("status" => "success", "msg" => "successfully update user fund ."));
+      }
+      
+      
+    }
+
+    
+    #created by sudhir pandey <sudhir@hostnsoft.com> 
+    #creation date 07/08/2013
+    #function use to edit client information 
+    function editClientInfo($parm,$userId){
+        
+//    [action] => editClientInfo
+//    [clientName] => molu
+//    [clientId] => 76597
+//    [callLimit] => 2
+//    [currenctTariff] => 171
+         
+        
+        
+//        #check contact no is valid or not 
+//        if (!preg_match("/^[0-9]{8,15}$/", $parm['contactNo'])) {
+//            return json_encode(array("status" => "error", "msg" => "contact no. are not valid!"));
+//        }
+//        
+//        #check contact no is valid or not 
+//        if (!preg_match("/^[0-9]{8,15}$/", $parm['contactNo'])) {
+//            return json_encode(array("status" => "error", "msg" => "contact no. are not valid!"));
+//        }
+        
+            
+        
+         #table name 
+         $table = "91_userBalance";
+         #update balance amount of user 
+         $data=array("callLimit"=>$parm['callLimit'],"tariffId"=>$parm['currenctTariff']); 
+         $condition = "userId=".$parm['clientId']." ";
+         $this->db->update($table, $data)->where($condition);	
+         #get update sql query 
+         $qur = $this->db->getQuery();
+         $results = $this->db->execute();
+         if($results){
+           return json_encode(array("status" => "success", "msg" => "successfully user information updated ."));
+         }  else {
+           return json_encode(array("status" => "", "msg" => "user information not update.".$qur));
+         }
+        
+         
+        
+        
+        
+   
+      
+        
+        
+        
+    }
+    
+    #created by sudhir pandey <sudhir@hostnsoft.com>
+    #creation date 04/09/2013
+    #function use to get User batch detail by batchId 
+    function getBatchDetail($batchId){
+        #table name 
+        $table = '91_bulkUser';
+        $condition = "batchId = '".$batchId."'";
+        $this->db->select('*')->from($table)->where($condition);
+        $this->db->getQuery();
+        $result = $this->db->execute();
+         if ($result->num_rows > 0) {
+         $row = $result->fetch_array(MYSQL_ASSOC);	    
+             
+              $userBatchData['batchId'] = $row['batchId'];
+              $userBatchData['batchName'] = $row['batchName'];
+              $userBatchData['numberOfClients'] = $row['numberOfClients'];
+              $userBatchData['expiryDate'] = $row['expiryDate'];
+              $userBatchData['resellerId'] = $row['userId'];
+              $userBatchData['createDate'] = $row['createDate'];
+            }
+            
+        #find user balance and user id for all user of given batch id     
+        $table = '91_userBalance';
+        $condition = "userBatchId = '".$batchId."'";
+        $this->db->select('*')->from($table)->where($condition);
+        $this->db->getQuery();
+        $result = $this->db->execute();  
+        if ($result->num_rows > 0) {
+          while ($data= $result->fetch_array(MYSQL_ASSOC) ) {
+              $userdata['userId'] = $data['userId'];
+              $userdata['balance']= $data['balance'];
+              $userdata['status']= $data['status'];
+              
+              #find user name and password 
+               $table = '91_userLogin';
+               $condition = "userId = '".$data['userId']."'";
+               $this->db->select('*')->from($table)->where($condition);
+               $this->db->getQuery();
+               $loginresult = $this->db->execute();
+               if ($loginresult->num_rows > 0) {
+               $logindata = $loginresult->fetch_array(MYSQL_ASSOC);
+              
+             $userdata['userName'] = $logindata['userName'];
+             $userdata['password'] = $logindata['password'];  
+               }
+             $userBatchData['userDetail'][] = $userdata;
+          }     
+        }else
+             $userBatchData['userDetail'] = array(); 
+        
+      return json_encode($userBatchData);       
+        
+        
+    }
+    
+    #created by sudhir pandey (sudhir@hostnsoft.com)
+    #creation date 05/09/2013
+    #function use for change bulk client status used or unused username and password . 
+    function changeBulkClientStatus($parm,$resellerId){
+       
+        #check user permission for update status  
+        $funobj = new fun();
+        $checkId = $funobj->getResellerId($parm['userid']); 
+        if($checkId != $resellerId){
+            return json_encode(array("status" => "error", "msg" => "you have no permession for update status."));
+        }
+                
+        #table name 
+        $table = "91_userBalance";
+        #update balance amount of user 
+        $data=array("status"=>$parm['status']); 
+        $condition = "userId=".$parm['userId']." ";
+        $this->db->update($table, $data)->where($condition);	
+        #get update sql query 
+        $qur = $this->db->getQuery();
+        $results = $this->db->execute();
+        if($results){
+             return json_encode(array("status" => "success", "msg" => "successfully status update."));
+        }
+        
+    }
+    
+    #created by sudhir pandey (sudhir@hostnsoft.com)
+    #creation date 05/09/2013
+    #function use for search bulk user username and password 
+    function searchBulkClient($parm){
+        
+       
+        $table = '91_manageClient';
+        $condition = "userBatchId = '".$parm['batchId']."' and userName like '%".$parm['searchData']."%'";
+        $this->db->select('*')->from($table)->where($condition);
+        $this->db->getQuery();
+        $result = $this->db->execute();
+         if ($result->num_rows > 0) {
+          while ($row= $result->fetch_array(MYSQL_ASSOC) ) {
+              $userdata['userId'] = $row['userId'];
+              $userdata['balance']= $row['balance'];
+              $userdata['status']= $row['status'];
+              $userdata['userName'] = $row['userName'];
+              $userdata['password'] = $row['password'];  
+               
+              $bulkUserData[] = $userdata;
+              
+          }
+         
+          }else
+              $bulkUserData[] = array();
+          
+          
+        
+        return json_encode($bulkUserData);       
+    }
+    
+    
+}
+
+//end of class
+?>

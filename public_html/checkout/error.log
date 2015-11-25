@@ -1,0 +1,4 @@
+Fri, 15 Feb 2013 01:28:46 -0600
+Fatal error in line 38 of file/home/voip91/public_html/checkout/ResponseHandlerAPIFunctions.php
+- include(MerchantCalculationsAPIFunctions.php): failed to open stream: No such file or directory
+

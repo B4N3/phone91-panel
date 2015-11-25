@@ -1,0 +1,232 @@
+@charset "utf-8";
+/* CSS Document 
+this stylesheets is for new msg91 panel design
+author : sarfaraz@hostnsoft.com
+about stylesheet this  stylesheet is designed for future changes it contains some sections like :
+1. common css
+2. structure css
+3. content css by pages
+it is also designed for dynamic colors:
+*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, form, label, table, caption, tbody, tfoot, thead, tr, th, td,select,input,button, textarea{
+	margin: 0; 
+	padding: 0;
+	font-family:'lucida grande', tahoma, verdana, arial, sans-serif;
+}
+body{
+	font-size:13px;
+}
+a:link, a:visited, a:active{text-decoration:none;}
+/*-------------------------common css start from here---------------------*/
+.dn{display:none;}/*-------------------------for displaying properties---------------------*/
+.db{display:block;}
+.di{display:inline-block;}
+
+.fl{float:left;}/*-------------------------for floating or clear---------------------*/
+.fr{float:right;}
+.cl{clear:both;}
+
+.ln{list-style:none;}
+.cr, .cmnul li{cursor:pointer;}
+.cmnzind{z-index:999;}
+strong{font-weight:bold;}
+/*------------------------------------for margin properties---------------------*/
+.marg{margin:5px;}
+.marg1{margin:10px;}
+.tmarg{margin-top:5px;}
+.lmarg{	margin-left:5px;}
+.rmarg{	margin-right:5px;}
+.bmarg{	margin-bottom:5x;}
+.tmarg1{margin-top:10px;}
+.lmarg1{margin-left:10px;}
+.rmarg1{margin-right:10px;}
+.bmarg1{margin-bottom:10px;}
+.tmarg2{margin-top:20px;}
+.lmarg2{margin-left:20px;}
+.rmarg2{margin-right:20px;}
+.bmarg2{margin-bottom:20px;}
+/*------------------------------------for padding properties---------------------*/
+.pad{padding:5px;}
+.pad1{padding:10px;}
+.tpad{padding-top:5px;}
+.lpad{padding-left:5px;}
+.rpad{padding-right:5px;}
+.bpad{padding-bottom:5px;}
+.tpad1{padding-top:10px;}
+.lpad1{padding-left:10px;}
+.rpad1{padding-right:10px;}
+.bpad1{padding-bottom:10px;}
+.tpad2{padding-top:20px;}
+.lpad2{padding-left:20px;}
+.rpad2{padding-right:20px;}
+.bpad2{padding-bottom:20px;}
+
+/*------------------------------------------for border properties---------------------*/
+.brd{ border:1px solid #ddd;}
+.brL{border-left:1px solid #ddd;}
+.brR{border-right:1px solid #ddd;}
+.brT{border-top:1px solid #ddd;}
+.brB{border-bottom:1px solid #ddd;}
+
+/*------------------------------------------for font-weight properties---------------------*/
+.fn{font-weight:normal;}
+.flite{font-weight:lighter;}
+.fb{font-weight:bold;}
+/*------------------------------------------for increase or decrease font-size properties---------------------*/
+.f10{font-size:10px;}
+.f11{font-size:11px;}
+.f12{font-size:12px;}
+.f13{font-size:13px;}
+.f14{font-size:14px;}
+.f15{font-size:15px;}
+.f16{font-size:16px;}
+.f20{font-size:20px;}
+.f24{font-size:24px;}
+/*------------------------------------------for background color properties---------------------*/
+.witbg{ background-color:#fff;}
+.blkbg{ background-color:#000;}
+.dgryg{background-color:#313131;}
+.lgrybg{ background-color:#eeeeee;}
+.dredbg{background-color:#CC0000;}
+.orngbg{background-color:#FF6600;}
+.lyelwbg{background-color:#D4BB6B;}
+.lgrnbg{background-color:#75A319;}
+
+/*------------------------------------------for fixed background color for theme properties---------------------*/
+.darkgrey{background-color:#313131;}
+.hotred{background-color:#CC0000;}
+.cherishred{background-color:#e40519;}
+.lightgreen{background-color:#50b043;}
+.green{background-color:#007d39;}
+.cyan{background-color:#03B3B2;}
+.darkcyan{background-color:#1b818c;}
+.lightblue{background-color:#5DB2FF;}
+.blue{background-color:#0072C6;}
+.cyanblue{background-color:#03A5D4;}
+.orange{background-color:#FF8F32;}
+.pink{background-color:#e0448b;}
+.yellow{background-color:#f7c23e;}
+.mehroon{background-color:#cd3f31;}
+.purple{background-color:#64367e;}
+
+/*------------------------------------------for fixed background color for theme properties---------------------*/
+.darkgreyfnt{color:#313131;}
+.hotredfnt{color:#CC0000;}
+.cherishredfnt{color:#e40519;}
+.lightgreenfnt{color:#50b043;}
+.greenfnt{color:#007d39;}
+.cyanfnt{color:#03B3B2;}
+.darkcyanfnt{color:#1b818c;}
+.lightbluefnt{color:#5DB2FF;}
+.bluefnt{color:#0072C6;}
+.cyanbluefnt{color:#03A5D4;}
+.orangefnt{color:#FF8F32;}
+.pinkfnt{color:#e0448b;}
+.yellowfnt{color:#f7c23e;}
+.mehroonfnt{color:#cd3f31;}
+.purplefnt{color:#64367e;}
+
+/*------------------------------------------for common position properties---------------------*/
+.pa{position:absolute;}
+.pr{position:relative;}
+.pf{position:fixed;}
+.top{top:0;}
+.left{left:0;}
+.right{right:0;}
+.bottom{bottom:0;}
+.b30{bottom:30px;}
+.l200{left:200px;}
+.t40{top:40px;}
+.t38{top:38px;}
+.r10{right:10px;}
+/*------------------------------------------for common fixed font-color properties---------------------*/
+.navi li a, .clr6, .cmnul{
+	color:#666;
+}
+.und a:hover{
+	text-decoration:underline;
+}
+.witclr{ color:#fff;}
+/*------------------------------------------for structure properties---------------------*/
+#leftside{
+	width:198px;
+}
+#header{
+	height:40px;
+	z-index:99
+}
+#hdrbtm{
+	height:20px;
+	z-index:2
+}
+#maincontent{
+}
+#footer{
+	height:29px;
+	line-height:29px;
+}
+/*------------------------------------------for navigations properties---------------------*/
+.navi li{
+	height:30px;
+	line-height:30px;
+}
+.navi li a{
+	display:block;
+	border-left:10px solid #fff;
+	padding-left:20px;
+}
+/*------------------------------------------for footer link or properties---------------------*/
+#ftrlink a{
+	margin:0 10px;
+}
+/*------------------------------------------for header link or properties---------------------*/
+.hlihit{line-height:40px;}
+#heading{ 
+	background:url(hd-vert.png) no-repeat top right;
+	padding-right:25px;
+}
+.hdicons{
+	background:url(text-sms.png) no-repeat;
+	width:34px;
+	height:25px;
+	margin-top:7px;
+}
+.dwnarw{
+	width:12px;
+	height:40px;
+	background:url(down-arw.png) no-repeat;
+}
+.usericon{
+	width:24px;
+	height:40px;
+	background:url(userico.png) no-repeat;
+}
+.cmnul li{
+	padding:5px 10px;
+}
+.cmnul li:hover{
+	background:#eee;
+}
+#showheading{
+	left:5px;
+	width:170px;
+}
+#showroute{
+	width:100px;
+}
+.hbtn{
+	height:30px;
+	line-height:30px;
+	padding:0 15px;
+	background-color: rgba(0, 0, 0, 0.18);
+}
+.hbtn:hover{
+	background-color: rgba(0, 0, 0, 0.3);
+}
+/*------------------------------------------for header bottom div properties---------------------*/
+#routeul li{
+	float:left;
+	height:20px;
+	line-height:20px;
+	padding:0 15px;
+}

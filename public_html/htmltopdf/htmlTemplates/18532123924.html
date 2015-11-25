@@ -1,0 +1,56 @@
+<div id="srchBox">
+      <div class="icon24 icon-srch closeQsrch fr"></div>
+      <div id="srchWrap">
+	   <input type="text" id="msInput" name="" class="uField" placeholder="Search Accounts" ng-keyup="searchByStr()" ng-model="accSearch">
+      </div>
+    </div>
+    <div class="cl"></div>
+    <div class="oh pdB pdL1 pdR1 bdrB"> 
+      <!--<span class="icon24 icon-hidden fl ptr mrR tip" title="Show Hidden Groups" onclick="showHiddenGroups(this);"></span>--> 
+      <span class="icon24 icon-expand fr ptr mrR coexTip" title="Collapse" onclick="collapseExpand(this);"></span> </div>
+    <div id="accountList" class="menu">
+	<div id="loader" ng-hide="groupAccListLoader">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+      <ul class="accordion group mrL pdT">
+        <li> 
+          <!--<div class="title main accounts active"><a href="javascript:;"><span class="icon24 icon-accounts"></span> Accounts</a></div>-->
+          <ul id="ul_0" class="accBox mUl" style="border-left:none">
+	      <li ng-repeat="(key,groupAcc) in groupAccList   " class="group pr" id="li_{{groupAcc.groupId}}">
+		  <span class="quickSelect">{{groupAcc.groupName}}
+		  </span>
+		  <div class="title accBdrL LIB{{groupAcc.groupId}} active">
+		      <a href="javascript:;" ng-click="changeClass($event)">{{groupAcc.groupName}}</a>
+		  </div>
+		 
+		  <ul class="accBox mUl " id="ul_{{groupAcc.groupId}}">
+		      <li ng-repeat="(index,accDtl) in groupAcc.accountDetails" class="mLi" id="ac_{{accDtl.accountId}}">
+                          
+<!--			  <div class="smlSquare LIB"> {{accDtl.charId}}</div>--> 
+                          
+                          
+                          <div ng-class="accDtl.charId ==1 ? 'smlSquare LIB' : 'smlSquare ASS'" > </div>
+                          
+			
+<!--                            <div  ng-switch on="accDtl.charId">
+                                <ng-switch-when="1" ng-class="smlSquare LIB">
+                                <ng-switch-when="2" ng-class="'smlSquare ASS">
+                            </div> -->
+
+
+
+
+			  <a ng-click="loadLedger(accDtl,groupAcc.groupId)" href="javascript:">{{accDtl.accountName}}</a>
+			  <span class="quickSelect"></span>
+		      </li>
+		  </ul>
+	      </li>
+          </ul>
+        </li>
+        <!--#/ledger?name=QkhBUkFU&amp;acc_char=pa&amp;grp_name=Q0FQSVRBTCBBQ0NPVU5U&amp;status_acc=onRecord&amp;ac_id={{accDtl.accId}}&amp;gr_id={{groupAcc.groupId}}&amp;accCurrency=INR-->
+      </ul>
+    </div>

@@ -1,0 +1,25 @@
+/* CSS Document */
+.wrapper { width:1000px; margin:0 auto; }
+
+@media only screen and (max-width : 1024px), (max-device-width:1024px) {
+.wrapper, .innerBanner { width:90%; margin:0 auto;}
+.bannerImg { display:none;}
+.searchFields.col2 { width: 100%;}
+.innerContainer, .howItsWorks, #footer div, #bottomFooter .innerFooter { width:90%; overflow:hidden;}
+}
+
+@media only screen and (max-width : 800px), (max-device-width:768px) {
+.vidoesPhone { width: 100%; height:inherit;}
+.vidoesPhone iframe { width:100%; min-height:380px; height:inherit;}
+}
+
+@media only screen and (max-width : 600px), (max-device-width:600px) {
+.formGet input[type="submit"] { width:15%;}
+.formGet input[type="text"] { width: 85%;}
+section.innerFooter aside { width:100%; float:none; margin-bottom:20px;clear:both;}
+#signupForm, .searchFields form input[type="text"], .searchFields form input[type="password"], .searchFields form input[type="email"] { width: 100%;}
+#header a#logo { float:none; margin:0 auto 10px;}
+#header nav { float:none; margin:0 0 10px 0;}
+}
+
+@media only screen and (max-width : 480px), (max-device-width:480px) {}

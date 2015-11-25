@@ -1,0 +1,146 @@
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video,hr,input,textarea,select,radio,a{	margin: 0; padding: 0;  outline:none}
+/* common */
+input, textarea, select, input[type="submit"], input[type="button"]{	-webkit-box-sizing: border-box;-moz-box-sizing: border-box;  box-sizing: border-box; border:0; outline:none}
+.oh{overflow:hidden}.oyAuto{overflow-y:auto}.oxAuto{overflow-x:auto}
+.db{display:block}.dn{display:none}
+.wrapper .decriptPadd{ margin-bottom:40px}
+h1,h2,h3,h3,h4,h6{ font-weight:normal}
+h4{ font-size:16px; font-weight:600}
+#banner h1, #banner h2 {    text-shadow: 0 0 2px #000000}
+.clrTrns { -webkit-transition: color .25s linear;-moz-transition: color .25s linear;-o-transition: color .25s linear; transition: color .25s linear}
+.bdrTrns { -webkit-transition: border .25s linear; -moz-transition: border .25s linear; -o-transition: border .25s linear; transition: border .25s linear}
+.bgTrns { -webkit-transition: background .25s linear; -moz-transition: background .25s linear; -o-transition: background .25s linear; transition: background .25s linear}
+.btn { color:#fff; font-weight:600; display:inline-block; background:#555; font-size:15px; padding:7px 15px}
+#header, #banner,  #container, #footer,  #subfooter, .resizeNav, #logo, .pageName,  #nav, #features ul li, .welcome p, p.bigD, #leftmap, #form{transition:all .5s ease-in-out;   -o-transition:all .5s ease-in-out;     -moz-transition:all .5s ease-in-out;     -webkit-transition:all .5s ease-in-out}
+.btn:hover { background:#FF6760; color:#fff}
+.fl{float:left}.fr{float:right}
+.cl{clear:both}.clL{clear:left}.clR{clear:right}
+.col2{width:50%}
+.col3{width:33.333%}
+.col4{width:25%}
+.pa{position:absolute}.pr{position:relative}.pf{position:fixed}
+.mrT2{margin-top:20px} 
+/* ---------------css common for body----------- */
+body{font-family: 'Open Sans', sans-serif; color:#939393; font-weight:normal; font-size:14px}
+ul li{list-style-type:none; display:inline}
+a{text-decoration:none;cursor:pointer; color:#6C8AFF}
+a:hover, a:active,  a:focus { color:#555}
+input[type='text'], input[type='email'], input[type='password']{   background: #FDFDFD;    border: 1px solid #F3F3F3;width:260px; height:30px; padding:0 5px; outline:none; color:#999}
+textarea, select{background:#f9f9f9; border:1px solid #ddd; padding:5px;  color:#999}
+/* ---------------header css----------- */
+#header{  height: 60px;    padding: 20px 0}
+#header a{text-decoration:none}
+.wrapper{width:1000px; margin:0 auto}
+#logo{float:left}
+#toplinks{float:right}
+#toplinks ul li:last-child{  border-left: 1px solid #ECECEA;    margin-left: 5px;    padding-left: 10px;}
+#toplinks ul li a{color:#f03c02; font-size:12px;font-weight:500}
+#toplinks ul li a span{background:url(../images/icons.png); width:16px; height:16px; display: block; float: left;padding-right:5px; margin: 2px 0}
+#nav{margin-top:12px; float:right}
+#nav ul li a{color:#939393;font-size:16px; margin-left:30px; font-weight:500; border-bottom:4px solid #fff}
+#nav ul li a:hover, #nav ul li a.active, #nav ul li a:hover:not(.disabled), #nav ul li a:focus:not(.disabled) {color:#f03c02; border-bottom:4px solid #F03C02}
+/* ---------------banner css----------- */
+#banner{  background-position: center center;  -webkit-background-size: cover;  -moz-background-size: cover;  -o-background-size: cover;  background-size: cover; padding: 100px 0;    text-align: center}
+#banner.home{background-image:url(../images/bannerimg.png)}
+#banner.about{background-image:url(../images/banner-about.png)}
+#banner.pricing{background-image:url(../images/banner-pricing.png)}
+#banner.contact{background-image:url(../images/banner-contact.png)}
+#banner h1{color:#fff; font-size:42px; letter-spacing:2px}
+#banner h2{color:#fff; font-size:1.8em; font-weight:300}
+a#getin{      background:#FF6760;    color: #FFFFFF;    display: inline-block;    font-size: 14px;    font-weight: bold;    margin-top: 20px;    padding: 15px; text-transform:capitalize} 
+.wrapper p.bigD { width:100%}
+a#getin:hover{ opacity:.9}
+/* ---------------container css----------- */
+#container{padding:40px 0; clear:both; overflow:hidden; min-height:500px}
+#container h3{ clear: both;   color: #FF6760;    font-size: 25px;    font-weight: normal;    margin-bottom: 40px;}
+#container h3.lessSpace { margin-bottom:25px}
+#container h3 .line{   border-top: 1px dotted #F1F1F1;    margin: 10px 0 0;    position: relative;}
+#container h3 .line span {    background:#FF6760;    display: block;    height: 5px;    left: 0;    position: absolute;    top: -3px;    width: 70px;}
+#welcome p {    font-size: 1.2em;    font-weight: 500}
+.welcome img{  border: 1px solid #F8F8F8;    float: left;    margin-right: 20px;    padding: 5px}
+.welcome p, p.bigD{   float: left;    line-height: 26px;    margin:0 0 25px;    width: 685px}
+p span.big{   color: #FF6760;    float: left;    font-size: 98px;    font-weight: 700;    line-height: 70px;    margin-right: 10px}
+#features ul li{padding:20px 40px; width:25%; float:left; text-align:center;color:#333}
+.circle{width: 40px; border-radius:50px; background:#ff6760; margin:0 auto; padding:30px}
+.circle:hover { background:#FF3E33}
+.circle .icont{width:36px; height:36px;background:url(../images/icons.png)}
+.circle .icont.i1{background-position:0 -16px}
+.circle .icont.i2{background-position:-36px -16px}
+.circle .icont.i3{background-position:-72px -16px}
+#features ul li .fhead{color: #666666;    font-size: 1.5em;    margin:20px 0; font-weight:lighter}
+#features { margin:30px 0 0 0}
+#features ul li a.lmore{color:#f03c02; display:block; margin-top:10px}
+/* ---------------footer css----------- */
+#footer{background:#333; text-align:center;color:#e0e0e0; padding:50px 0}
+#footer .fheading{font-size:2.6em; font-weight:700}
+#footer .fsub{font-size:1.3em}
+ul#cntct{width:800px; margin:0 auto; text-align:left; font-size: 15px}
+ul#cntct li{margin:25px 25px 0; float:left}
+ul#cntct li span{background:url(../images/icons.png); width:16px; height:16px; display: block; float: left;margin: 4px}
+ul#cntct li span.c1{background-position:-16px 0}
+ul#cntct li span.c2{background-position:-32px 0}
+ul#cntct li span.c3{background-position:-48px 0}
+/* ---------------subfooter css----------- */
+#subfooter{background:#222; color:#e0e0e0; font-size:13px; padding:20px 0}
+ul#social {float:right}
+ul#social li{background:url(../images/icons.png); width:16px; height:16px; display: block;float: left;margin-left:10px; border:3px solid #444; text-indent:-9999em}
+ul#social li:hover{border:3px solid #555}
+ul#social li.s1{background-position:-64px 0}
+ul#social li.s2{background-position:-80px 0}
+ul#social li.s3{background-position:-96px 0}
+ul#social li.s4{background-position:-112px 0}
+/*Resposnive menus dropdowns*/
+.dropdwn{   background-clip: padding-box;    background-color: rgb(255, 255, 255);    border: 1px solid rgba(0, 0, 0, 0.2);    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);    display: none;    list-style: none outside none;    min-width: 150px;    position: absolute;    right: -1px;    top: 19px;    z-index: 99}
+.resizeNav { float:right; margin:15px 0 0 0}
+ .resizeNav .resizeIcn {    border-radius: 2px 2px 2px 2px;    color: rgb(255, 255, 255);    display: inline-block;    font-size: 13px;    font-weight: normal;    height: 21px;    line-height: 17px;    margin-left: 0;    padding: 0 5px 0 4px; letter-spacing:-2px; background:#999; color:#fff}
+.resizeNav .resizeIcn.active, .resizeNav .resizeIcn:hover { color:#ddd}
+ .dropdwn a {  background: rgba(0, 0, 0, 0);    color: rgb(51, 51, 51);    display: block;    float: none;    font-size: 15px;    height: 20px;    line-height: 20px;    margin: 0;    padding: 10px; border-radius:0}
+.dropdwn a:hover,   .dropdwn a.active { background: rgb(240, 60, 2); color:#fff}
+.pageName{     float: left;    font-size: 15px;    margin:18px 0 0 23px;    text-align: left;    text-transform: capitalize; display:none}
+
+#contact{font-size:13px;}
+#leftmap{ border: 1px solid #EEEEEE;    float: left;    height: 430px;    width: 50%;}
+#form{ float: right;    width: 47%;}
+#form h4{font-size:24px; color:#666;}
+#form p{font-weight:600; line-height:22px;}
+#form input{margin-top:20px;}
+#form textarea{width:100%; height:100px; margin-top:20px;}
+#form #submit{background:#ff6760; color:#fff; font-weight:bold; padding:10px; width:100px; display:block; border:none;}
+#form #submit:hover { opacity:0.9}
+
+
+
+@media screen and (max-width:1440px) {
+#container, #footer .inner, #subfooter, #header .wrapper, #footer { padding-left:20px; padding-right:20px}
+.welcome p, p.bigD { width:	}	
+}
+@media screen and (max-width:1024px) {
+.wrapper  { width:auto}
+.welcome p, p.bigD { width:630px}
+}
+@media screen and (max-width:975px) {
+#container .col-3 { width:100%; float:none; display:block; clear:both; overflow:hidden}
+.resizeNav { display:block}
+#nav, #toplinks { display:none}
+.formGet input[type="text"] { width:92.7%}	
+.formGet input[type="submit"] { width:7.3%}
+.pageName { display:block}
+#stcnt .col4 { width:100%; float:none}
+#features ul li { width:100%; float:none}
+#footer { text-align:left}
+ul#cntct li{  display: block;    float: none;    margin: 25px 0 0;    width: 100%}
+.welcome img { float:none; max-width:95%; height:auto; margin-bottom:20px; min-width:95%}  .welcome p, p.bigD{ width:100%; float:none}
+ul#cntct { width:100%}
+#leftmap { margin-right:35px}
+}
+@media screen and (max-width:760px) {
+.termsConditin { margin:0}
+#banner h1 { font-size:29px}
+#banner { padding-top:20px}
+ul#social li { margin:0} ul#social { float:left; margin:10px 0 0 0}
+#leftmap{ float:none; width:100%}
+#form {  float: none;    margin:25px 0 0 0;    width: 100%}
+}
+@media screen and (max-width:500px) {
+.bankDtl .col3{ clear:both; float:none; margin-bottom:20px;}
+}

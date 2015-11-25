@@ -1,0 +1,126 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Generated pdf html</title>
+<link href="css/style005.css" rel="stylesheet" type="text/css" />
+<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+<style>
+/*common*/
+body, input, textarea, select {font-family: 'Open Sans', sans-serif; font-weight:100; font-size:14px; color: #444}
+.fl{float:left}.fr{float:right}
+.cl{clear:both}
+.alL{text-align: left}.alC{text-align: center}.alR{text-align:right}
+.fwB,b{font-weight:bold}
+.pd1{padding:10px}
+.mrT3{margin-top:30px}
+.mrT4{margin-top:40px}.mrB4{margin-bottom:40px}
+.col1{width:70%}
+.col2{width:50%}
+.col3{width:30%}
+
+/*this page*/
+#wrap{width:1024px; margin:20px auto; font-size:14px; border:1px solid #ddd; padding:40px 40px 100px; background-color:#fff; box-sizing:border-box; box-shadow:0 0 7px #aaa;}
+table {width:100%; margin:30px 0}
+thead, tfoot{font-size: 16px;}
+th{border-bottom:2px solid #ddd}
+td, th {padding:5px 0;}
+.serTax td{border-top:2px solid #ddd; border-bottom:2px solid #333;}
+.lit{color:#999}
+</style>
+</head>
+ 
+<body bgcolor="#ddd">
+    <div id="wrap">
+        <img src="http://taskb.in/images/logo.jpg"/>
+        <h2 class="mrT mrB4 alC">INVOICE</h2>
+        
+        <div class="fl col1"><h3 style="margin:0"><%cmpName%></h3> <%cmpAddress%></div>
+
+		<div class="fr col3" align="right">Date : <%date%><br>
+        Invoice No. : <%invoiceNo%><br>
+        PO No. : <%poNumber%>
+        </div>
+        
+		<div class="cl"></div>
+        
+        <div class="mrT4 pd1" style="border:2px solid #ddd;">
+        	<div class="fl col2">
+            	<%userName%><br>
+            	<b><%userCmp%></b>
+            </div>
+            <div class="fr col2" align="right">
+               <%userAddress%>
+            </div>
+            <div class="cl"></div>
+        </div>
+        
+        <table class="itemTbl" cellpadding="0" cellspacing="0" border="0">
+        	<thead>
+            <tr>
+            	<th class="alL">ITEMS</th>
+                <th align="right">Amount <%currency%></th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+            	<td><%itemQuantity1%> <%itemName1%></td>
+                <td align="right"><%itemAmount1%> <%currency1%></td>
+            </tr>
+            <tr>
+            	<td><%itemQuantity2%> <%itemName2%></td>
+                <td align="right"><%itemAmount2%> <%currency2%></td>
+            </tr>
+            <tr>
+            	<td><%itemQuantity3%> <%itemName3%></td>
+                <td align="right"><%itemAmount3%> <%currency3%></td>
+            </tr>
+            <tr>
+            	<td><%itemQuantity4%> <%itemName4%></td>
+                <td align="right"><%itemAmount4%> <%currency4%></td>
+            </tr>
+            <tr>
+            	<td><%itemQuantity5%> <%itemName5%></td>
+                <td align="right"><%itemAmount5%> <%currency5%></td>
+            </tr>
+            <tr class="serTax">
+            	<td><%taxOrVat%> : (<%rate%>%) <%currency%></td>
+                <td align="right"><%taxAmount%> <%currency%></td>
+            </tr>
+            </tbody>
+            <tfoot>
+            <tr class="fwB">
+            	<td>Total</td>
+                <td align="right"><%total%> <%currency%></td>
+            </tr>
+            </tfoot>
+        </table>
+        
+        <p class="mrT3">Amount in words</p>
+        <h3><%amountInWord%></h3>
+        
+        <p class="mrT3 mrB4 lit" style="font-size:12px">
+        We declare that this invoice shows the actual price of the services rendered and that all particulars are 			true and correct.<br>
+Please wire transfer the amount FREE OF THE BANK CHARGES to the account given below<br>
+Please quote this invoice number when making paymen
+        </p>
+        
+        <div class="fl col2">
+            PAN No : <%cmpPanNo%><br>
+            STC : <%stc%><br>
+            CIA No. : <%ciaNo%><br>
+            ASO Code No. : <%asoCodeNo%>
+        </div>
+        
+        <div class="fr col2" align="right">
+        	For <%productName%><br>
+            <span class="lit">Generated Electronically</span><br>
+            Authorized Signatory<br>
+            <img src="http://taskb.in/images/blue_signature.jpg" />
+        </div>
+        
+		<div class="cl"></div>
+    </div>
+</body>
+
+</html>

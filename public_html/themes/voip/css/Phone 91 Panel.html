@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+<meta name="viewport" id="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,initial-scale=1.0">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Phone 91 Panel</title>
+<link rel="stylesheet" type="text/css" href="Phone%2091%20Panel_files/panel_style.css">
+<link rel="stylesheet" type="text/css" href="Phone%2091%20Panel_files/ui-theme.css">
+<link rel="stylesheet" type="text/css" href="Phone%2091%20Panel_files/normalize.css">
+<!--[if IE 7]>  
+<link rel="stylesheet" href="ie7.css">  
+<![endif]-->
+<style>
+.flip-horizontal { -webkit-transform: matrix(-1, 0, 0, 1, 0, 0); -moz-transform: matrix(-1, 0, 0, 1, 0, 0); }
+</style>
+<script id="undefined" src="Phone%2091%20Panel_files/inpage_linkid.js" async="" type="text/javascript"></script><script src="Phone%2091%20Panel_files/dc.js" async="" type="text/javascript"></script><script src="Phone%2091%20Panel_files/ga.js" async="" type="text/javascript"></script><script src="Phone%2091%20Panel_files/jquery-1.js"></script> 
+<script src="Phone%2091%20Panel_files/socket.js"></script>
+<!--<script type="text/javascript" src="/socket.io/socket.io.js"></script>-->
+</head>
+<body>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  var pluginUrl = 
+ '//www.google-analytics.com/plugins/ga/inpage_linkid.js';
+_gaq.push(['_require', 'inpage_linkid', pluginUrl]);
+  _gaq.push(['_setAccount', 'UA-7245107-13']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+   var pluginUrl = 
+ '//www.google-analytics.com/plugins/ga/inpage_linkid.js';
+_gaq.push(['_require', 'inpage_linkid', pluginUrl]);
+  _gaq.push(['_setAccount', 'UA-38167416-1']);
+  _gaq.push(['_setDomainName', 'phone880.com']);
+  _gaq.push(['_setAllowLinker', true]);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<div id="notification"> </div>
+<div class="motion" style="display:none;"></div>
+<!--Header-->
+<div id="header" class="clear">	       
+	<div class="pageName hidden-desktop">page name dynamic</div>	
+	<!--<a id="backToPanel" href="" class="mrT1 mrL2 btn btn-medium btn-primary">Back</a>-->
+	<a id="logout" href="http://voice.phone91.com/logout.php" class="fr mrT1 mrR2 btn btn-medium btn-inverse" title="Logout">Logout</a> 
+ </div>
+<!--//Header-->
+<!-- <input type="text" name="searchUser" id="searchUser">-->
+<div id="container" class=""><!--/data come in this div--> 
+<div id="callshopWrap" class="Wrap">
+    <ul class="ln cmnli-callshop clear"><li onclick="">                    <h3 class="clear">                    <span class="ellp">sandsou</span>                    <!--<i class="ic-24 edit"></i>-->                    </h3>                    <p class="tm">4:10</p>                    <h3 class="mrT1">919544498311</h3>                    <p class="dt">Wed, 07 May 2014 10:44:46 GMT</p>                    <div class="line"></div>                    <div class="clear">                        <a href="javascript:void(0)" onclick="hitApi(1399459474.298)" class="btn btn-mini btn-danger alC stopACBtn">                                <span class="ic-16 stop fl"></span><span class="stopLbl">Stop</span>                        </a>                        <span class="callType">gtalk</span>                    </div>                </li><li onclick="">                    <h3 class="clear">                    <span class="ellp">charishma</span>                    <!--<i class="ic-24 edit"></i>-->                    </h3>                    <p class="tm">1:83</p>                    <h3 class="mrT1">919847299583</h3>                    <p class="dt">Wed, 07 May 2014 10:47:02 GMT</p>                    <div class="line"></div>                    <div class="clear">                        <a href="javascript:void(0)" onclick="hitApi(1399459608.302)" class="btn btn-mini btn-danger alC stopACBtn">                                <span class="ic-16 stop fl"></span><span class="stopLbl">Stop</span>                        </a>                        <span class="callType">gtalk</span>                    </div>                </li></ul>
+</div><!--/end call log wrap-->
+
+ </div>
+ 
+
+<script type="text/javascript" src="Phone%2091%20Panel_files/client.js"></script>
+ 
+<script>
+$('#backToPanel').attr('href',window.location.protocol+'//'+window.location.hostname+'/userhome.php#!reseller-manage-clients.php')
+$('#logout').attr('href',window.location.protocol+'//'+window.location.hostname+'/logout.php')
+    var loadingInterval;
+function motion(obj,col,width,height){
+	var  bgPosX=0, bgPosY=0,r=1, c=1;
+        if(loadingInterval)
+            clearInterval(loadingInterval);
+	loadingInterval = setInterval(function(){
+//		console.log('X : '+bgPosX+' col : '+c+' Y : '+bgPosY+' Row : '+r);		
+		if(c == col){c = 1;bgPosX=0;r=1;bgPosY=0;}
+            {$(obj).css({'background-position':bgPosX+'px '+bgPosY+'px'}); c++; bgPosX=bgPosX-width;}
+							
+	},120);		
+}
+
+
+function p91Loader(action){
+//    console.log('run');
+//    var left = function(){
+//         $(".motion").css('background','url("../images/Phone91-preloader_flip.png") no-repeat scroll 0 0 transparent');
+//         $(".motion").animate(
+//            {"right": "-=100px"},
+//            1300,function(){
+//                console.log("123");
+//                $('.motion').css('background','url("../images/Phone91-preloader.png") no-repeat scroll 0 0 transparent');
+////                $(".motion").animate(
+////            {"right": "+=100px"},
+////            1300);
+//                left();
+//            });
+//    }
+//    var right = function(){
+//         $(".motion").animate(
+//            {"right": "-=100px"},
+//            1300,function(){
+//                $('.motion').css('background','url("../images/Phone91-preloader_flip.png") no-repeat scroll 0 0 transparent');
+//                left();
+//            });
+//    }
+    if(action=='start')
+    {
+        $('.motion').show();
+        motion('.motion',10,150,200);
+//        left();
+        
+    }
+    else
+    {
+        $('.motion').hide();
+//        $('.motion').css("right","330px");
+        clearInterval(loadingInterval);
+    }
+    
+}
+
+
+var storage = window['localStorage'];
+
+function menuHandler() {
+    p91Loader('start');
+    var menu = $(this).attr('menuval');
+    var icId = $(this).attr('icId');
+    var lPage = $(this).attr('lPage');
+    localStorage.setItem('menu', menu);
+    localStorage.setItem('lPage', lPage);
+    $(".userTopMenu").hide();
+    $(".icClass").hide();
+    $("."+menu+"MenuLi").show();
+    $("#"+icId+"").show();
+    uiDrop(this,'#showUsType', false)
+    $("#userTitle").text($(this).text());
+    window.location.href=lPage;
+    p91Loader('stop');
+}
+$(function() {
+	$(".UserTypeMenu").on("click",menuHandler);
+});
+
+</script>
+<script type="text/javascript" src="Phone%2091%20Panel_files/jquery.js"></script>
+<script type="text/javascript">
+	//	The menu on the left
+	$(function() {
+		$('nav#menu-left').mmenu();
+	});
+
+	//	The menu on the right
+	$(function() {
+		$('nav#menu-right').mmenu({
+			position	: 'right',
+			counters	: true,
+			searchfield	: true
+		});
+
+		//	Click a menu-item
+		var $confirm = $('#confirmation');
+		$('#menu-right a').not( '.mm-subopen' ).not( '.mm-subclose' ).bind(
+			'click.example',
+			function( e )
+			{
+				e.preventDefault();
+				$confirm.show().text( 'You clicked "' + $(this).text() + '"' );
+				$('#menu-right').trigger( 'close' );
+			}
+		);
+	});
+</script>
+
+</body></html>

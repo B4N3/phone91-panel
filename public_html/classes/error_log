@@ -1,0 +1,48 @@
+[15-Jul-2013 02:20:32 America/Chicago] PHP Warning:  Mongo::__construct() [<a href='mongo.--construct'>mongo.--construct</a>]: php_network_getaddresses: getaddrinfo failed: Name or service not known in /home/voip91/public_html/beta/classes/db_class.php on line 32
+[15-Jul-2013 02:20:32 America/Chicago] PHP Fatal error:  Uncaught exception 'MongoConnectionException' with message 'Failed to connect to: @localhost:27017: php_network_getaddresses: getaddrinfo failed: Name or service not known' in /home/voip91/public_html/beta/classes/db_class.php:32
+Stack trace:
+#0 /home/voip91/public_html/beta/classes/db_class.php(32): Mongo->__construct('mongodb://@loca...')
+#1 /home/voip91/public_html/beta/classes/db_class.php(175): db_class->connectMongoDb(NULL)
+#2 {main}
+  thrown in /home/voip91/public_html/beta/classes/db_class.php on line 32
+[15-Jul-2013 02:20:40 America/Chicago] PHP Warning:  Mongo::__construct() [<a href='mongo.--construct'>mongo.--construct</a>]: php_network_getaddresses: getaddrinfo failed: Name or service not known in /home/voip91/public_html/beta/classes/db_class.php on line 32
+[15-Jul-2013 02:20:40 America/Chicago] PHP Fatal error:  Uncaught exception 'MongoConnectionException' with message 'Failed to connect to: @localhost:27017: php_network_getaddresses: getaddrinfo failed: Name or service not known' in /home/voip91/public_html/beta/classes/db_class.php:32
+Stack trace:
+#0 /home/voip91/public_html/beta/classes/db_class.php(32): Mongo->__construct('mongodb://@loca...')
+#1 /home/voip91/public_html/beta/classes/db_class.php(175): db_class->connectMongoDb(NULL)
+#2 {main}
+  thrown in /home/voip91/public_html/beta/classes/db_class.php on line 32
+[15-Jul-2013 02:20:40 America/Chicago] PHP Warning:  Mongo::__construct() [<a href='mongo.--construct'>mongo.--construct</a>]: php_network_getaddresses: getaddrinfo failed: Name or service not known in /home/voip91/public_html/beta/classes/db_class.php on line 32
+[15-Jul-2013 02:20:40 America/Chicago] PHP Fatal error:  Uncaught exception 'MongoConnectionException' with message 'Failed to connect to: @localhost:27017: php_network_getaddresses: getaddrinfo failed: Name or service not known' in /home/voip91/public_html/beta/classes/db_class.php:32
+Stack trace:
+#0 /home/voip91/public_html/beta/classes/db_class.php(32): Mongo->__construct('mongodb://@loca...')
+#1 /home/voip91/public_html/beta/classes/db_class.php(175): db_class->connectMongoDb(NULL)
+#2 {main}
+  thrown in /home/voip91/public_html/beta/classes/db_class.php on line 32
+[31-Jul-2013 01:20:24 America/Chicago] PHP Warning:  SimpleEmailService::sendEmail(): Sender - SignatureDoesNotMatch: The request signature we calculated does not match the signature you provided. Check your AWS Secret Access Key and signing method. Consult the service documentation for details.
+Request Id: 49ea3052-f9a9-11e2-b83d-c152857cb3c8
+ in /home/voip91/public_html/beta/classes/ses.php on line 363
+[31-Jul-2013 01:23:23 America/Chicago] PHP Warning:  SimpleEmailService::sendEmail(): Sender - AccessDenied: User: arn:aws:iam::220425157014:user/phone91 is not authorized to perform: ses:SendEmail
+Request Id: b4c8e49b-f9a9-11e2-a1da-979db8dd4ab9
+ in /home/voip91/public_html/beta/classes/ses.php on line 363
+[31-Jul-2013 01:24:01 America/Chicago] PHP Warning:  SimpleEmailService::sendEmail(): Sender - AccessDenied: User: arn:aws:iam::220425157014:user/phone91 is not authorized to perform: ses:SendEmail
+Request Id: cb6b929e-f9a9-11e2-971b-4f6b3d48f395
+ in /home/voip91/public_html/beta/classes/ses.php on line 363
+[31-Jul-2013 02:04:24 America/Chicago] PHP Warning:  SimpleEmailService::sendEmail(): Sender - MessageRejected: Email address is not verified.
+Request Id: 6fa39282-f9af-11e2-a3a0-2912df871794
+ in /home/voip91/public_html/beta/classes/ses.php on line 363
+[31-Jul-2013 02:05:00 America/Chicago] PHP Warning:  SimpleEmailService::sendEmail(): Sender - MessageRejected: Email address is not verified.
+Request Id: 84f507c5-f9af-11e2-b06d-fb6958d6f795
+ in /home/voip91/public_html/beta/classes/ses.php on line 363
+[06-Aug-2013 08:57:42 America/Chicago] PHP Warning:  include_once(SuperMySQLi.php) [<a href='function.include-once'>function.include-once</a>]: failed to open stream: No such file or directory in /home/voip91/public_html/beta/classes/function_layer.php on line 2
+[06-Aug-2013 08:57:42 America/Chicago] PHP Warning:  include_once() [<a href='function.include'>function.include</a>]: Failed opening 'SuperMySQLi.php' for inclusion (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/voip91/public_html/beta/classes/function_layer.php on line 2
+[06-Aug-2013 08:57:42 America/Chicago] PHP Fatal error:  Class 'SuperMySQLi' not found in /home/voip91/public_html/beta/classes/function_layer.php on line 3
+[08-Aug-2013 03:46:09 America/Chicago] PHP Warning:  include_once(SuperMySQLi.php) [<a href='function.include-once'>function.include-once</a>]: failed to open stream: No such file or directory in /home/voip91/public_html/beta/classes/function_layer.php on line 2
+[08-Aug-2013 03:46:09 America/Chicago] PHP Warning:  include_once() [<a href='function.include'>function.include</a>]: Failed opening 'SuperMySQLi.php' for inclusion (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/voip91/public_html/beta/classes/function_layer.php on line 2
+[08-Aug-2013 03:46:09 America/Chicago] PHP Fatal error:  Class 'SuperMySQLi' not found in /home/voip91/public_html/beta/classes/function_layer.php on line 3
+[08-Aug-2013 06:04:06 America/Chicago] PHP Warning:  include_once(SuperMySQLi.php) [<a href='function.include-once'>function.include-once</a>]: failed to open stream: No such file or directory in /home/voip91/public_html/beta/classes/function_layer.php on line 2
+[08-Aug-2013 06:04:06 America/Chicago] PHP Warning:  include_once() [<a href='function.include'>function.include</a>]: Failed opening 'SuperMySQLi.php' for inclusion (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/voip91/public_html/beta/classes/function_layer.php on line 2
+[08-Aug-2013 06:04:06 America/Chicago] PHP Fatal error:  Class 'SuperMySQLi' not found in /home/voip91/public_html/beta/classes/function_layer.php on line 3
+[12-Nov-2013 04:46:52 America/Chicago] PHP Notice:  Undefined index: HTTP_HOST in /home/voip91/public_html/definePath.php on line 10
+[12-Nov-2013 04:46:52 America/Chicago] PHP Parse error:  syntax error, unexpected '}' in /home/voip91/public_html/classes/function_layer.php on line 1387
+[13-Feb-2014 07:44:02 America/Chicago] PHP Fatal error:  Call-time pass-by-reference has been removed in /home/voicepho/public_html/classes/function_class.php on line 915

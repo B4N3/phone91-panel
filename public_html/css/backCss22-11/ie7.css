@@ -1,0 +1,75 @@
+@charset "utf-8";
+/* ============================================================
+ * css for phone91 panel
+ * v1.1 by Sarfaraz Ansari 
+ * sarfaraz@hostnsoft.com
+ * Date : 9 July 2013
+ * ============================================================
+ * Licensed under the Apache License, Version 2.0
+ * http://www.apache.org/licenses/LICENSE-2.0
+ * ============================================================ */
+ /*-------------setting section css------------*/
+input[type="text"], input[type="password"]{
+	height:24px;
+}
+textarea, input[type="text"], input[type="password"], select{
+	padding:30;
+}
+
+.pyopt{
+	overflow:hidden;
+}
+.pyopt li{
+	float:left;
+}
+#oropt{
+	width:100%;
+	background:#d8d8d8;
+	height:1px;
+	margin-top:30px;
+}
+#oropt span{
+	margin-top:-20px;
+}
+.setContainer{
+	width:400px;
+}
+
+#addAccbox > input {
+    width: 96%;
+}
+#wlids .tryc{
+	width:150px;
+	margin:0 auto;
+} 
+#addemails .tryc.tr1{
+	width:160px;
+	margin:0 auto;
+}
+#addemails .tryc.tr2{
+	width:100px;
+	margin:0 auto;
+}
+#addemails #mobwrap input:first-child{
+	width:12%;
+	float:left;
+}
+#addemails #mobwrap input{
+	width:70%;
+	float:left;
+}
+#rightsec{
+	overflow:inherit;
+}
+.recCallList li{
+	overflow:hidden;
+	clear:both;
+	position:inherit;
+}
+.box-dtl{
+	overflow:hidden;
+}
+.prCallList li{
+	overflow:hidden;
+	clear:both;
+}

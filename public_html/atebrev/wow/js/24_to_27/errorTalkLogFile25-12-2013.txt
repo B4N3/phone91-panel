@@ -1,0 +1,52 @@
+[25-Dec-2013 10:05:25]PHP Run-time notices: Undefined index: usern in  /Applications/MAMP/htdocs/voip91local/inc/incHeader.php on line 27.
+[25-Dec-2013 10:05:25]PHP Run-time notices: Undefined index: passn in  /Applications/MAMP/htdocs/voip91local/inc/incHeader.php on line 30.
+[25-Dec-2013 10:05:25]PHP Run-time notices: Undefined index: captcha in  /Applications/MAMP/htdocs/voip91local/inc/incFooter.php on line 47.
+[25-Dec-2013 10:05:37]PHP Run-time notices: A session had already been started - ignoring session_start() in  /Applications/MAMP/htdocs/voip91local/function_layer.php on line 604.
+[25-Dec-2013 10:05:37]PHP User-generated notice message.: user details:voipreseller pass:123qweasdzxc num:1 in  /Applications/MAMP/htdocs/voip91local/function_layer.php on line 630.
+[25-Dec-2013 10:05:38]PHP Run-time notices: Undefined index: q in  /Applications/MAMP/htdocs/voip91local/classes/reseller_class.php on line 1349.
+[25-Dec-2013 10:05:38]PHP Run-time notices: Undefined variable: page_number in  /Applications/MAMP/htdocs/voip91local/classes/reseller_class.php on line 1364.
+[25-Dec-2013 10:17:27]PHP Run-time notices: Undefined variable: res in  /Applications/MAMP/htdocs/voip91local/controller/userCallLog.php on line 440.
+[25-Dec-2013 10:17:27]PHP Run-time notices: Undefined variable: response in  /Applications/MAMP/htdocs/voip91local/classes/callLog_class.php on line 168.
+[25-Dec-2013 10:17:27]PHP Run-time notices: Undefined variable: response in  /Applications/MAMP/htdocs/voip91local/classes/callLog_class.php on line 173.
+[25-Dec-2013 10:17:27]PHP Run-time warnings: Division by zero in  /Applications/MAMP/htdocs/voip91local/classes/callLog_class.php on line 173.
+[25-Dec-2013 10:17:27]PHP Run-time notices: Undefined variable: sumofDuration in  /Applications/MAMP/htdocs/voip91local/classes/callLog_class.php on line 174.
+[25-Dec-2013 10:17:29]PHP Run-time notices: Undefined index: q in  /Applications/MAMP/htdocs/voip91local/classes/reseller_class.php on line 1349.
+[25-Dec-2013 10:17:29]PHP Run-time notices: Undefined variable: page_number in  /Applications/MAMP/htdocs/voip91local/classes/reseller_class.php on line 1364.
+[25-Dec-2013 10:17:30]PHP Run-time notices: Undefined variable: res in  /Applications/MAMP/htdocs/voip91local/controller/userCallLog.php on line 440.
+[25-Dec-2013 10:17:30]PHP Run-time notices: Undefined variable: response in  /Applications/MAMP/htdocs/voip91local/classes/callLog_class.php on line 168.
+[25-Dec-2013 10:17:30]PHP Run-time notices: Undefined variable: response in  /Applications/MAMP/htdocs/voip91local/classes/callLog_class.php on line 173.
+[25-Dec-2013 10:17:30]PHP Run-time warnings: Division by zero in  /Applications/MAMP/htdocs/voip91local/classes/callLog_class.php on line 173.
+[25-Dec-2013 10:17:30]PHP Run-time notices: Undefined variable: sumofDuration in  /Applications/MAMP/htdocs/voip91local/classes/callLog_class.php on line 174.
+[25-Dec-2013 10:18:05]PHP Run-time notices: Undefined index: usern in  /Applications/MAMP/htdocs/voip91local/inc/incHeader.php on line 27.
+[25-Dec-2013 10:18:05]PHP Run-time notices: Undefined index: passn in  /Applications/MAMP/htdocs/voip91local/inc/incHeader.php on line 30.
+[25-Dec-2013 10:18:05]PHP Run-time notices: Undefined index: captcha in  /Applications/MAMP/htdocs/voip91local/inc/incFooter.php on line 47.
+[25-Dec-2013 10:18:29]PHP Run-time notices: A session had already been started - ignoring session_start() in  /Applications/MAMP/htdocs/voip91local/function_layer.php on line 604.
+[25-Dec-2013 10:18:29]PHP User-generated notice message.: user details:voipreseller pass:123qweasdzxc num:1 in  /Applications/MAMP/htdocs/voip91local/function_layer.php on line 630.
+[25-Dec-2013 10:18:30]PHP Run-time notices: Undefined index: q in  /Applications/MAMP/htdocs/voip91local/classes/reseller_class.php on line 1349.
+[25-Dec-2013 10:18:30]PHP Run-time notices: Undefined variable: page_number in  /Applications/MAMP/htdocs/voip91local/classes/reseller_class.php on line 1364.
+[25-Dec-2013 10:18:30]PHP Run-time notices: Undefined variable: res in  /Applications/MAMP/htdocs/voip91local/controller/userCallLog.php on line 440.
+[25-Dec-2013 10:18:30]PHP Run-time notices: Undefined variable: response in  /Applications/MAMP/htdocs/voip91local/classes/callLog_class.php on line 168.
+[25-Dec-2013 10:18:30]PHP Run-time notices: Undefined variable: response in  /Applications/MAMP/htdocs/voip91local/classes/callLog_class.php on line 173.
+[25-Dec-2013 10:18:30]PHP Run-time warnings: Division by zero in  /Applications/MAMP/htdocs/voip91local/classes/callLog_class.php on line 173.
+[25-Dec-2013 10:18:30]PHP Run-time notices: Undefined variable: sumofDuration in  /Applications/MAMP/htdocs/voip91local/classes/callLog_class.php on line 174.
+[25-Dec-2013 10:18:43]PHP Run-time notices: Undefined index: q in  /Applications/MAMP/htdocs/voip91local/classes/reseller_class.php on line 1349.
+[25-Dec-2013 10:18:43]PHP Run-time notices: Undefined variable: page_number in  /Applications/MAMP/htdocs/voip91local/classes/reseller_class.php on line 1364.
+[25-Dec-2013 10:18:43]PHP Run-time notices: Undefined variable: res in  /Applications/MAMP/htdocs/voip91local/controller/userCallLog.php on line 440.
+[25-Dec-2013 10:18:43]PHP Run-time notices: Undefined variable: response in  /Applications/MAMP/htdocs/voip91local/classes/callLog_class.php on line 168.
+[25-Dec-2013 10:18:43]PHP Run-time notices: Undefined variable: response in  /Applications/MAMP/htdocs/voip91local/classes/callLog_class.php on line 173.
+[25-Dec-2013 10:18:43]PHP Run-time warnings: Division by zero in  /Applications/MAMP/htdocs/voip91local/classes/callLog_class.php on line 173.
+[25-Dec-2013 10:18:43]PHP Run-time notices: Undefined variable: sumofDuration in  /Applications/MAMP/htdocs/voip91local/classes/callLog_class.php on line 174.
+[25-Dec-2013 10:27:43]PHP Run-time notices: Undefined index: q in  /Applications/MAMP/htdocs/voip91local/classes/reseller_class.php on line 1349.
+[25-Dec-2013 10:27:43]PHP Run-time notices: Undefined variable: page_number in  /Applications/MAMP/htdocs/voip91local/classes/reseller_class.php on line 1364.
+[25-Dec-2013 10:27:44]PHP Run-time notices: Undefined variable: res in  /Applications/MAMP/htdocs/voip91local/controller/userCallLog.php on line 440.
+[25-Dec-2013 10:27:44]PHP Run-time notices: Undefined variable: response in  /Applications/MAMP/htdocs/voip91local/classes/callLog_class.php on line 168.
+[25-Dec-2013 10:27:44]PHP Run-time notices: Undefined variable: response in  /Applications/MAMP/htdocs/voip91local/classes/callLog_class.php on line 173.
+[25-Dec-2013 10:27:44]PHP Run-time warnings: Division by zero in  /Applications/MAMP/htdocs/voip91local/classes/callLog_class.php on line 173.
+[25-Dec-2013 10:27:44]PHP Run-time notices: Undefined variable: sumofDuration in  /Applications/MAMP/htdocs/voip91local/classes/callLog_class.php on line 174.
+[25-Dec-2013 10:30:06]PHP Run-time notices: Undefined index: q in  /Applications/MAMP/htdocs/voip91local/classes/reseller_class.php on line 1349.
+[25-Dec-2013 10:30:06]PHP Run-time notices: Undefined variable: page_number in  /Applications/MAMP/htdocs/voip91local/classes/reseller_class.php on line 1364.
+[25-Dec-2013 10:30:06]PHP Run-time notices: Undefined variable: res in  /Applications/MAMP/htdocs/voip91local/controller/userCallLog.php on line 441.
+[25-Dec-2013 10:30:06]PHP Run-time notices: Undefined variable: response in  /Applications/MAMP/htdocs/voip91local/classes/callLog_class.php on line 168.
+[25-Dec-2013 10:30:06]PHP Run-time notices: Undefined variable: response in  /Applications/MAMP/htdocs/voip91local/classes/callLog_class.php on line 173.
+[25-Dec-2013 10:30:06]PHP Run-time warnings: Division by zero in  /Applications/MAMP/htdocs/voip91local/classes/callLog_class.php on line 173.
+[25-Dec-2013 10:30:06]PHP Run-time notices: Undefined variable: sumofDuration in  /Applications/MAMP/htdocs/voip91local/classes/callLog_class.php on line 174.

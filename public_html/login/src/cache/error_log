@@ -1,0 +1,6 @@
+[22-Apr-2013 10:05:47 America/Chicago] PHP Fatal error:  Class 'apiCache' not found in /home/voip91/public_html/login/src/cache/apiApcCache.php on line 26
+[22-Apr-2013 10:05:47 America/Chicago] PHP Fatal error:  Class 'apiCache' not found in /home/voip91/public_html/login/src/cache/apiFileCache.php on line 27
+[22-Apr-2013 10:05:48 America/Chicago] PHP Fatal error:  Class 'apiCache' not found in /home/voip91/public_html/login/src/cache/apiMemcacheCache.php on line 26
+[22-Apr-2013 10:12:40 America/Chicago] PHP Fatal error:  Class 'apiCache' not found in /home/voip91/public_html/login/src/cache/apiApcCache.php on line 26
+[22-Apr-2013 10:12:40 America/Chicago] PHP Fatal error:  Class 'apiCache' not found in /home/voip91/public_html/login/src/cache/apiFileCache.php on line 27
+[22-Apr-2013 10:12:40 America/Chicago] PHP Fatal error:  Class 'apiCache' not found in /home/voip91/public_html/login/src/cache/apiMemcacheCache.php on line 26

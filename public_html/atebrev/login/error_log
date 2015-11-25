@@ -1,0 +1,122 @@
+[04-Sep-2013 07:12:30 America/Chicago] CSRF state token does not match one provided.
+[04-Sep-2013 07:53:45 America/Chicago] CSRF state token does not match one provided.
+[04-Sep-2013 08:44:12 America/Chicago] PHP Fatal error:  Call to undefined method Facebook::getSession() in /home/voip91/public_html/login/FBconfig.php on line 27
+[04-Sep-2013 09:06:50 America/Chicago] PHP Parse error:  syntax error, unexpected $end, expecting T_FUNCTION in /home/voip91/public_html/login/google-open/openid.php on line 728
+[04-Sep-2013 09:07:40 America/Chicago] PHP Parse error:  syntax error, unexpected $end, expecting T_FUNCTION in /home/voip91/public_html/login/google-open/openid.php on line 727
+[09-Sep-2013 01:31:19 America/Chicago] CSRF state token does not match one provided.
+[09-Sep-2013 01:47:15 America/Chicago] CSRF state token does not match one provided.
+[09-Sep-2013 01:47:56 America/Chicago] CSRF state token does not match one provided.
+[07-Nov-2013 04:08:08 America/Chicago] CSRF state token does not match one provided.
+[14-Nov-2013 01:49:36 America/Chicago] CSRF state token does not match one provided.
+[06-Dec-2013 09:21:14 America/Chicago] CSRF state token does not match one provided.
+[10-Dec-2013 08:47:57 America/Chicago] CSRF state token does not match one provided.
+[10-Dec-2013 08:48:16 America/Chicago] CSRF state token does not match one provided.
+[10-Dec-2013 08:48:20 America/Chicago] CSRF state token does not match one provided.
+[10-Dec-2013 08:48:23 America/Chicago] CSRF state token does not match one provided.
+[10-Dec-2013 08:48:51 America/Chicago] CSRF state token does not match one provided.
+[10-Dec-2013 09:19:49 America/Chicago] CSRF state token does not match one provided.
+[02-Jan-2014 03:46:22 America/Chicago] PHP Warning:  include_once(panelConfig.php) [<a href='function.include-once'>function.include-once</a>]: failed to open stream: No such file or directory in /home/voip91/public_html/config.php on line 22
+[02-Jan-2014 03:46:22 America/Chicago] PHP Warning:  include_once() [<a href='function.include'>function.include</a>]: Failed opening 'panelConfig.php' for inclusion (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/voip91/public_html/config.php on line 22
+[02-Jan-2014 03:46:29 America/Chicago] PHP Warning:  include_once(panelConfig.php) [<a href='function.include-once'>function.include-once</a>]: failed to open stream: No such file or directory in /home/voip91/public_html/config.php on line 22
+[02-Jan-2014 03:46:29 America/Chicago] PHP Warning:  include_once() [<a href='function.include'>function.include</a>]: Failed opening 'panelConfig.php' for inclusion (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/voip91/public_html/config.php on line 22
+[02-Jan-2014 03:46:35 America/Chicago] PHP Warning:  include_once(panelConfig.php) [<a href='function.include-once'>function.include-once</a>]: failed to open stream: No such file or directory in /home/voip91/public_html/config.php on line 22
+[02-Jan-2014 03:46:35 America/Chicago] PHP Warning:  include_once() [<a href='function.include'>function.include</a>]: Failed opening 'panelConfig.php' for inclusion (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/voip91/public_html/config.php on line 22
+[02-Jan-2014 03:46:40 America/Chicago] PHP Warning:  include_once(panelConfig.php) [<a href='function.include-once'>function.include-once</a>]: failed to open stream: No such file or directory in /home/voip91/public_html/config.php on line 22
+[02-Jan-2014 03:46:40 America/Chicago] PHP Warning:  include_once() [<a href='function.include'>function.include</a>]: Failed opening 'panelConfig.php' for inclusion (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/voip91/public_html/config.php on line 22
+[02-Jan-2014 03:49:30 America/Chicago] PHP Warning:  include_once(panelConfig.php) [<a href='function.include-once'>function.include-once</a>]: failed to open stream: No such file or directory in /home/voip91/public_html/config.php on line 22
+[02-Jan-2014 03:49:30 America/Chicago] PHP Warning:  include_once() [<a href='function.include'>function.include</a>]: Failed opening 'panelConfig.php' for inclusion (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/voip91/public_html/config.php on line 22
+[02-Jan-2014 03:50:02 America/Chicago] PHP Warning:  include_once(panelConfig.php) [<a href='function.include-once'>function.include-once</a>]: failed to open stream: No such file or directory in /home/voip91/public_html/config.php on line 22
+[02-Jan-2014 03:50:02 America/Chicago] PHP Warning:  include_once() [<a href='function.include'>function.include</a>]: Failed opening 'panelConfig.php' for inclusion (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/voip91/public_html/config.php on line 22
+[02-Jan-2014 03:50:05 America/Chicago] PHP Warning:  include_once(panelConfig.php) [<a href='function.include-once'>function.include-once</a>]: failed to open stream: No such file or directory in /home/voip91/public_html/config.php on line 22
+[02-Jan-2014 03:50:05 America/Chicago] PHP Warning:  include_once() [<a href='function.include'>function.include</a>]: Failed opening 'panelConfig.php' for inclusion (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/voip91/public_html/config.php on line 22
+[02-Jan-2014 03:51:04 America/Chicago] PHP Warning:  include_once(panelConfig.php) [<a href='function.include-once'>function.include-once</a>]: failed to open stream: No such file or directory in /home/voip91/public_html/config.php on line 22
+[02-Jan-2014 03:51:04 America/Chicago] PHP Warning:  include_once() [<a href='function.include'>function.include</a>]: Failed opening 'panelConfig.php' for inclusion (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/voip91/public_html/config.php on line 22
+[02-Jan-2014 03:51:04 America/Chicago] PHP Warning:  include_once(panelConfig.php) [<a href='function.include-once'>function.include-once</a>]: failed to open stream: No such file or directory in /home/voip91/public_html/config.php on line 22
+[02-Jan-2014 03:51:04 America/Chicago] PHP Warning:  include_once() [<a href='function.include'>function.include</a>]: Failed opening 'panelConfig.php' for inclusion (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/voip91/public_html/config.php on line 22
+[02-Jan-2014 03:51:04 America/Chicago] PHP Warning:  include_once(panelConfig.php) [<a href='function.include-once'>function.include-once</a>]: failed to open stream: No such file or directory in /home/voip91/public_html/config.php on line 22
+[02-Jan-2014 03:51:04 America/Chicago] PHP Warning:  include_once() [<a href='function.include'>function.include</a>]: Failed opening 'panelConfig.php' for inclusion (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/voip91/public_html/config.php on line 22
+[02-Jan-2014 03:51:04 America/Chicago] PHP Warning:  include_once(panelConfig.php) [<a href='function.include-once'>function.include-once</a>]: failed to open stream: No such file or directory in /home/voip91/public_html/config.php on line 22
+[02-Jan-2014 03:51:04 America/Chicago] PHP Warning:  include_once() [<a href='function.include'>function.include</a>]: Failed opening 'panelConfig.php' for inclusion (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/voip91/public_html/config.php on line 22
+[02-Jan-2014 05:58:09 America/Chicago] CSRF state token does not match one provided.
+[10-Jan-2014 00:01:20 America/Chicago] CSRF state token does not match one provided.
+[10-Jan-2014 07:22:38 America/Chicago] CSRF state token does not match one provided.
+[11-Jan-2014 04:16:42 America/Chicago] CSRF state token does not match one provided.
+[11-Jan-2014 04:17:22 America/Chicago] CSRF state token does not match one provided.
+[14-Jan-2014 03:58:27 America/Chicago] PHP Parse error:  syntax error, unexpected T_ENCAPSED_AND_WHITESPACE, expecting ']' in /home/voip91/public_html/function_layer.php on line 2344
+[14-Jan-2014 04:28:55 America/Chicago] PHP Fatal error:  Call to undefined function jaon_encode() in /home/voip91/public_html/login/getGoogleData.php on line 63
+[14-Jan-2014 04:46:31 America/Chicago] PHP Parse error:  syntax error, unexpected $end in /home/voip91/public_html/function_layer.php on line 2118
+[14-Jan-2014 05:05:39 America/Chicago] PHP Fatal error:  Call to undefined function jaon_encode() in /home/voip91/public_html/login/getGoogleData.php on line 67
+[15-Jan-2014 02:17:53 America/Chicago] PHP Fatal error:  Call to undefined method fun::check_user_avail() in /home/voip91/public_html/login/login-fb.php on line 40
+[15-Jan-2014 02:18:45 America/Chicago] CSRF state token does not match one provided.
+[15-Jan-2014 02:18:46 America/Chicago] PHP Fatal error:  Call to undefined method fun::check_user_avail() in /home/voip91/public_html/login/login-fb.php on line 40
+[15-Jan-2014 02:21:05 America/Chicago] CSRF state token does not match one provided.
+[15-Jan-2014 02:21:06 America/Chicago] PHP Fatal error:  Call to undefined function logmonitor() in /home/voip91/public_html/login/login-fb.php on line 83
+[15-Jan-2014 02:21:08 America/Chicago] CSRF state token does not match one provided.
+[15-Jan-2014 02:21:09 America/Chicago] PHP Fatal error:  Call to undefined function logmonitor() in /home/voip91/public_html/login/login-fb.php on line 83
+[15-Jan-2014 02:21:13 America/Chicago] CSRF state token does not match one provided.
+[15-Jan-2014 02:21:14 America/Chicago] PHP Fatal error:  Call to undefined function logmonitor() in /home/voip91/public_html/login/login-fb.php on line 83
+[15-Jan-2014 02:21:36 America/Chicago] CSRF state token does not match one provided.
+[15-Jan-2014 02:21:37 America/Chicago] PHP Fatal error:  Call to undefined function logmonitor() in /home/voip91/public_html/login/login-fb.php on line 83
+[15-Jan-2014 02:21:39 America/Chicago] CSRF state token does not match one provided.
+[15-Jan-2014 02:21:40 America/Chicago] PHP Fatal error:  Call to undefined function logmonitor() in /home/voip91/public_html/login/login-fb.php on line 83
+[15-Jan-2014 02:21:42 America/Chicago] CSRF state token does not match one provided.
+[15-Jan-2014 02:21:43 America/Chicago] PHP Fatal error:  Call to undefined function logmonitor() in /home/voip91/public_html/login/login-fb.php on line 83
+[15-Jan-2014 02:21:47 America/Chicago] CSRF state token does not match one provided.
+[15-Jan-2014 02:21:47 America/Chicago] PHP Fatal error:  Call to undefined function logmonitor() in /home/voip91/public_html/login/login-fb.php on line 83
+[15-Jan-2014 02:21:50 America/Chicago] CSRF state token does not match one provided.
+[15-Jan-2014 02:21:51 America/Chicago] PHP Fatal error:  Call to undefined function logmonitor() in /home/voip91/public_html/login/login-fb.php on line 83
+[15-Jan-2014 02:21:54 America/Chicago] CSRF state token does not match one provided.
+[15-Jan-2014 02:21:54 America/Chicago] CSRF state token does not match one provided.
+[15-Jan-2014 02:21:55 America/Chicago] PHP Fatal error:  Call to undefined function logmonitor() in /home/voip91/public_html/login/login-fb.php on line 83
+[15-Jan-2014 02:21:55 America/Chicago] CSRF state token does not match one provided.
+[15-Jan-2014 02:21:55 America/Chicago] CSRF state token does not match one provided.
+[15-Jan-2014 02:21:55 America/Chicago] PHP Fatal error:  Call to undefined function logmonitor() in /home/voip91/public_html/login/login-fb.php on line 83
+[15-Jan-2014 02:21:56 America/Chicago] PHP Fatal error:  Call to undefined function logmonitor() in /home/voip91/public_html/login/login-fb.php on line 83
+[15-Jan-2014 02:21:57 America/Chicago] PHP Fatal error:  Call to undefined function logmonitor() in /home/voip91/public_html/login/login-fb.php on line 83
+[15-Jan-2014 02:22:00 America/Chicago] CSRF state token does not match one provided.
+[15-Jan-2014 02:22:00 America/Chicago] PHP Fatal error:  Call to undefined function logmonitor() in /home/voip91/public_html/login/login-fb.php on line 83
+[15-Jan-2014 02:22:01 America/Chicago] CSRF state token does not match one provided.
+[15-Jan-2014 02:22:01 America/Chicago] CSRF state token does not match one provided.
+[15-Jan-2014 02:22:02 America/Chicago] CSRF state token does not match one provided.
+[15-Jan-2014 02:22:02 America/Chicago] PHP Fatal error:  Call to undefined function logmonitor() in /home/voip91/public_html/login/login-fb.php on line 83
+[15-Jan-2014 02:22:02 America/Chicago] PHP Fatal error:  Call to undefined function logmonitor() in /home/voip91/public_html/login/login-fb.php on line 83
+[15-Jan-2014 02:22:03 America/Chicago] PHP Fatal error:  Call to undefined function logmonitor() in /home/voip91/public_html/login/login-fb.php on line 83
+[15-Jan-2014 02:22:38 America/Chicago] CSRF state token does not match one provided.
+[15-Jan-2014 02:22:39 America/Chicago] PHP Fatal error:  Call to undefined function logmonitor() in /home/voip91/public_html/login/login-fb.php on line 83
+[15-Jan-2014 02:23:18 America/Chicago] CSRF state token does not match one provided.
+[15-Jan-2014 02:23:19 America/Chicago] PHP Fatal error:  Call to undefined function logmonitor() in /home/voip91/public_html/login/login-fb.php on line 83
+[15-Jan-2014 02:23:25 America/Chicago] CSRF state token does not match one provided.
+[15-Jan-2014 02:23:26 America/Chicago] PHP Fatal error:  Call to undefined function logmonitor() in /home/voip91/public_html/login/login-fb.php on line 83
+[15-Jan-2014 02:26:06 America/Chicago] CSRF state token does not match one provided.
+[15-Jan-2014 02:26:07 America/Chicago] PHP Fatal error:  Call to undefined function logmonitor() in /home/voip91/public_html/login/login-fb.php on line 83
+[15-Jan-2014 02:27:12 America/Chicago] CSRF state token does not match one provided.
+[15-Jan-2014 02:27:13 America/Chicago] PHP Fatal error:  Call to undefined function logmonitor() in /home/voip91/public_html/login/login-fb.php on line 83
+[15-Jan-2014 02:36:25 America/Chicago] CSRF state token does not match one provided.
+[15-Jan-2014 02:36:26 America/Chicago] PHP Fatal error:  Call to undefined function logmonitor() in /home/voip91/public_html/login/login-fb.php on line 83
+[15-Jan-2014 02:39:05 America/Chicago] CSRF state token does not match one provided.
+[15-Jan-2014 02:39:06 America/Chicago] PHP Fatal error:  Call to undefined function logmonitor() in /home/voip91/public_html/login/login-fb.php on line 83
+[15-Jan-2014 02:42:28 America/Chicago] CSRF state token does not match one provided.
+[15-Jan-2014 02:42:29 America/Chicago] PHP Fatal error:  Call to undefined function logmonitor() in /home/voip91/public_html/login/login-fb.php on line 83
+[15-Jan-2014 02:42:36 America/Chicago] CSRF state token does not match one provided.
+[15-Jan-2014 04:47:56 America/Chicago] PHP Parse error:  syntax error, unexpected $end in /home/voip91/public_html/login/login-fb.php on line 85
+[15-Jan-2014 05:28:33 America/Chicago] CSRF state token does not match one provided.
+[22-Feb-2014 04:39:39 America/Chicago] CSRF state token does not match one provided.
+[22-Feb-2014 04:39:49 America/Chicago] CSRF state token does not match one provided.
+[22-Feb-2014 07:34:50 America/Chicago] CSRF state token does not match one provided.
+[11-Mar-2014 04:36:09 America/Chicago] CSRF state token does not match one provided.
+[18-Mar-2014 03:05:52 America/Chicago] PHP Fatal error:  Call to undefined function issset() in /home/voicepho/public_html/function_layer.php on line 773
+[18-Mar-2014 03:07:49 America/Chicago] CSRF state token does not match one provided.
+[19-Mar-2014 11:17:25 America/Chicago] CSRF state token does not match one provided.
+[14-Apr-2014 13:05:23 America/Chicago] CSRF state token does not match one provided.
+[14-Apr-2014 13:07:22 America/Chicago] CSRF state token does not match one provided.
+[14-Apr-2014 13:14:07 America/Chicago] CSRF state token does not match one provided.
+[22-Apr-2014 05:28:16 America/Chicago] PHP Parse error:  syntax error, unexpected end of file in /home/voicepho/public_html/classes/signup_class.php on line 1616
+[22-Apr-2014 05:29:22 America/Chicago] PHP Parse error:  syntax error, unexpected end of file in /home/voicepho/public_html/classes/signup_class.php on line 1704
+[22-Apr-2014 05:44:42 America/Chicago] PHP Parse error:  syntax error, unexpected end of file, expecting variable (T_VARIABLE) or heredoc end (T_END_HEREDOC) or ${ (T_DOLLAR_OPEN_CURLY_BRACES) or {$ (T_CURLY_OPEN) in /home/voicepho/public_html/function_layer.php on line 2065
+[22-Apr-2014 05:44:45 America/Chicago] PHP Parse error:  syntax error, unexpected end of file in /home/voicepho/public_html/function_layer.php on line 4152
+[02-May-2014 04:59:18 America/Chicago] CSRF state token does not match one provided.
+[02-May-2014 04:59:22 America/Chicago] CSRF state token does not match one provided.
+[02-May-2014 04:59:24 America/Chicago] CSRF state token does not match one provided.
+[02-May-2014 04:59:25 America/Chicago] CSRF state token does not match one provided.
+[02-May-2014 04:59:26 America/Chicago] CSRF state token does not match one provided.
+[02-May-2014 04:59:26 America/Chicago] CSRF state token does not match one provided.

@@ -1,0 +1,190 @@
+<?php
+
+//var_dump($_REQUEST);
+
+ $counter = 0;
+ $parm = apc_fetch('importData');
+ 
+ 
+ 
+ if(isset($parm))
+{
+   $counter = count($parm);
+  
+}
+    
+apc_delete('importData');
+?>
+<div id="add-contact-dialog" class="dn" title="Import New Contact">
+				</div>
+      </div>
+<link rel="stylesheet" type="text/css" href="css/user-panel.css" />      
+<script type="text/javascript" src="/js/contact.js"></script>       
+<script type="text/javascript">
+
+
+var count = 0;
+count = <?php if(isset($counter))echo (int)$counter;else echo 0; ?>;
+
+
+if(count == 0)
+{   show_message('No contacts found in your gmail account!','error');
+    window.location.href = "#!contact.php";
+}
+
+if(count != 0)
+{
+    var contactObj = <?php if(isset($parm['contact']))echo json_encode($parm['contact']);else echo json_encode(array()) ?>;
+
+
+    var cCodeObj = <?php if(isset($parm['countryCode']))echo json_encode($parm['countryCode']);else echo json_encode(array()) ?>;
+
+var nameObj = <?php if(isset($parm['name']))echo json_encode($parm['name']);else echo json_encode(array()) ?>;
+ 
+var emailObj = <?php if(isset($parm['email']))echo json_encode($parm['email']);else echo json_encode(array()); ?>; 
+
+
+var contactArr = $.map(contactObj, function(value, index) {
+    return [value];
+});
+
+var nameArr = $.map(nameObj, function(value, index) {
+    return [value];
+});
+
+var emailArr = $.map(emailObj, function(value, index) {
+    return [value];
+});
+
+var cCodeArr = $.map(cCodeObj, function(value, index) {
+    return [value];
+});
+
+
+var codeIso = [];
+
+//create dialog to import contact
+
+
+
+var str = ''
+ 
+     $.ajax({
+        url: "action_layer.php?action=addMoreRowDetail",
+        type: "POST",
+        dataType: "json",
+        success: function(text) { 
+	    
+	var template = '<form id="contact_detail" action="javascript:;">';
+	var importCounter = 1;
+	    for(var i = 0 ; i< contactArr.length ; i++){
+		
+		str = addContactDD(importCounter);
+    
+		 template +='<div class="addCntrow clear bdrB addrows"><div class="child">\
+                         <input placeholder="Name" value="'+nameArr[i]+'" type="text" class="name" name="name[]" />\
+                         </div>\
+                         <div class="child">\
+                         <!--country flags with code-->\
+                         <div class="countryWrap">\
+                         <div class="selwrpa">\
+                         <div class="currencySelectDropdownAddcnt cntry" onclick="showCountryForAdd(this);">\
+                         <span class="pickDown setCountry"></span>\
+                         <span id="setFlagWebCall_'+importCounter+'" flagId="IN" class="flag-24 IN setFlag"></span>\
+                         </div>\
+                         <ul  class="bgW" style="display: none;">';
+                        
+                        
+                         $.each(text,function(key,value){
+                             
+                             var ccode = value.ISO.split('/');
+			     var countryCode = parseInt(value.CountryCode);
+			     var ccodeFromArr = parseInt(cCodeArr[i])
+			     if(countryCode == ccodeFromArr)
+			     {
+				 console.log(parseInt(value.CountryCode) +'==='+parseInt(cCodeArr[i]));
+				 codeIso.push({"cCode":countryCode,
+					  	"cIso":ccode[0]});
+					    return false;
+			     }
+			 });
+                       
+                         $.each(text,function(key,value){
+			 
+			    var ccode = value.ISO.split('/');
+			    
+                             template +='<li  countryCode="'+value.CountryCode+'" countryName="'+value.Country+'" countryFlags="'+ccode[0]+'" onClick="SetValueAddCnt(this)">\
+                                                <a class="clear" href="javascript:void(0)">\
+                                <span class="flag-24 '+ccode[0]+'"></span><span code="'+value.CountryCode+'" class="fltxt">'+value.Country+'</span>\
+                                </a>\
+                                </li>'; 
+                             
+                         })
+
+                        
+
+		template +='</ul>\
+                      </div>\
+                      <div class="codeInput">\
+                      <input name="code[]" type="text" id="code_'+importCounter+'" class="min code" value="91" readonly/>\
+                      <input class="pr contact" name="contact[]" id="mobileNumber" value="'+contactArr[i]+'" type="text" placeholder="Contact No" />\
+                      </div>\
+                      </div>\
+                      </div>\
+                      <div class="child accCont">\
+                      <a onclick="uiDrop(this,\'#accessBox_'+importCounter+'\', \'true\');renderCurrentRow('+importCounter+')" id="currentAccessNumber_'+importCounter+'" class="accLink themeLink tdu" href="javascript:;">Assign access Number</a>\
+                      <div id="accParent_'+importCounter+'" class="accParent">'+str+'<!--dialog content will load here--></div>\
+                      </div>\
+                      <div class="child">\
+                      <i class="ic-24 close cp" onclick="closeResetObj(this,'+importCounter+')";></i>\
+                      </div></div>';
+			  
+		    importCounter++;  
+
+    
+	}
+	template +='<a class="btn btn-medium btn-blue mr2" onclick="addcontact();" href="javascript:void(0);">Done</a></form>'
+	
+	$('#add-contact-dialog').append(template);
+	
+	console.log(codeIso);
+	
+	 $.each(codeIso,function(index,val){
+                             
+		$('#setFlagWebCall_'+(index+1)).attr('class','').addClass('flag-24 setFlag '+val.cIso).attr('flagid',val.cIso);
+		$('#code_'+(index+1)).val(val.cCode);
+			     
+                            
+         })
+	
+	
+	for(var j = 1; j < importCounter; j++ )
+	{
+	    getCountries(j);
+	}
+
+    
+    }
+     });
+
+
+
+
+
+$("#add-contact-dialog").dialog({modal: true, resizable: false, width: 720, height: 600, 'title':'Import Contacts',
+close : function(event, ui) {
+                     dedicatedAN = [];
+                     hashObj = [];
+                    window.location.href = "#!contact.php";
+                }});
+	    
+	    
+		
+
+    
+    
+}
+
+
+</script>
+

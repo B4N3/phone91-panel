@@ -1,0 +1,57 @@
+[14-May-2013 08:11:11 America/Chicago] PHP Fatal error:  Class 'Google_PlusService' not found in /home/voip91/public_html/login/gapi/google-contact.php on line 65
+[14-May-2013 08:11:33 America/Chicago] PHP Fatal error:  Uncaught exception 'Google_ServiceException' with message 'Error calling GET https://www.googleapis.com/plus/v1/people/me: (403) Insufficient Permission' in /home/voip91/public_html/login/gapi/src/io/Google_REST.php:66
+Stack trace:
+#0 /home/voip91/public_html/login/gapi/src/io/Google_REST.php(36): Google_REST::decodeHttpResponse(Object(Google_HttpRequest))
+#1 /home/voip91/public_html/login/gapi/src/service/Google_ServiceResource.php(186): Google_REST::execute(Object(Google_HttpRequest))
+#2 /home/voip91/public_html/login/gapi/src/contrib/Google_PlusService.php(233): Google_ServiceResource->__call('get', Array)
+#3 /home/voip91/public_html/login/gapi/google-contact.php(68): Google_PeopleServiceResource->get('me')
+#4 {main}
+  thrown in /home/voip91/public_html/login/gapi/src/io/Google_REST.php on line 66
+[14-May-2013 08:12:37 America/Chicago] PHP Fatal error:  Uncaught exception 'Google_ServiceException' with message 'Error calling GET https://www.googleapis.com/plus/v1/people/me: (403) Insufficient Permission' in /home/voip91/public_html/login/gapi/src/io/Google_REST.php:66
+Stack trace:
+#0 /home/voip91/public_html/login/gapi/src/io/Google_REST.php(36): Google_REST::decodeHttpResponse(Object(Google_HttpRequest))
+#1 /home/voip91/public_html/login/gapi/src/service/Google_ServiceResource.php(186): Google_REST::execute(Object(Google_HttpRequest))
+#2 /home/voip91/public_html/login/gapi/src/contrib/Google_PlusService.php(233): Google_ServiceResource->__call('get', Array)
+#3 /home/voip91/public_html/login/gapi/google-contact.php(68): Google_PeopleServiceResource->get('me')
+#4 {main}
+  thrown in /home/voip91/public_html/login/gapi/src/io/Google_REST.php on line 66
+[14-May-2013 08:13:58 America/Chicago] PHP Fatal error:  Uncaught exception 'Google_ServiceException' with message 'Error calling GET https://www.googleapis.com/plus/v1/people/me: (403) Insufficient Permission' in /home/voip91/public_html/login/gapi/src/io/Google_REST.php:66
+Stack trace:
+#0 /home/voip91/public_html/login/gapi/src/io/Google_REST.php(36): Google_REST::decodeHttpResponse(Object(Google_HttpRequest))
+#1 /home/voip91/public_html/login/gapi/src/service/Google_ServiceResource.php(186): Google_REST::execute(Object(Google_HttpRequest))
+#2 /home/voip91/public_html/login/gapi/src/contrib/Google_PlusService.php(233): Google_ServiceResource->__call('get', Array)
+#3 /home/voip91/public_html/login/gapi/google-contact.php(68): Google_PeopleServiceResource->get('me')
+#4 {main}
+  thrown in /home/voip91/public_html/login/gapi/src/io/Google_REST.php on line 66
+[14-May-2013 08:14:34 America/Chicago] PHP Fatal error:  Uncaught exception 'Google_ServiceException' with message 'Error calling GET https://www.googleapis.com/plus/v1/people/me: (403) Insufficient Permission' in /home/voip91/public_html/login/gapi/src/io/Google_REST.php:66
+Stack trace:
+#0 /home/voip91/public_html/login/gapi/src/io/Google_REST.php(36): Google_REST::decodeHttpResponse(Object(Google_HttpRequest))
+#1 /home/voip91/public_html/login/gapi/src/service/Google_ServiceResource.php(186): Google_REST::execute(Object(Google_HttpRequest))
+#2 /home/voip91/public_html/login/gapi/src/contrib/Google_PlusService.php(233): Google_ServiceResource->__call('get', Array)
+#3 /home/voip91/public_html/login/gapi/google-contact.php(68): Google_PeopleServiceResource->get('me')
+#4 {main}
+  thrown in /home/voip91/public_html/login/gapi/src/io/Google_REST.php on line 66
+[14-May-2013 08:14:35 America/Chicago] PHP Fatal error:  Uncaught exception 'Google_ServiceException' with message 'Error calling GET https://www.googleapis.com/plus/v1/people/me: (403) Insufficient Permission' in /home/voip91/public_html/login/gapi/src/io/Google_REST.php:66
+Stack trace:
+#0 /home/voip91/public_html/login/gapi/src/io/Google_REST.php(36): Google_REST::decodeHttpResponse(Object(Google_HttpRequest))
+#1 /home/voip91/public_html/login/gapi/src/service/Google_ServiceResource.php(186): Google_REST::execute(Object(Google_HttpRequest))
+#2 /home/voip91/public_html/login/gapi/src/contrib/Google_PlusService.php(233): Google_ServiceResource->__call('get', Array)
+#3 /home/voip91/public_html/login/gapi/google-contact.php(68): Google_PeopleServiceResource->get('me')
+#4 {main}
+  thrown in /home/voip91/public_html/login/gapi/src/io/Google_REST.php on line 66
+[14-May-2013 08:20:45 America/Chicago] PHP Fatal error:  Uncaught exception 'Google_ServiceException' with message 'Error calling GET https://www.googleapis.com/plus/v1/people/me: (403) Insufficient Permission' in /home/voip91/public_html/login/gapi/src/io/Google_REST.php:66
+Stack trace:
+#0 /home/voip91/public_html/login/gapi/src/io/Google_REST.php(36): Google_REST::decodeHttpResponse(Object(Google_HttpRequest))
+#1 /home/voip91/public_html/login/gapi/src/service/Google_ServiceResource.php(186): Google_REST::execute(Object(Google_HttpRequest))
+#2 /home/voip91/public_html/login/gapi/src/contrib/Google_PlusService.php(233): Google_ServiceResource->__call('get', Array)
+#3 /home/voip91/public_html/login/gapi/google-contact.php(68): Google_PeopleServiceResource->get('me')
+#4 {main}
+  thrown in /home/voip91/public_html/login/gapi/src/io/Google_REST.php on line 66
+[14-May-2013 08:20:48 America/Chicago] PHP Fatal error:  Uncaught exception 'Google_ServiceException' with message 'Error calling GET https://www.googleapis.com/plus/v1/people/me: (403) Insufficient Permission' in /home/voip91/public_html/login/gapi/src/io/Google_REST.php:66
+Stack trace:
+#0 /home/voip91/public_html/login/gapi/src/io/Google_REST.php(36): Google_REST::decodeHttpResponse(Object(Google_HttpRequest))
+#1 /home/voip91/public_html/login/gapi/src/service/Google_ServiceResource.php(186): Google_REST::execute(Object(Google_HttpRequest))
+#2 /home/voip91/public_html/login/gapi/src/contrib/Google_PlusService.php(233): Google_ServiceResource->__call('get', Array)
+#3 /home/voip91/public_html/login/gapi/google-contact.php(68): Google_PeopleServiceResource->get('me')
+#4 {main}
+  thrown in /home/voip91/public_html/login/gapi/src/io/Google_REST.php on line 66

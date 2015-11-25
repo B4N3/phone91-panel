@@ -1,0 +1,2 @@
+##################################START OF ERROR 08/Nov/2013 16:03:02################################################error sub:google checkout in lead
+msg:problem with payement id,reseller id or company id in responseLead.php

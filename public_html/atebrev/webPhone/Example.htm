@@ -1,0 +1,51 @@
+<!-- 
+  This is a simple example for the websipphone usage.
+  You need to set at least the serveraddress applet parameter for this example to work (replace "YOURSIPDOMAIN.COM" with your VoIP server IP or domain name)
+  Then copy this html file together with with the webphone.jar to your webserver. (Or you can just copy-paste the applet section whenever you wish into your existing html) 
+  More/better examples can be found in the "Examples" folder, including html skins.
+-->
+
+
+<html>
+
+<head>
+<title>Mizu WebSIPPhone</title>
+</head>
+
+<body>
+<p><b>Mizu-WebSIPPhone Demo Test</b></p>
+		
+<applet
+  archive  = "webphone.jar"
+  codebase = "."
+  code     = "webphone.webphone.class"
+  name     = "webphone"
+  width    = "300"
+  height   = "330"
+  hspace   = "0"
+  vspace   = "0"
+  align    = "middle"  
+  mayscript = "true"
+  scriptable = "true"
+  alt="Enable or install java: http://www.java.com/en/download/index.jsp"
+>
+<param name = "serveraddress" value = "216.245.200.2"> 
+<param name = "username" value = "">
+<param name = "password" value = "">
+<param name = "callto" value = "">
+<param name = "loglevel" value = "1">
+<param name = "MAYSCRIPT" value = "true">
+<param name = "mayscript" value = "yes">
+<param name = "scriptable" value = "true">
+<param name = "pluginspage" value = "http://java.com/download/">
+<param name = "permissions" value = "all-permissions">
+
+<b>You must enable java or install from <a href="http://www.java.com/en/download/index.jsp"> here </a>  </b>
+</applet>
+
+<p> <a href="http://www.mizu-voip.com/G/webphone/mizuweb_demo/webphone.htm">Quick demo with basic user interface</a> </p>
+
+<p> <a href="http://www.mizu-voip.com/">MizuTech VoIP software solutions</a> </p>
+
+</body>
+</html>

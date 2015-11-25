@@ -1,0 +1,78 @@
+<script id="manageClients" type="text/template">
+if(_rndr)
+	h1 Manage Clients
+	hr.mrT1.mrB1	
+if(_rndr)
+	div
+		if(isSearchResult=="true")
+			input#user_name(type="text",value=searchQuery)
+		else
+			input#user_name(type="text")
+
+div#subDiv
+	if(client=='No Record Found')
+		div.mrT1=client
+	else
+		table.mrT1.t4n
+			thead
+				tr
+					th Id
+					th Name
+					th Username
+					th Contact No
+					th Currency
+					th Client Type
+					th Tariff
+					th Balance
+					th confirm
+					th status
+					th tariffID					
+					th Action
+			tbody#tbodyClientData        
+				each col, i in client
+					tr			
+						each data in col
+							td=data
+						td
+							input.ld.mrR(type="button", value="Edit Fund", onClick="load_details('#tr"+col.id+"','manage_funds.php?form_id="+col.id+"',this)")
+							input.ld.mrR(type="button", value="Edit Client",onClick="load_details('#tr"+col.id+"','edit_client.php?id="+col.id+"',this)")
+							input.ld.mrR(type="button", value="Sign Up Date",onClick="load_details('#tr"+col.id+"','getSignupDate.php?id="+col.id+"',this)")
+							input.ld(type="button", value="Details",onClick="load_details('#tr"+col.id+"','viewContactDetails.php?id="+col.id+"',this)")
+					tr
+						td.dn(colspan="15",style="padding:0px; border:none;",id='tr'+col.id)
+if(_rndr)
+	div#footer
+		if(totalpage)
+			div#jPagination	
+
+script		
+	var totalpage = (#{totalpage} == 0 ? 1 : #{totalpage});
+	var jpage = request({"name":"page_number"});	
+	
+	if(jpage == '' || jpage == undefined)
+		jpage = 1;	
+	
+	$("#jPagination").paginate({
+		count:totalpage,
+		start:jpage,
+		display:12,
+		onChange:function(page){			
+			_rndr = false;
+			changeQs({"page_number":page});				
+		}
+	});
+	
+	if(_rndr)			
+		$('#user_name').keyup(function() {
+			var q = $(this).val();
+			//_globalTimeout declared in phone.js
+			if(_globalTimeout != null)
+				clearTimeout(_globalTimeout);
+					
+			_globalTimeout = setTimeout(function(){
+				_rndr = false;
+				changeQs({"q":q,"page_number":1});
+			},600);				
+		});
+		breadcrumbs(['Home','ManageClients']);
+</script>

@@ -1,0 +1,1633 @@
+@charset "utf-8";
+/* ============================================================
+ * css for phone91 panel
+ * v1.1 by Sarfaraz Ansari 
+ * sarfaraz@hostnsoft.com
+ * Date : 9 July 2013
+ * ============================================================
+ * Licensed under the Apache License, Version 2.0
+ * http://www.apache.org/licenses/LICENSE-2.0
+ * ============================================================ */
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,600);
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video,hr,input,textarea,select,radio,a{
+	margin: 0; 
+	padding: 0;  
+	outline:none;
+}
+a:link{
+	text-decoration:none;
+}
+a:focus, input:focus, textarea:focus, button:focus{
+	outline:none;
+}
+body, input, textarea, select{
+	font-family: 'Open Sans', sans-serif;
+	font-weight:400;
+	font-size:14px; 
+	color: #777777;
+}
+.ligt{
+	font-weight:300 !important;
+}
+.semi{
+	font-weight:600 !important;
+}
+/*---------------common css---------------*/
+.clear:before,.clear:after {
+	display: table;
+	line-height: 0; 
+	content: "";
+}
+.clear:after {
+	clear: both;
+}
+.fl{
+	float:left
+}
+.fr{
+	float:right
+}
+.clL{
+	clear:left
+}
+.clR{
+	clear:right
+}
+.fwN{
+	font-weight:normal;
+}
+.alC{text-align: center;}
+.alR{text-align:right;}
+
+/*---------------some heading sizes------------*/
+.h1{ font-size:24px;}
+.h2, h2{ font-size:20px; font-weight:normal;}
+.h3, h3{ font-size:18px; font-weight:normal;}
+.h4{ font-size:16px}
+
+/*--------------------line height------------------*/
+.lh22{line-height:22px; min-height:22px !important; height:22px\9}
+.lh24{line-height:24px; min-height:24px !important; height:24px\9}
+.lh26{line-height:26px; min-height:26px !important; height:26px\9}
+.lh28{line-height:28px; min-height:28px !important; height:28px\9}
+.lh30{line-height:30px; min-height:30px !important; height:30px\9}
+.lh32{line-height:32px; min-height:32px !important; height:32px\9}
+.lh40{line-height:40px; min-height:40px !important; height:40px\9}
+
+/*common padding*/
+.pd{padding:5px}.pd1{padding:10px}.pd2{padding:20px}.pd3{padding:30px}.pd4{padding:40px}
+.pdT{padding-top:5px}.pdB{padding-bottom:5px}.pdL{padding-left:5px}.pdR{padding-right:5px}
+.pdT1{padding-top:10px}.pdB1{padding-bottom:10px}.pdL1{padding-left:10px}.pdR1{padding-right:10px}
+.pdT2{padding-top:20px}.pdB2{padding-bottom:20px}.pdL2{padding-left:20px}.pdR2{padding-right:20px}
+.pdT3{padding-top:20px}.pdB3{padding-bottom:30px}.pdL3{padding-left:30px}.pdR3{padding-right:30px}
+.pdT4{padding-top:30px}.pdB4{padding-bottom:40px}.pdL4{padding-left:40px}.pdR4{padding-right:40px}
+
+/*--common margin*/
+.mr{margin:5px}.mr1{margin:10px}.mr2{margin:20px}.mr3{margin:30px}.mr4{margin:40px}
+.mrT{margin-top:5px}.mrB{margin-bottom:5px}.mrL{margin-left:5px}.mrR{margin-right:5px}
+.mrT1{margin-top:10px}.mrB1{margin-bottom:10px}.mrL1{margin-left:10px}.mrR1{margin-right:10px}
+.mrT2{margin-top:20px}.mrB2{margin-bottom:20px}.mrL2{margin-left:20px}.mrR2{margin-right:20px}
+.mrT3{margin-top:30px}.mrB3{margin-bottom:30px}.mrL3{margin-left:30px}.mrR3{margin-right:30px}
+.mrT4{margin-top:40px}.mrB4{margin-bottom:40px}.mrL4{margin-left:40px}.mrR4{margin-right:40px}
+
+/*-----------common positions----------*/
+.pr{position:relative;}
+.pa{position:absolute;}
+.cp{cursor:pointer;}
+.ln{list-style:none;}
+.db{display:block;}
+.dn{display:none;}
+
+/*some common properties*/
+textarea, input, select, button, .boxsize { 
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+	box-sizing: border-box;         /* Opera/IE 8+ */
+}
+.dropmenu {
+    background-clip: padding-box;
+    background-color: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    display: none;
+    list-style: none outside none;
+    min-width: 160px;
+    position: absolute;
+    z-index: 99;
+}
+.dropmenu  li {
+    line-height: 24px;
+    padding: 5px 10px;
+    white-space: nowrap;
+	cursor:pointer;
+}
+.dropmenu  li.divider{
+	background:#d8d8d8;
+	height:2px;
+	padding:0;
+	margin:0 5px;
+}
+/*------------some transition properties-------*/
+.clrTrns{
+	-webkit-transition: color .25s linear;
+	-moz-transition: color .25s linear;
+	-o-transition: color .25s linear;
+	transition: color .25s linear;
+}
+.bdrTrns{
+	-webkit-transition: border .25s linear;
+	-moz-transition: border .25s linear;
+	-o-transition: border .25s linear;
+	transition: border .25s linear;
+}
+
+
+
+/*-------------------making a theme-------------*/
+body{ background:#fff;}
+.themeClr, .themeLink, #emailIdsList li .mailact  span a:hover{color:#30a5d8;}
+.themeBg, .dropmenu  li:hover{background:#30a5d8;}
+.themeLink:hover{color:#333;}
+#navisec li:hover, #navisec li.active, #topRightAct li:hover, .topmenu li.active{border-bottom-color:#30a5d8 !important}
+#setmenu li a:hover, .cntnav li a.active{color:#30a5d8!important; border-left-color:#30a5d8 !important}
+
+.resList li.group, .mngClntList li.group{
+	 border-right-color:#30a5d8 !important
+}
+#wlIdsList li.default, #emailIdsList li.default, .cntList li:hover, .cntList li.default{
+	border-left-color:#30a5d8 !important
+}
+.prCallList li.answered{
+	border-left-color:#1abc9c !important
+}
+.prCallList li.unanswered{
+	border-left-color:red !important
+}
+.mngClntList li.group.selected, .mngPlnList li.selected, .cmnli-mngpin li.selected{
+	background:#4d4d4d;
+	color:#fff;
+}
+input.error{
+	border-color:red !important;
+}
+input.valid{
+	border-color:#1abc9c !important;
+}
+label.error{
+	color:red !important;
+}
+
+/*---------------structure css------------*/
+#header{
+	border-bottom:1px solid #d8d8d8;
+	background:#fff;
+	height:60px;
+}
+#container{
+}
+/*--------------------universal css-----------------------*/
+.f12{font-size:12px;}
+[class*="box-"]{
+	background:#fff;
+	padding:15px;
+}
+[class*="col-"]{
+	float:left;
+}
+.ellp{ 
+	text-overflow: ellipsis; 
+	overflow: hidden; 
+	white-space: nowrap;
+	width:100%;
+}
+.Wrap{
+	background:#f4f4f4;
+}
+.inner{
+	padding:25px;
+}
+.col-1{
+	width:10%;
+}
+.col-2{
+	width:20%;
+}
+.col-3{
+	width:33.33%;
+}
+.col-5{
+	width:50%;
+}
+.col-3-4{
+	width:30%;
+}
+.col-1-3{
+	width:70%;
+}
+[class*="col-"] input[type="text"], [class*="col-"] select{
+	width:80%;
+}
+/*-------------------header elements------------*/
+#logosec, #usersec, #navisec{
+	float:left;
+}
+#logosec{
+	padding:7px 10px 7px 30px;
+	border-right:1px solid #d8d8d8;
+	height:46px;
+}
+#logosec a{
+	display:block;
+}
+#usersec{
+	padding:14px 10px;
+	height:32px;
+}
+#userTitle{
+	font-size:24px;
+	line-height:32px;
+	float:left;
+}
+#navisec > li{
+	float:left;
+	margin-right:5px;
+	position:relative;
+}
+#navisec li {
+	border-bottom:3px solid transparent;
+}
+#navisec li > a{
+	display:block;
+	padding:0 20px;
+	color:#777777;
+	line-height:57px;
+}
+#navisec li a .ic-16.dropsign{
+	margin:21px 0 0 10px;
+}
+.submenu{
+	position:absolute;
+	top:60px;
+	left:0;
+	background:#fff;
+	z-index:99;
+	min-width:140px;
+	border:1px solid #d8d8d8;
+	display:none;
+}
+#navisec li .submenu li{
+	display:block;
+	float:none;
+}
+#navisec li .submenu li a{
+	height:30px;
+	line-height:30px;
+	padding: 0 10px;
+}
+#navisec li:hover .submenu{
+	display:block;
+}
+#navisec li .submenu li a:hover{
+	background:#f5f5f5;
+}
+
+
+#topRightAct{
+	float:right;
+}
+#topRightAct > li{
+	float:right;
+	border-left:1px solid #d8d8d8;
+	padding:8px 20px 9px;
+	height:40px;
+	border-bottom:3px solid transparent;
+}
+#topRightAct li span.userico{
+	margin:10px 0 0 5px;
+}
+#topRightAct li span.dropsign{
+	margin:12px 0 0 5px;
+}
+#firstName, #balance{
+	font-size:18px;
+}
+#balance{
+	border-right:1px solid #d8d8d8;
+	padding:0 10px 0 0;
+	float:left;
+	margin-right:10px;
+}
+#dtLink{
+	float:left;
+	font-size:12px;
+	line-height:20px;
+}
+#showSetting, #showUsType{
+	top:60px;
+}
+#showUsType li:hover, #showSetting li:hover{
+    color: #fff;
+}
+#showSetting{
+	right:10px;
+}
+#showSetting span{
+	float:left;
+	margin-right:10px;
+}
+#showSetting span:last-child{
+	margin-right:0;
+}
+
+/*--------------------calling spirit image-----------*/
+[class*="ic-"]{
+	display:block;
+	float:left;
+	background:url(../images/ic-sprite.png) no-repeat;
+}
+.btn [class*="ic-"]{
+	display:inline-block;
+}
+
+.ic-32{
+	width:32px;
+	height:32px;
+}
+.ic-24{
+	width:24px;
+	height:24px;
+}
+.ic-16{
+	width:16px;
+	height:16px;
+}
+.ic-sw{
+	width:48px;
+	height:24px;
+}
+.ic-bl{
+	width:72px;
+	height:24px;
+}
+/*======================switch=======================*/
+.ic-sw.enabledR{
+	background-position: -72px -408px;
+}
+.ic-sw.disabledR{
+	background-position: -168px -408px;
+}
+.ic-sw.fadder{
+	background-position: -72px -432px;
+}
+.ic-sw.freducer{
+	background-position: -120px -432px;
+}
+.ic-bl.paid{
+	background-position: -168px -432px;
+}
+.ic-bl.unpaid{
+	background-position: -240px -432px;
+}
+
+/*------------32 icons size--------------*/
+#uSign{
+	background-position: -64px -192px;
+}
+#rSign{
+	background-position: -96px -192px;
+}
+#cSign{
+	background-position: -128px -192px;
+}
+.ic-32.notif{
+	background-position: -64px -222px;
+}
+
+
+/*------------24 icons size--------------*/
+.ic-24.userico{
+	background-position: -96px -360px;
+}
+.ic-24.setting{
+	background-position: -168px -360px;
+}
+.ic-24.logout{
+	background-position: -96px -360px;
+}
+.ic-24.actDel{
+	background-position: -240px -360px;
+}
+.ic-24.selected{
+	background-position: -144px -360px;/*change karna ha*/
+}
+.ic-24.add{
+	background-position: -144px -360px;
+}
+.ic-24.edit{
+	background-position: -192px -360px;
+}
+.ic-24.close { 
+	background-position: -216px -360px; 
+}
+.ic-24.notifW{
+	background-position: -336px -360px;
+}
+.ic-24.login{
+	background-position: -72px -336px;
+}
+.ic-24.und{
+	background-position: -96px -336px;
+}
+/*------------red color icon----------*/
+.ic-24.delR{
+	background-position: -72px -384px;
+}
+.ic-24.correct{
+	background-position: -96px -384px;
+}
+.ic-24.playR{
+	background-position: -144px -384px;
+}
+.ic-24.stopR{
+	background-position: -120px -384px;
+}
+/*****************************white color icon--------*/
+.ic-24.addW{
+	background-position: -408px -360px;
+}
+.ic-24.callW{
+	background-position: -528px -360px;
+}
+.ic-24.editW{
+	background-position: -456px -360px;
+}
+.ic-24.searchW{
+	background-position: -384px -360px;
+}
+.ic-24.refresh{
+	background-position: -552px -360px;
+}
+/*****************************colors icon--------*/
+.ic-24.actdelC{
+	background-position: -72px -384px;
+}
+
+/*--------------16pixel icons css---------*/
+.ic-16.correct{
+	background-position: -80px -464px;
+}
+.ic-16.wrong{
+	background-position: -96px -464px;
+}
+.ic-16.dropsign{
+	background-position: -64px -464px;
+}
+.ic-16.notif{
+	background-position: -64px -480px;
+}
+.ic-16.call{
+	background-position: -96px -480px;
+}
+.ic-16.callW{
+	background-position: -368px -480px;
+}
+.ic-16.profit{
+	background-position: -112px -464px;
+}
+.ic-16.stop{
+	background-position: -384px -480px;
+}
+.ic-16.login{
+	background-position: -128px -480px;
+}
+.ic-16.refresh{
+	background-position: -416px -480px;
+}
+.ic-16.und{
+	background-position: -162px -480px;
+}
+/*-------------button css----------------*/
+.btn {
+	-webkit-transition: background .25s linear;
+	-moz-transition: background .25s linear;
+	-o-transition: background .25s linear;
+	transition: background .25s linear;
+	border: none;
+	background: #bdc3c7;
+	color: #fff;
+	display:inline-block;
+	cursor:pointer;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box; 
+	box-sizing: border-box;
+}
+.btn:hover, .btn:focus{
+  background-color: #cacfd2;
+  color: #ffffff;
+}
+.btn:active {
+  background-color: #a1a6a9;
+  color: rgba(255, 255, 255, 0.75);
+}
+/*some sizes for buttons-------*/
+.btn-mini{
+	padding:2px 15px 3px;
+}
+.btn-medium{
+	padding: 5px 12px;
+	line-height: 24px;
+}
+.btn-large{
+	padding: 10px 30px;
+	line-height: 30px;
+	font-size:16px;
+}
+.btn-block{
+	display:block;
+	text-align:center;
+}
+
+/*----------some colors for change  button background color */
+.btn.btn-primary {
+  background-color: #1abc9c;
+}
+.btn.btn-primary:hover, .btn.btn-primary:focus{
+  background-color: #48c9b0;
+}
+.btn.btn-info {
+  background-color: #3498db;
+}
+.btn.btn-info:hover, .btn.btn-info:focus{
+  background-color: #5dade2;
+}
+.btn.btn-danger {
+  background-color: #e74c3c;
+}
+.btn.btn-danger:hover, .btn.btn-danger:focus{
+  background-color: #ec7063;
+}
+.btn.btn-success {
+  background-color: #2ecc71;
+}
+.btn.btn-success:hover, .btn.btn-success:focus{
+  background-color: #58d68d;
+}
+.btn.btn-warning {
+  background-color: #f1c40f;
+}
+.btn.btn-warning:hover, .btn.btn-warning:focus{
+  background-color: #f5d313;
+}
+.btn.btn-inverse {
+  background-color: #34495e;
+}
+.btn.btn-inverse:hover, .btn.btn-inverse:focus{
+  background-color: #415b76;
+}
+
+/*--------------------designing inputs---------*/
+input[type="button"], input[type="submit"]{
+	border:0;
+	outline:0;
+	cursor:pointer;
+}
+input[type="text"], input[type="password"]{
+	height:29px;
+}
+.linp{
+	width:100%;
+}
+textarea, input[type="text"], input[type="password"], select{
+	border:1px solid #cccccc;
+	background:#fff;
+	padding:3px 5px;
+}
+textarea.rn{
+	resize:none;
+}
+
+/*-------------------------section wise css---------------------*/
+/*setting section css start*/
+#settingwrap{
+	background:#f4f4f4;
+	width:100%;
+}
+#settingwrap #leftsec{
+	width:200px;
+	background:#fff;
+	float:left;
+}
+#setmenu{
+	margin-top:10px;
+}
+#setmenu li{
+	height:24px;
+	margin-bottom:10px;
+}
+#setmenu li a{
+	line-height:24px;
+	padding-left:25px;
+	color:#777;
+	border-left:4px solid transparent;
+}
+#settingwrap #leftsec #dline{
+	border-bottom:1px solid #d8d8d8;
+}
+#settingwrap #rightsec{
+	float:left;
+	overflow:auto;
+}
+.setContainer{
+	width:500px;
+	width:500px\9;
+}
+.pyopt li{
+	background:#fff;
+	padding:10px 20px;
+	display:inline-block;
+	margin-right:10px;
+	position:relative;
+	cursor:pointer;
+}
+.pyopt li span{
+	position:absolute;
+	top:2px;
+	right:2px;
+}
+#addemails #mobwrap input:first-child{
+	width:15%;
+	margin-right:5%;
+}
+#addemails #mobwrap input:last-child{
+	width:78%;
+}
+#oropt{
+	margin-bottom:30px;
+	border-bottom:1px solid #d8d8d8;
+	height:20px;
+}
+#oropt span{
+	width:40px;
+	background:#f4f4f4;
+	height:24px;
+	position:absolute;
+	left:50%;
+	margin-left:-20px;
+	top:10px;
+	text-align:center;
+}
+.resboxrow{
+	height:20px;
+	margin-bottom:10px;
+	line-height:20px;
+}
+.resboxrow label{
+	margin-left:5px;
+}
+#cpbox input[type="text"], #cpbox input[type="password"]{
+	min-width:200px;
+}
+#cpbox textarea{
+	min-height:100px;
+	width:200px;
+}
+#cpbox #cprow{
+	height:20px;
+	line-height:20px;
+	margin-top:5px;
+}
+#cpbox label{
+	margin: 0 5px;
+}
+
+#wlIdsList li, #emailIdsList li{
+	background:#fff;
+	border-left:3px solid transparent;
+	padding:12px 40px 12px 15px;
+	margin-bottom:15px;
+	position:relative;
+}
+#emailIdsList li{
+	padding:12px 15px !important;
+}
+#wlIdsList li .acName{
+	font-size:18px;
+	line-height:20px;
+	margin-bottom:10px;
+}
+#wlIdsList li .acProvider, .mailact{
+	font-size:12px;
+}
+#wlIdsList li span{
+	position:absolute;
+	top:5px;
+	right:5px;
+}
+#addAccbox{
+	background:#fff;
+	padding:15px;
+}
+#addAccbox select, #addAccbox  input{
+	width:100%;
+}
+#wlids .btn{
+	position:relative;
+}
+#wlids .btn span.ic-24{
+	margin-top:3px;
+	margin-right:10px;
+}
+#wlids .btn span{
+	display:inline-block;
+	float:left;
+}
+#emailIdsList li .idname{
+	font-size:18px;
+	line-height:20px;
+	margin-bottom:5px;
+}
+#emailIdsList li .mailact .acType{
+	margin-bottom:5px;
+}
+#emailIdsList li .mailact i{
+	margin-right:5px;
+}
+#emailIdsList li .mailact  span a{
+	float:right;
+	color:#777777;
+}
+#emailIdsList li .mailact  span a:hover{
+}
+#emailIdsList li > span{
+	position:absolute;
+	top:5px;
+	right:5px;
+}
+.tryc{
+	/*display:inline-block;*/
+}
+.tryc span{
+	float:left;
+}
+.tryc span.ic-24{
+	margin:3px 5px 0;
+}
+
+/*---------------------user section css--------------*/
+#contactWrap #leftsec{
+	width:375px;
+	float:left;
+	margin-right:20px;
+}
+#contactWrap #midsec{
+	width:600px;
+	float:left;
+	margin-right:20px;
+}
+#contactWrap #rightsec{
+	width:500px;
+	float:left;
+}
+#contactWrap #leftsec .box-sync{
+	height:160px;
+}
+.notewrap span:first-child{
+	margin-right:10px;
+}
+.notewrap .noteinfo{
+	font-size:12px;
+	line-height:16px;
+}
+.recCallList li{
+	background:#fff;
+	padding:10px;
+	position:relative;
+	margin-bottom:10px;
+}
+.recCallList li .fpinfo{
+	font-size:12px;
+}
+.recCallList li .fpinfo label{
+	margin-left:5px;
+}
+.recCallList li .TPlan{
+	font-size:22px;
+	line-height:40px;
+}
+.recCallList li .hoverCall{
+	display:none;
+	position:relative;
+	z-index:99;
+}
+.recCallList li:hover .TPlan{
+	display:none;
+}
+.recCallList li:hover .hoverCall{
+	display:block;
+}
+.recCallList li .tryc span:last-child{
+	font-size:20px;
+	line-height:29px;
+}
+
+.recCallList li .hoverCall a.btn{
+	margin:-10px -10px -10px 0 !important;
+	padding:16px 20px !important;
+}
+
+.cntList li{
+	background:#fff;
+	border-left:3px solid transparent;
+	padding:10px 10px 10px 15px;
+	margin-bottom:10px;
+	position:relative;
+}
+.cntList li .edtsiWrap .ic-24{
+	float:none;
+	margin:10px 0 0 10px;
+}
+.cntList li:hover .edtsiWrap{
+	display:none;
+}
+.cntList li .hoveredtsiWrap{
+	display:none;
+}
+.cntList li:hover .hoveredtsiWrap{
+	display:block;
+}
+
+.cntList li .hoveredtsiWrap a.btn{
+	margin:-10px -10px -10px 0 !important;
+	padding:18px 20px !important;
+}
+@media only screen and (max-width: 1386px) {
+	#contactWrap #leftsec{
+		width:200px;
+	}
+	#contactWrap #midsec{
+		width:350px;
+	}
+	#contactWrap #rightsec{
+		width:300px;
+	}
+}
+#add-contact-dialog .col-1-3{
+	width:69%;
+	margin-right:3%;
+	padding-right:2%;
+	height:330px;
+}
+
+#add-contact-dialog .col-3-4{
+	width:25%;
+}
+
+
+#add-contact-dialog .add-cnt-form{
+	border-right:1px solid #d8d8d8;
+}
+#add-contact-dialog .add-cnt-form .child{
+	float:left;
+	margin-right:10px;
+	width:160px;
+	width:140px\ /* IE8 and below */  ;
+}
+#add-contact-dialog .add-cnt-form .child:nth-child(3n+3){
+	width:30px;
+	margin-right:0;
+}
+#add-contact-dialog .add-cnt-form .child.ie{
+	width:30px\9; /* IE8 and below */  
+	margin-right:0\9; /* IE8 and below */  
+}
+#add-contact-dialog .add-cnt-form .child input{
+	width:160px;
+	width:140px\ /* IE8 and below */  ;
+}
+
+#add-contact-dialog .add-cnt-form .row{
+	margin-bottom:10px;
+}
+.addmorelink a{
+	font-size:12px;
+}
+/*-----------------user call log section-------*/
+#srchrow input, #srchrow button{
+	float:left;
+}
+/*#srchrow button{
+	padding:2px 10px 3px;
+}*/
+#srchrow label{
+	font-size:18px;
+	line-height:40px;
+	margin-left:10px;
+}
+#callLogWrap #leftsec{
+	width:360px;
+	float:left;
+	margin-right:20px;
+}
+#callLogWrap #rightsec{
+	width:360px;
+	float:left;
+}
+
+#callLogList li{
+	background:#fff;
+	padding:10px;
+	margin-bottom:10px;
+	font-size:12px;
+	position:relative;
+}
+#callLogList li .cntName{
+	font-size:18px;
+}
+#callLogList li .qntCall{
+	position:absolute;
+	bottom:10px;
+	right:10px;
+}
+.wantToCall{
+	display:none;
+}
+#callLogList li:hover .wantToCall{
+	display:inline-block;
+}
+#callLogList li:hover{
+	background:#ececec;
+}
+#callLogList li.selected{
+	background:#333333;
+	color:#fff;
+}
+#callLogList li.selected .wantToCall{
+	display:inline-block;
+}
+.box-dtl .col{
+	float:left;
+	width:50%;
+}
+.prCallList li{
+	background:#fff;
+	padding:15px;
+	border-top:2px solid #d8d8d8;
+	border-left:solid 2px transparent;
+}
+.prCallList li .cInfo{
+	font-size:12px;
+}
+.prCallList li .cInfo.error{
+	color:red;
+}
+/*----------transaction section start-------*/
+.cmntbl tr th, .cmntbl tr td{
+	padding:5px 10px;
+	border-right:1px solid #e5e5e5;
+}
+.cmntbl tr th:last-child, .cmntbl tr td:last-child{
+	border-right:none !important;
+}
+.cmntbl tfoot tr{
+	border-top:2px solid #d8d8d8;
+}
+.cmntbl tfoot tr td{
+	border-right:none !important;
+}
+.cmntbl.alR tr td, .cmntbl.alR tr th{
+	text-align:right;
+}
+.cmntbl tr th{
+	text-align:left;
+	background:#30a6d9;
+	color:#fff;
+	font-weight:normal;
+}
+.cmntbl tbody tr.odd{
+	background:#fff;
+}
+.cmntbl tbody tr.even{
+	background:#f5f5f5;
+}
+.cmntbl .debit{
+	color:#ea5c3b;
+}
+.cmntbl tr.selected{
+	background:#4d4d4d !important;
+	color:#fff;
+}
+.cmntbl tbody tr.zerobal{
+	background:#30a6d9 !important;
+	height:2px !important;
+}
+.cmntbl tbody tr.zerobal td{
+	padding:0 !important;
+}
+.editable tr td input[type="text"]{
+	width:100%;
+	background:none !important;
+	border:none !important;
+}
+/****************************reseller section **********************/
+#resellerWrap #pagiwrap{
+	height:40px;
+}
+#resellerListWrap{
+	overflow:auto;
+}
+#resellerListWrap.groupView{
+	width:330px;
+	float:left;
+	margin-right:20px;
+}
+#resellerWrap #groupContent{
+	float:left;
+	width:360px;
+}
+#resellerListWrap .resList li{
+	display:inline-block;
+	width:280px;
+	height:130px;
+	margin:0 10px 10px 0;
+	border-right:3px solid transparent;
+}
+#resellerListWrap.groupView .resList li{
+	margin-right:0;
+}
+.resList li{
+	position:relative;
+	background:#fff;
+	padding:10px;
+	margin-right:0;
+}
+#groupContent .resList li{
+	border-top:2px solid #d8d8d8;
+}
+.resName{
+	font-weight:bold;
+}
+.resNo, .resTimeInfo, .dataInfo, .provInfo{
+	font-size:12px;
+}
+#resellerListWrap .resTimeInfo{
+	margin:8px 0;
+}
+.resTimeInfo{
+	margin:5px 0;
+}
+.resList li .resTimeInfo span{
+	font-size:16px;
+}
+#resellerListWrap .resList li .dataInfo{
+	line-height:16px;
+	margin-top:25px;
+}
+.dataInfo i{
+	margin-right:5px;
+}
+.actWrap{
+	position:absolute;
+	top:10px;
+	right:10px;
+}
+.provInfo{
+	text-align:right;
+}
+.actWrap .btn-mini{
+	padding: 2px 10px 3px;
+	margin-bottom:5px;
+}
+.actWrap .tryc .ic-16{
+	margin:2px 3px 0 0 ;
+}
+#srchrow .sett{
+	float:right;
+	width:200px;
+	padding-top:8px;
+}
+#srchrow .sett i{
+	float:right
+}
+#srchrow .sett .ic-16{
+	margin:4px 0 0 5px;
+}
+#showTrSett, #showDwSett{
+	font-size:12px;
+	right:0;
+	top:30px;
+	min-width:100px !important;
+}
+#showTrSett li:hover, #showDwSett li:hover{
+	color:#fff;
+}
+/*================reseller manage client===========*/
+#resMngCltWrap #srchrow{
+	height:40px;
+}
+#resManageCnt #leftsec{
+	float:left;
+	width:320px;
+	margin-right:20px;
+}
+#resManageCnt #rightsec{
+	float:left;
+}
+.mngClntList li{
+	position:relative;
+	background:#fff;
+	padding:10px;
+	height:90px;
+	border-right:3px solid transparent;
+	margin-bottom:10px;
+}
+.uiwrp, .tInfo{
+	font-size:12px;
+}
+.uiwrp i{
+	margin-top:1px;
+}
+.uiwrp label{
+	line-height:16px;
+	margin-left:2px;
+}
+.tInfo{
+	margin-top:16px;
+	margin-left:18px;
+}
+.tInfo span{
+	font-size:16px;
+}
+.mngClntList li .actwrp{
+	position:absolute;
+	top:10px;
+	right:10px;
+}
+.actwrp .switch{
+	width:48px;
+	height:24px;
+}
+.actwrp .switch label{
+	cursor:pointer;
+}
+.mngClntList li.group .btn{
+	position:absolute;
+	right:0;
+	bottom:20px;
+	font-size:12px;
+	padding:2px 5px 3px;
+}
+#addClntForm{
+	width:300px;
+}
+#addClntForm p{
+	margin-top:15px;
+	margin-bottom:5px;
+}
+#addClntForm input[type="text"], select{
+	width:100%;
+}
+#addClntForm #mobwrap input:first-child{
+	width:20%;
+	margin-right:5%;
+}
+#addClntForm #mobwrap input{
+	width:73%;
+}
+
+.btnlbl .ui-button{
+	float:left;
+	height:30px;
+	background:#e5e5e5;
+	padding:0 20px;
+	cursor:pointer;
+}
+.btnlbl label span.ui-button-text{
+	line-height:30px;
+}
+.btnlbl label.ui-state-hover{
+	background:#cbcbcb;
+	color:#000;
+}
+.btnlbl label.ui-state-active{
+	background:#333;
+	color:#fff;
+}
+/*------------------batchname--------------------*/
+#resMngCltWrap .srchrowSec{
+	height:34px;
+}
+#resMngCltWrap .srchrowSec .sett{
+	float:right;
+	width:200px;
+}
+#resMngCltWrap .srchrowSec .sett div{
+	float:right;
+	margin-left:30px;
+}
+#resMngCltWrap .srchrowSec .sett .dropsign{
+	margin: 4px 0 0 5px;
+}
+.h3wico{
+	height:30px; 
+	line-height:30px;
+}
+.h3wico i{
+	margin-top:3px;
+	margin-left:5px;
+}
+.actM{
+	font-size:12px;
+}
+.actM .irow{
+	height:20px;
+	line-height:20px;
+}
+.actM .irow input[type="checkbox"]{
+	float:left;
+	margin:3px 5px;
+}
+.actM .irow label{
+	float:left;
+}
+.actM input[type="text"], .actM textarea{
+	width:100%;
+}
+.actM textarea{
+	height:120px;
+}
+.chrow input[type="text"], .chrow label{
+	float:left;
+}
+.chrow label{
+	margin-left:10px;
+}
+.chrow label span{
+	margin-right:5px;
+	line-height:29px;
+	float:left;
+}
+.chrow label span.blk{
+	background:#000;
+	width:24px;
+	height:24px;
+	padding:2px 3px 3px;
+	display:block;
+}
+#sporow .funder, #sporow input[type="text"], #sporow select{
+	float:left;
+}
+#sporow input[type="text"]{
+	width:100px;
+	margin-right:-1px;
+}
+#sporow select{
+	width:80px;
+}
+.funder{
+	width:48px;
+	height:24px;
+	margin-top:2px;
+}
+#sporow .btn{
+	padding:0 5px 2px;
+	margin-left:10px;
+}
+.desc textarea{
+	height:170px;
+	width:320px;
+}
+#tabs-3 #edInfo input[type="text"], #tabs-3 #edInfo select{
+	width:200px;
+}
+/*************************manage plan*********************/
+[class*="cmnli-"] li{
+	background:#fff;
+	padding:10px;
+	margin-bottom:10px;
+	position:relative;
+}
+.mngPlnList li .actwrap{
+	position:absolute;
+	top:10px;
+	right:10px;
+}
+.mnpInfo{
+	margin-top:10px;
+}
+.mnpInfo p:first-child{
+	float:left;
+}
+.mnpInfo p:last-child{
+	float:right;
+	text-align:right;
+}
+#trfTbl{
+	border-left:solid 1px #d8d8d8;
+	border-bottom:solid 1px #d8d8d8;
+}
+#trfTbl input{
+	width:100%;
+	border:none !important;
+}
+#trfTbl tr th{
+	text-indent:10px;
+}
+#trfTbl tr th, #trfTbl tr td{
+	padding:0;
+	height:30px;
+	line-height:30px;
+}
+.box-imp{
+	border:1px solid #d8d8d8;
+	width:400px;
+}
+#upType{
+	margin-top:-30px;
+	margin-bottom:10px;
+}
+.fileWrap{
+	border:1px solid #d8d8d8;
+	padding:5px;
+	width:300px;
+	margin-bottom:10px;
+}
+#addPlanWrap .tryc span:last-child{
+	font-size:20px;
+	line-height:29px;
+}
+/*---------------manage plan setting--------*/
+#mnpSettLeft{
+	width:600px;
+	float:left;
+	margin-right:20px;
+}
+
+#mnpSettRight{
+	width:300px;
+	float:left;
+}
+@media only screen and (max-width: 1480px) {
+	#mnpSettLeft{
+		width:600px;
+		float:none;
+	}
+	
+	#mnpSettRight{
+		width:300px;
+		margin-top:30px;
+		float:none;
+	}
+}
+/**************************manage pins******************/
+.cmnli-mngpin li{
+	font-size:12px;
+}
+.cmnli-mngpin li h3 span{
+	font-size:12px;
+}
+.mpinrow p{
+	float:left;
+	height:24px;
+	line-height:24px;
+}
+.mpinrow p:first-child{
+	width:185px;
+}
+.mpinrow p:last-child{
+	float:right;
+}
+.mpinrow p:last-child span{
+	float:right;
+}
+.biller{
+	width:72px;
+	height:24px;
+	margin:0 10px 0 0;
+	display:inline-block;
+	float:right;
+}
+/*manage pins----------*/
+#manage-pin-wrap #leftwrap{
+	float:left;
+	width:600px;
+	margin-right:20px;
+}
+#manage-pin-wrap #rightwrap{
+	float:left;
+	width:300px;
+}
+#manage-pin-wrap #rightwrap p{
+	margin:20px 0 5px 0;
+}
+#manage-pin-wrap #rightwrap input[type="text"], #manage-pin-wrap #rightwrap select{
+	width:100%;
+}
+
+/**********************callshop************************/
+#callshopListWrap{
+	overflow:auto;
+}
+.cmnli-callshop li{
+	float:left;
+	margin:0 20px 20px 0;
+	width:280px;
+	height:142px;
+}
+.cmnli-callshop li#addN{
+	width:300px;
+	height:162px;
+	background:none;
+	border:1px dashed #cccccc;
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+	box-sizing: border-box;         /* Opera/IE 8+ */
+}
+.cmnli-callshop li#addN h3{
+	height:30px;
+	margin-top:50px;
+	text-align:center;
+	line-height:30px;
+}
+.cmnli-callshop li h3 span.ellp{
+	float:left;
+	width:80%;
+}
+.cmnli-callshop li h3 i{
+	float:right;
+}
+.cmnli-callshop li .line{
+	height:1px;
+	background:#d8d8d8;
+	margin:10px -10px;
+}
+.cmnli-callshop li .btn{
+	float:left;
+	margin-right:10px;
+}
+.cmnli-callshop li .prov{
+	float:left;
+	display:inline-block;
+	line-height:25px;
+	font-size:12px;
+	margin-right:5px;
+}
+.cmnli-callshop li .prov:last-child{
+	margin-right:0;
+	margin-left:8px;
+}
+.cmnli-callshop li .btn-mini{
+	 padding: 2px 10px 3px;
+}
+.cmnli-callshop li .btn .ic-16{
+	margin-top:2px;
+}
+
+#add-shop-dialog p{
+	margin:10px 0 5px 0;
+}
+#add-shop-dialog .rdrow{
+	height:24px;
+	line-height:24px;
+	margin-bottom:5px;
+}
+#add-shop-dialog .rdrow label{
+	margin-left:10px;
+}
+#add-shop-dialog .wrp{
+	border-left:1px solid #d8d8d8;
+	height:400px;
+	overflow:auto;
+}
+
+#add-shop-dialog #srchrslt li{
+	border-bottom:1px solid #d8d8d8;
+	padding:6px 0 6px 20px;
+}
+#add-shop-dialog #srchrslt li p{
+	font-size:12px;
+	margin:0 !important;
+}
+.cmnli-summary li{
+	background:#f5f5f5;
+	font-size:12px;
+	float:left;
+	margin:0 10px 10px 0;
+	width:260px;
+}
+.cmnli-summary li .lir{
+	height:24px;
+	line-height:24px;
+}
+.cmnli-summary li .lir p{
+	float:left;
+}
+.cmnli-summary li .lir p:last-child{
+	float:right;
+}
+
+/*------------manage websites-----------*/
+.cmnli-webli li .actwrap{
+	position:absolute;
+	right:10px;
+	bottom:10px;
+}
+.jh p{
+	float:left;
+}
+.jh p:last-child{
+	float:right;
+}
+
+
+/*------------manage websites-----------*/
+.cmnli-webli li .actwrap{
+	position:absolute;
+	right:10px;
+	bottom:10px;
+}
+.jh p{
+	float:left;
+}
+.jh p:last-child{
+	float:right;
+}
+#web-data-form{
+	font-size:12px;
+}
+#web-data-form h4{
+	margin:15px 0 5px;
+	font-size:14px;
+}
+#web-data-form p{
+	margin:15px 0 5px;
+}
+#web-data-form label{
+	width:150px;
+	display:inline-block;
+}
+#web-data-form .inprow{
+	margin-bottom:10px;
+}
+#web-data-form #tabs .inprow input[type="text"]{
+	width:450px;
+}
+#web-data-form #tabs textarea{
+	width:600px;
+	height:200px;
+}
+#web-data-form #tabs textarea.mtag{
+	height:60px;
+}
+#web-data-form #tabs select {
+	width:600px;
+}
+
+/**********************notifications************************/
+#notification{
+	position:absolute;
+	top:0;
+	left:0;
+	right:0;
+	z-index:999;
+	color:#fff;
+	font-size:20px;
+	display:none;
+}
+#notification div{
+	height:30px;
+	padding:15px 30px;
+	line-height:30px;
+}
+#notification i{
+	margin:5px 5px 0 0;
+}
+#notification .success, #notification .warning, #notification .error, #notification .information{display: block;}
+
+#notification .success{
+	background:#1fbaa6
+}
+#notification .warning{
+	background:#ffcc00;
+}
+#notification .error{
+	background:#ff5c33;
+}
+#notification .information{
+	background:#30a6d9;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
